@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>YaomaCore_NamerArt</defName>
+    <include>
+      <li>YaomaCore_WordUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- General -->
+        <li>r_art_name->[YaomaMoniker]</li>
+        <li>r_art_name->[YaomaAdj] [YaomaElements] [YaomaItem]</li>
+        <li>r_art_name->[YaomaAdj] [YaomaItem] of [YaomaWord]</li>
+        <li>r_art_name->[YaomaAdj] [YaomaItem] of [YaomaMoniker]</li>
+        <li>r_art_name->[YaomaElements]-[YaomaElementsAction] [YaomaItem]</li> <!-- i.e. Space-Rending Blade-->
+
+        <li>r_art_name->[YaomaMyth]'s [Positive] </li> <!-- i.e. Taotie's Blessing -->
+        
+		<li>r_art_name->[YaomaElements] - [YaomaElementsAction]</li> <!-- i.e. Space-Rending -->
+		<li>r_art_name->[YaomaElements] [YaomaItem]</li>	<!-- i.e. Space Blade -->
+		<li>r_art_name->[YaomaElements] [YaomaMyth]</li> <!-- i.e. Space Immortal -->
+
+		<li>r_art_name->[YaomaMyth]'s [YaomaItem]</li> <!-- i.e. Tiger's Blade -->
+		<li>r_art_name->[YaomaMyth] [YaomaElements]</li> <!-- i.e. Tiger Space -->			
+ 
+		<li>r_art_name->[YaomaAdj] [YaomaItem] </li>  <!-- i.e. Dominating Blade -->	
+		<li>r_art_name->[YaomaAdj] [YaomaMyth] </li> <!-- i.e. Dominating Immortal -->	
+		
+		<li>r_art_name->[YaomaWord] [YaomaWord]</li> <!-- i.e. Dominating Blade  -->			
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>YaomaCore_NamerArtWeapon</defName>
+    <include>
+      <li>YaomaCore_WordUtility</li>
+	  <li>ArtNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- General -->
+        <li>r_art_name->[YaomaMoniker]</li>
+        <li>r_art_name->[YaomaAdj] [YaomaElements] [YaomaItem]</li>
+        <li>r_art_name->[YaomaAdj] [YaomaItem] of [YaomaWord]</li>
+        <li>r_art_name->[YaomaAdj] [YaomaItem] of [YaomaMoniker]</li>
+        <li>r_art_name->[YaomaElements] [YaomaElementsAction] [YaomaItem]</li>		
+		<li>r_art_name->[AdjectiveBadass] [AnimalBadass]</li>
+		<li>r_art_name->[ColorBadass] [AnimalBadass]</li>
+        <li>r_art_name->[ConceptBadass] [ColorBadass]</li>
+		
+        <!-- Person. High probability; if we can use these we want to -->
+        <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [YaomaItem]</li>
+        <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [YaomaElements]</li>
+        <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonBadass]</li>
+        <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonAlly]</li>
+        <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonFamily]</li>
+        <li>r_art_name(p=3)->[Positive] of [ANYPAWN_nameIndef]</li>
+		<li>r_art_name(p=3)->[ConceptBadass] of [ANYPAWN_nameIndef]</li>
+        <li>r_art_name(p=3)->[ColorBadass] [ANYPAWN_nameIndef]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>YaomaCore_NamerArtWeaponMelee</defName>
+    <include>
+      <li>YaomaCore_NamerArtWeapon</li>
+    </include>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>YaomaCore_NamerArtWeaponGun</defName>
+    <include>
+      <li>YaomaCore_NamerArtWeapon</li>
+    </include>
+  </RulePackDef>
+
+</Defs>

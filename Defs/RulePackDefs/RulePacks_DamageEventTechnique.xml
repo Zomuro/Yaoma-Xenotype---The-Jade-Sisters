@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    
+	<RulePackDef>
+		<defName>DamageEvent_Technique</defName>
+		<include>
+			<li>DamageEvent_Include</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>damage_source->[qi] damaged</li>
+
+				<li>qi(p=3)->qi burst</li>
+				<li>qi(p=3)->qi stream</li>
+				<li>qi(p=3)->qi</li>
+
+				<li>damaged_present->harming</li>
+				<li>damaged_present->blasting</li>
+				<li>damaged_present->damaging</li>
+				<li>damaged_present->wounding</li>
+
+				<li>destroyed_present->destorying</li>
+				<li>destroyed_present->decimating</li>
+				<li>destroyed_present->removing</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>DamageEvent_SwordDaoExecute</defName>
+		<include>
+			<li>DamageEvent_Include</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>damage_source->[blade] damaged</li>
+
+				<li>blade(p=3)->a qi sword</li>
+				<li>blade(p=3)->a qi blade</li>
+				<li>blade(p=3)->a qi weapon</li>
+
+				<li>damaged_present->cutting</li>
+				<li>damaged_present->slicing</li>
+				<li>damaged_present->lacerating</li>
+				<li>damaged_present->wounding</li>
+
+				<li>destroyed_present->gouging</li>
+				<li>destroyed_present->carving</li>
+				<li>destroyed_present->excising</li>
+				<li>destroyed_present->removing</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- <StatDef> -->
+		<!-- <defName>QiMax</defName> -->
+		<!-- <label>qi limit</label> -->
+		<!-- <description>The maximum amount of qi a cultivator is able to utilize before tapping into their own life force.\n\nHowever, some esoteric cultivation texts amongst the Yaoma speak of a way to surpass this, through stablizing and perfecting one's foundations.</description> -->
+		<!-- <category>BasicsPawn</category> -->
+		<!-- <defaultBaseValue>50</defaultBaseValue> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		<!-- <toStringStyle>FloatOne</toStringStyle> -->
+		<!-- <showOnAnimals>false</showOnAnimals> -->
+		<!-- <showOnMechanoids>false</showOnMechanoids> -->
+		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
+		<!-- <displayPriorityInCategory>3500</displayPriorityInCategory> -->
+		<!-- <statFactors> -->
+			<!-- <li>CultivationTalent</li> -->
+		<!-- </statFactors> -->
+	<!-- </StatDef> -->
+
+	<!-- <StatDef> -->
+		<!-- <defName>QiRecoveryRate</defName> -->
+		<!-- <label>qi recovery rate</label> -->
+		<!-- <description>The rate at which this person naturally recovers their qi.\n\nIt has been said though that by stablizing and perfecting one's foundations, this rate can be surpassed to some degree.</description> -->
+		<!-- <category>BasicsPawn</category> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <toStringStyle>FloatTwo</toStringStyle> -->
+		<!-- <formatString>{0}/s</formatString> -->
+		<!-- <showOnAnimals>false</showOnAnimals> -->
+		<!-- <showOnMechanoids>false</showOnMechanoids> -->
+		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
+		<!-- <displayPriorityInCategory>3500</displayPriorityInCategory> -->
+		<!-- <statFactors> -->
+			<!-- <li>CultivationTalent</li> -->
+		<!-- </statFactors> -->
+	<!-- </StatDef> -->
+
+	<!-- <StatDef> -->
+		<!-- <defName>QiCostMultiplier</defName> -->
+		<!-- <label>qi cost multiplier</label> -->
+		<!-- <description>A multiplier on qi used.</description> -->
+		<!-- <category>BasicsPawn</category> -->
+		<!-- <minValue>-1</minValue> -->
+		<!-- <hideAtValue>1</hideAtValue> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <toStringStyle>PercentZero</toStringStyle> -->
+		<!-- <showOnAnimals>false</showOnAnimals> -->
+		<!-- <showOnMechanoids>false</showOnMechanoids> -->
+		<!-- <showOnPawns>false</showOnPawns> -->
+		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
+		<!-- <displayPriorityInCategory>4000</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+	
+	<!-- <StatDef> -->
+		<!-- <defName>TechniqueSlotsBonus</defName> -->
+		<!-- <label>additional technique slots</label> -->
+		<!-- <description>An additional number of Yaoma techniques a pawn can learn.</description> -->
+		<!-- <category>BasicsPawn</category> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		<!-- <defaultBaseValue>0</defaultBaseValue> -->
+		<!-- <toStringStyle>Integer</toStringStyle> -->
+		<!-- <showOnAnimals>false</showOnAnimals> -->
+		<!-- <showOnMechanoids>false</showOnMechanoids> -->
+		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
+		<!-- <displayPriorityInCategory>4000</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+  
+</Defs>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef ParentName="GeneLearningBase">
+		<defName>YaomaCore_Neuroplasticity</defName>
+		<label>enhanced neuroplasticity</label>
+		<description>Carriers of this gene form neural connections more quickly. This alteration in neuron function allows them to learn more swiftly and work more efficiently, but makes it easier to recall bad memories.</description>
+		<iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		<statOffsets>
+			<GlobalLearningFactor>0.25</GlobalLearningFactor>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+			<MentalBreakThreshold>.075</MentalBreakThreshold>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>corti</symbol></li>
+				<li><symbol>neuro</symbol></li>
+				<li><symbol>mnemo</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>plastic</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneToughnessBase">
+		<defName>YaomaCore_MyeloaffectiveOsteoporosis</defName>
+		<label>Myeloaffective osteoporosis</label>
+		<description>Carriers of this gene have altered osteogenesis cells that create weaker bone structures and reduced bone marrow. This has a variety of knock-on effects that effectively reduce their physical durability and weaken their immune response.</description>
+		<iconPath>UI/Icons/Genes/Gene_Delicate</iconPath>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		<statFactors>
+			<YaomaCore_HealthScaleFactor>0.75</YaomaCore_HealthScaleFactor>
+			<ImmunityGainSpeed>0.9</ImmunityGainSpeed>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>5</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>brittle</symbol></li>
+				<li><symbol>hollowed</symbol></li>
+				<li><symbol>osteo</symbol></li>
+				<li><symbol>myelo</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>porosis</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>	
+	
+	<GeneDef Name="YaomaCore_GeneCultivationAbilityBase" Abstract="True">
+		<displayCategory>YaomaCore_CategoryCultivation</displayCategory>
+		<exclusionTags>
+			<li>CultivationAbility</li>
+		</exclusionTags>
+	</GeneDef>
+	
+	<GeneDef ParentName="YaomaCore_GeneCultivationAbilityBase">
+		<defName>YaomaCore_DaoAttunement</defName>
+		<label>Dao attunement</label>
+		<description>Carriers of this gene are more amenable to the mental and physiological changes brought upon by Yaoma cultivation. Though the precise mechanism is still unknown, researchers have discovered a category of unique receptors only found in cultivators and carriers. </description>
+		<iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		<statOffsets>
+			<YaomaCore_CultivationTalent>0.5</YaomaCore_CultivationTalent>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>Dao</symbol></li>
+				<li><symbol>taiji</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>harmonized</symbol></li>
+				<li><symbol>qigong</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="CellInstabilityBase">
+		<defName>YaomaCore_StabilizedSenescence</defName>
+		<label>stabilized senescence</label>
+		<description>Carriers of this gene are granted a longer average life expectancy. Their cells are less likely to die due to reduced DNA damage during the cell replication process. The lower rate of apoptosis, however, gives cells the time to become cancerous through other factors.</description>
+		<iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		<statFactors>
+			<LifespanFactor>1.25</LifespanFactor>
+			<CancerRate MayRequire="Ludeon.RimWorld.Biotech">2</CancerRate>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>dura</symbol></li>
+				<li><symbol>teneo</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>longevity</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+</Defs>

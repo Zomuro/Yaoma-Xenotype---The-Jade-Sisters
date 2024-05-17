@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>YaomaCore_DamageShock</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>damaged_past(p=2)->blasted</li>
+				<li>damaged_past(p=2)->scorched</li>
+				<li>damaged_past(p=2)->burned</li>
+				<li>damaged_past(p=2)->blistered</li>
+				<li>damaged_past(p=2)->ignited</li>
+				<li>damaged_past(p=2)->seared</li>
+				<li>damaged_past->injured</li>
+				<li>damaged_past->damaged</li>
+				<li>damaged_past->wounded</li>
+				<li>damaged_past->hurt</li>
+				<li>damaged_past->electrified</li>
+				<li>damaged_past->shocked</li>
+				<li>damaged_past->zapped</li>
+				<li>damaged_past->electrocuted</li>
+
+				<li>damaged_present->electrocuting</li>
+				<li>damaged_present->electrifying</li>
+				<li>damaged_present->shocking</li>
+				<li>damaged_present->zapping</li>
+				<li>damaged_present(p=2)->blasting</li>
+				<li>damaged_present(p=2)->scorching</li>
+				<li>damaged_present(p=2)->burning</li>
+				<li>damaged_present(p=2)->blistering</li>
+				<li>damaged_present(p=2)->igniting</li>
+				<li>damaged_present(p=2)->searing</li>
+				<li>damaged_present->injuring</li>
+				<li>damaged_present->damaging</li>
+				<li>damaged_present->wounding</li>
+				<li>damaged_present->hurting</li>
+
+				<li>destroyed_past->cremated</li>
+				<li>destroyed_past->incinerated</li>
+				<li>destroyed_past->charred</li>
+				<li>destroyed_past->obliterated</li>
+				<li>destroyed_past->annihilated</li>
+				<li>destroyed_past->detonated</li>
+
+				<li>destroyed_present->cremating</li>
+				<li>destroyed_present->incinerating</li>
+				<li>destroyed_present->charring</li>
+				<li>destroyed_present->obliterating</li>
+				<li>destroyed_present->annihilating</li>
+				<li>destroyed_present->detonating</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>YaomaCore_DamageSoul</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>damaged_past(p=2)->splintered</li>
+				<li>damaged_past(p=2)->fractured</li>
+				<li>damaged_past(p=2)->cracked</li>
+				<li>damaged_past(p=2)->crushed</li>
+				<li>damaged_past(p=2)->clefted</li>
+				<li>damaged_past->injured</li>
+				<li>damaged_past->damaged</li>
+				<li>damaged_past->wounded</li>
+				<li>damaged_past->hurt</li>
+
+				<li>damaged_present(p=2)->splintering</li>
+				<li>damaged_present(p=2)->fracturing</li>
+				<li>damaged_present(p=2)->cracking</li>
+				<li>damaged_present(p=2)->crushing</li>
+				<li>damaged_present(p=2)->clefting</li>
+				<li>damaged_present->injuring</li>
+				<li>damaged_present->damaging</li>
+				<li>damaged_present->wounding</li>
+				<li>damaged_present->hurting</li>
+
+				<li>destroyed_past->obliterated</li>
+				<li>destroyed_past->annihilated</li>
+				<li>destroyed_past->shattered</li>
+				<li>destroyed_past->fragmented</li>
+				<li>destroyed_past->disintegrated</li>
+				<li>destroyed_past->broke</li>
+
+				<li>destroyed_present->obliterating</li>
+				<li>destroyed_present->annihilating</li>
+				<li>destroyed_present->shattering</li>
+				<li>destroyed_present->fragmenting</li>
+				<li>destroyed_present->disintegrating</li>
+				<li>destroyed_present->breaking</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

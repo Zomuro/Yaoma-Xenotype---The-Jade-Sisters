@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Yaoma Xenotype- The Jade Sisters</name>
+	<author>Zomuro</author>
+	<supportedVersions><li>1.5</li></supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+			<downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2009463077</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>Zomuro.ItsSorcery</packageId>
+			<displayName>It's Sorcery!</displayName>
+			<downloadUrl>https://github.com/Zomuro/ItsSorceryFramework/releases</downloadUrl>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3013487115</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>Zomuro.ItsSorcery</li>
+	</loadAfter>
+	<packageId>Zomuro.YaomaXenotype</packageId>
+	<description>"My daughters... I made you as you are. Fashioned your bones fragile as glass, perfected your skin into moonlight, entwining your lifeblood like rubies... All so you may take my teachings."
+	
+"Hark! Who is the cry of a newborn babe? The festering wounds of a foolhardy solider? The relentless march of an endless plague upon kin? Oppresive and omnipresent, know me as your challenger!"
+
+"Hear me! The archons shall pierce their veils, bringing soulless wrath. Void of my guidance... all will be lost amongst the endless stars."
+	
+Created by a being interested in defending against a (supposedly) incoming archotech incursion, the Yaoma are intended as the uplifters of humanity.
+With unknown conditions now satisfied, they have been scattered amongst the universe with the solar wind, ready to fulfill their purpose.
+
+By the immortal jade.
+
+Features:
+	New research tree! Develop the equipment and items of the Yaoma, and marvel at their wonderous effects. wip
+	Magic system inspired by xianxia (Chinese high fantasy)! The key to Yaoma perpetuity. Find your Dao, and wield frighteningly powerful abilities. wip
+	Three tiers of Yaoma weaponry! wip
+	Three tiers of Yaoma apparel! wip
+	New charms and shield belts! wip
+	New drugs, for war and peace! wip
+	Two new storytellers (Farseer Fan and Kaiyi of Karma)! wip
+	Two new end conditions! wip
+	New AI! wip
+
+My warmest thanks go to:
+	Halno, for doing apparel, weapon, and drug art!
+	Erok031, for providing building art!
+	SirLalaPyon, for crafting mote and icon art!
+	Sovereign, for drug, item, and building art!
+	Gouda quiche, for patiently helping me with the C# of the magic system and being my mentor!
+	Fraudecon, for helping with C# and ability development!
+	Argon, for all those night providing C# advice!
+	And many others within the RimWorld community for your support!
+	
+	</description>
+</ModMetaData>

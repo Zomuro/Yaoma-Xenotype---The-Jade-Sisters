@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IdeoStoryPatternDef>
+    <defName>YaomaCore_MythicDeity</defName>
+    <segments>
+      <li>setting</li>
+      <li>intro</li>
+      <li>humanity</li>
+      <li>settling</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+		<li>YaomaCore_WordUtility</li>
+      </include>
+      <rulesStrings>
+        <li>setting->It was in the chill of winter that the first Yaoma set foot in [place_summary] [place_name], seeking to contemplate [memeConcept].</li>
+        <li>setting->Spring came with verdant leaves and rain, as did the Yaoma at the site of [place_summary] [place_name] - there they hoped to become as [memeAdjective] as their [deity0_type].</li>
+        <li>setting->At the dawn of a clear summer day, many [memberNamePlural] came to the new world, bearing arms attuned to the Way of [YaomaElements].</li>
+        <li>setting->When the lands were covered in the warm colors of autumn, many came to a new home blessed by [deity0_name].</li>
+        <li>setting->No migration is ever easy, but the Yaoma made their way to a new land with the blessings of [deity0_name].</li>
+
+        <li>intro->There on the land, [deity0_name] conjured a vision of the future, one of prosperity for the [memberNamePlural] of [place_name].</li>
+        <li>intro->With the aid of [deity1_name], [deity0_name] endeavored to fulfill Ku’s sacred mission. </li>
+        <li>intro->Looking upon them, [deity1_name] took lessons from the old heartland, and chose to guide [deity1_possessive] people.</li>
+        <li>intro->Both [deity0_name] and [deity1_name] expounded on the Dao, so that their people would learn of [memeConcept].</li>
+
+        <li>humanity->To fulfill [deity0_possessive] goals, [deity0_name] taught [deity0_possessive] people methods to follow Ku’s tenet of humanity.</li>
+        <li>humanity->Though many warriors were among the [memberNamePlural], some exchanged their blades for the pen upon their journey towards empathy and understanding.</li>
+        <li>humanity->Inspired by the efforts of their [deity0_type]s, the children of Ku wished to connect amongst themselves and with those unlike themselves.</li>
+        <li>humanity->The yin and yang of [place_name] took the [memeAdjective] words bestowed upon them to heart.</li>
+
+        <li>settling->Thus did the people, aided by [deity0_name] and [deity1_name], move forwards, ever searching for [memeAdjective] [memeConcept].</li>
+        <li>settling->Building upon the gumption of its people, eventually [place_name] became a haven of milk and honey.</li>
+		<li>settling->Perhaps that is why [deity0_name] speaks fondly of [place_name] to this day- a community of traditions and connections.</li>
+		<li>settling->Many that seeked the principles of the world eventually discerned the Dao, taking to heart the guidance of [deity0_name] and Ku’s humanity.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+  <IdeoStoryPatternDef>
+    <defName>YaomaCore_PredecessorDeity</defName>
+    <segments>
+      <li>setting</li>
+      <li>intro</li>
+      <li>resilience</li>
+      <li>victory</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+		<li>YaomaCore_WordUtility</li>
+      </include>
+      <rulesStrings>
+		<li>moodRain->ashes</li>
+		<li>moodRain->embers</li>
+		<li>moodRain->tears</li>
+	  
+        <li>setting->Under the rain of [moodRain] of their old home, many [memberNamePlural] had made their way to [place_name] to prepare for battle.</li>
+        <li>setting->The erstwhile children of [place_name], under the guidance of their [deity0_type], made their way to the battlefield bearing [place_personalWeapon]s.</li>
+        <li>setting->In the midst of an infestation on the [place_summary] [place_name] were [memberNamePlural], forced to fight for survival.</li>
+        <li>setting->There, in a bastion fortified against a mechanoid menace, were once Yaoma mercenaries that bore [place_personalWeapon]s against steel.</li>
+
+        <li>intro->It was a conflict that the [deity0_type]s could not afford to mishandle; as a result, they fought alongside their people.</li>
+        <li>intro->With the aid of [deity1_name], [deity0_name] endeavored to fulfill Ku’s sacred mission.</li>
+        <li>intro->Looking upon them, [deity1_name] chose to guide [deity1_possessive] people to victory.</li>
+        <li>intro->Both [deity0_name] and [deity1_name] expounded on the Dao, so that their people would learn of [memeConcept].</li>
+
+        <li>resilience->To fulfill [deity0_possessive] goals, [deity0_name] taught [deity0_possessive] people methods to follow Ku’s tenet of resilience.</li>
+        <li>resilience->Many warriors among the [memberNamePlural] thus embraced battle, carving the meaning of [memeConcept] into their own flesh under the auspices of [deity0_name].</li>
+        <li>resilience->Inspired by the efforts of their [deity0_type]s, the children of Ku endured much struggle to see the promised day.</li>
+        <li>resilience->As such, combat brought rise to many [memeAdjective] legends attributed to both [deity0_type]s and [memberNamePlural].</li>
+
+        <li>victory->Through their unyielding determination, those of [place_name] came to comprehend the many lessons of [deity0_name] and [deity1_name].</li>
+        <li>victory->Thus did the people aided by [deity0_name] and [deity1_name] move forwards, seizing [memeAdjective] [memeConcept] through trials and tribulations.</li>
+		<li>victory->The students of [deity0_name] still maintain their martial prowess to this day, retelling the old war-tales of glory.</li>
+		<li>victory->In the end, many discerned the Dao on the warpath to victory, taking to heart the guidance of [deity0_name] and Ku’s resilience.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+  
+  <IdeoStoryPatternDef>
+    <defName>YaomaCore_EnlightenedDeity</defName>
+    <segments>
+      <li>setting</li>
+      <li>intro</li>
+      <li>wisdom</li>
+      <li>discovery</li>
+    </segments>
+    <rules>
+      <include>
+        <li>IdeoDescriptionGlobal</li>
+		<li>YaomaCore_WordUtility</li>
+      </include>
+      <rulesStrings> 
+        <li>setting->Those who once bore [place_personalWeapon]s now take up the pen, under the watchful eye of [place_summary] [place_name]’s star.</li>
+        <li>setting->The erstwhile children of [place_name], under the guidance of their [deity0_type], made their way to a foreign land seeking [memeConcept].</li>
+        <li>setting->[memberNamePlural] from a faraway star hoped to discern the Dao on [place_summary] [place_name], sending scholars and researchers.</li>
+        <li>setting->Scouring daoworlds for enlightenment, the children of Ku soon came to a new land to become as [memeAdjective] as their ancestors.</li>
+
+        <li>intro->Their dreams brought [deity0_name] to tears, and inspired [deity0_objective] to travel amongst them so that they may know the Dao’s [memeConcept].</li>
+        <li>intro->With the aid of [deity1_name], [deity0_name] endeavored to fulfill Ku’s sacred mission.</li>
+        <li>intro->Looking upon them, [deity1_name] chose to aid [deity1_possessive] people in understanding the universe, as the Dao permitted.</li>
+        <li>intro->Both [deity0_name] and [deity1_name] expounded on the Dao, so that their people would learn of [memeConcept].</li>
+
+        <li>wisdom->To fulfill [deity0_possessive] goals, [deity0_name] taught [deity0_possessive] people methods to follow Ku’s tenet of wisdom.</li>
+        <li>wisdom->As a result, the community raised many explorers and pioneers from their children who all aspired to [memeConcept].</li>
+        <li>wisdom->Touched by the sweat on their [deity0_type]’s brow, the children of Ku journeyed farther yet, accumulating experiences.</li>
+        <li>wisdom->As such, many [memberNamePlural] studiously observed the natural world, drawing insight from the cosmos and beyond.</li>
+
+        <li>discovery->Through their knowledge, steadily built upon by generations before them, the people of [deity0_name] and [deity1_name] came to work miracles of the Dao and natural sciences.</li>
+        <li>discovery->Thus did the people aided by [deity0_name] and [deity1_name] move forwards, realizing [memeAdjective] [memeConcept] via self-introspection and experimentation.</li>
+		<li>discovery->The students of [deity0_name] still maintain their academic excellence to this day, and continue to outline the fundamental principles of the universe under their [deity0_type]’s auspices.</li>
+		<li>discovery->In the end, many discerned the Dao with both patience and examination, taking to heart the guidance of [deity0_name] and Ku’s wisdom.</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
+
+</Defs>
