@@ -23,11 +23,18 @@ namespace YaomaCore
             this.pawn = pawn;
         }
 
-        public void Recache()
-        {
+        public bool Stale => Find.TickManager.TicksGame > cacheTick + cacheTickInterval;
 
+        public void CacheHealthFactor()
+        {
+            healthScaleFactor = pawn.GetStatValue(DefOfs.YaomaCore_HealthScaleFactor);
         }
 
+        public void ResetCache()
+        {
+            CacheHealthFactor();
+            cacheTick = Find.TickManager.TicksGame;
+        }
 
     }
 }

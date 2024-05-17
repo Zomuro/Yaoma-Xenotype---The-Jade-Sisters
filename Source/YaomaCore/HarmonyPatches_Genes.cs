@@ -10,6 +10,7 @@ using HarmonyLib;
 
 namespace YaomaCore.HarmonyPatches
 {
+    [StaticConstructorOnStartup]
     public static class HarmonyPatches_Genes
     {
         public static void Patch(Harmony harmony)

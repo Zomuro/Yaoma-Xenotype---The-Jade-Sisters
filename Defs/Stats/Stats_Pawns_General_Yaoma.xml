@@ -4,12 +4,13 @@
 	<StatDef>
 		<defName>YaomaCore_CultivationTalent</defName>
 		<label>cultivation talent</label>
-		<description>Cultivation talent determines a pawn's innate skill at how naturally they can manipulate qi, or life energy. More talented pawns tend to cultivate faster and are able to store more qi.</description>
+		<description>Cultivation talent determines a pawn's innate ability to manipulate qi, or life energy. More talented pawns tend to cultivate faster and are able to store more qi.</description>
 		<category>BasicsPawn</category>
 		<defaultBaseValue>1</defaultBaseValue>
-		<toStringStyle>PercentZero</toStringStyle>
-		<showOnAnimals>false</showOnAnimals>
 		<minValue>0.1</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<showOnAnimals>false</showOnAnimals>
 		<displayPriorityInCategory>3500</displayPriorityInCategory>
 		<scenarioRandomizable>true</scenarioRandomizable>
 	</StatDef>
@@ -21,12 +22,11 @@
 		<category>BasicsPawn</category>
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0</minValue>
-		<roundValue>true</roundValue>
-		<toStringStyle>Integer</toStringStyle>
-		<showNonAbstract>true</showNonAbstract>
-		<scenarioRandomizable>true</scenarioRandomizable>
+		<roundValue>false</roundValue>
+		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
-		<cacheable>true</cacheable>
+		<showOnAnimals>false</showOnAnimals>
+		<scenarioRandomizable>true</scenarioRandomizable>
 		<displayPriorityInCategory>99997</displayPriorityInCategory>
 	</StatDef>
 	

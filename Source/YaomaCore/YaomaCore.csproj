@@ -53,6 +53,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PawnCacheDict.cs" />
+    <Compile Include="PawnCache.cs" />
     <Compile Include="DefOfs.cs" />
     <Compile Include="HarmonyPatches_Stats.cs" />
     <Compile Include="HarmonyPatches_Main.cs" />
