@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<YaomaCore_BuildPregnancyFail>{PAWN1_nameDef} and {PAWN2_nameDef} are temporarily incompatible because one of them is pregnant or lactating.</YaomaCore_BuildPregnancyFail>	
+	
+</LanguageData>
