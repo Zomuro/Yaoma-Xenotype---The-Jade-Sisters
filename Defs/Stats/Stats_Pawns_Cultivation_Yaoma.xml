@@ -1,72 +1,82 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- <StatDef> -->
-		<!-- <defName>QiMax</defName> -->
-		<!-- <label>qi limit</label> -->
-		<!-- <description>The maximum amount of qi a cultivator is able to utilize before tapping into their own life force.\n\nHowever, some esoteric cultivation texts amongst the Yaoma speak of a way to surpass this, through stablizing and perfecting one's foundations.</description> -->
-		<!-- <category>BasicsPawn</category> -->
-		<!-- <defaultBaseValue>50</defaultBaseValue> -->
-		<!-- <minValue>0</minValue> -->
-		<!-- <hideAtValue>0</hideAtValue> -->
-		<!-- <toStringStyle>FloatOne</toStringStyle> -->
-		<!-- <showOnAnimals>false</showOnAnimals> -->
-		<!-- <showOnMechanoids>false</showOnMechanoids> -->
+	<StatDef Name="YaomaCore_CultivationStat" Abstract="True">
+		<category>YaomaCore_Cultivation</category>
+		<showOnAnimals>false</showOnAnimals>
+		<showOnMechanoids>false</showOnMechanoids>
 		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
-		<!-- <displayPriorityInCategory>3500</displayPriorityInCategory> -->
-		<!-- <statFactors> -->
-			<!-- <li>CultivationTalent</li> -->
-		<!-- </statFactors> -->
-	<!-- </StatDef> -->
-
-	<!-- <StatDef> -->
-		<!-- <defName>QiRecoveryRate</defName> -->
-		<!-- <label>qi recovery rate</label> -->
-		<!-- <description>The rate at which this person naturally recovers their qi.\n\nIt has been said though that by stablizing and perfecting one's foundations, this rate can be surpassed to some degree.</description> -->
-		<!-- <category>BasicsPawn</category> -->
-		<!-- <minValue>0</minValue> -->
-		<!-- <hideAtValue>0</hideAtValue> -->
-		<!-- <defaultBaseValue>1</defaultBaseValue> -->
-		<!-- <toStringStyle>FloatTwo</toStringStyle> -->
-		<!-- <formatString>{0}/s</formatString> -->
-		<!-- <showOnAnimals>false</showOnAnimals> -->
-		<!-- <showOnMechanoids>false</showOnMechanoids> -->
-		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
-		<!-- <displayPriorityInCategory>3500</displayPriorityInCategory> -->
-		<!-- <statFactors> -->
-			<!-- <li>CultivationTalent</li> -->
-		<!-- </statFactors> -->
-	<!-- </StatDef> -->
-
-	<!-- <StatDef> -->
-		<!-- <defName>QiCostMultiplier</defName> -->
-		<!-- <label>qi cost multiplier</label> -->
-		<!-- <description>A multiplier on qi used.</description> -->
-		<!-- <category>BasicsPawn</category> -->
-		<!-- <minValue>-1</minValue> -->
-		<!-- <hideAtValue>1</hideAtValue> -->
-		<!-- <defaultBaseValue>1</defaultBaseValue> -->
-		<!-- <toStringStyle>PercentZero</toStringStyle> -->
-		<!-- <showOnAnimals>false</showOnAnimals> -->
-		<!-- <showOnMechanoids>false</showOnMechanoids> -->
-		<!-- <showOnPawns>false</showOnPawns> -->
-		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
-		<!-- <displayPriorityInCategory>4000</displayPriorityInCategory> -->
-	<!-- </StatDef> -->
+	</StatDef>
 	
-	<!-- <StatDef> -->
-		<!-- <defName>TechniqueSlotsBonus</defName> -->
-		<!-- <label>additional technique slots</label> -->
-		<!-- <description>An additional number of Yaoma techniques a pawn can learn.</description> -->
-		<!-- <category>BasicsPawn</category> -->
-		<!-- <minValue>0</minValue> -->
-		<!-- <hideAtValue>0</hideAtValue> -->
-		<!-- <defaultBaseValue>0</defaultBaseValue> -->
-		<!-- <toStringStyle>Integer</toStringStyle> -->
-		<!-- <showOnAnimals>false</showOnAnimals> -->
-		<!-- <showOnMechanoids>false</showOnMechanoids> -->
-		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
-		<!-- <displayPriorityInCategory>4000</displayPriorityInCategory> -->
-	<!-- </StatDef> -->
-  
+	<StatDef ParentName = "YaomaCore_CultivationStat">
+		<defName>YaomaCore_QiAbsMin</defName>
+		<label>absolute minimum qi</label>
+		<description>The absolute minimum qi a cultivator can have.\n\nAs cultivators near this final threshold, they begin to experience symptoms of severe exhaustion. At full depletion, they will die.</description>
+		<defaultBaseValue>-50</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>1</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaCore_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef ParentName = "YaomaCore_CultivationStat">
+		<defName>YaomaCore_QiMin</defName>
+		<label>minimum qi</label>
+		<description>The minimum qi a cultivator normally has.\n\nIn life or death scenarios, cultivators can break through this boundary and fuel their techniques with their own life force.</description>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>2</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaCore_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef ParentName = "YaomaCore_CultivationStat">
+		<defName>YaomaCore_QiMax</defName>
+		<label>maximum qi</label>
+		<description>The maximum qi a cultivator is able to normally to utilize before tapping into their own life force.</description>
+		<defaultBaseValue>100</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>3</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaCore_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+
+	<StatDef ParentName = "YaomaCore_CultivationStat">
+		<defName>YaomaCore_QiCastFactor</defName>
+		<label>qi casting factor</label>
+		<description>A multiplier on qi used when casting techniques.</description>
+		<category>YaomaCore_Cultivation</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<displayPriorityInCategory>4</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef ParentName = "YaomaCore_CultivationStat">
+		<defName>YaomaCore_QiRecoveryRate</defName>
+		<label>qi recovery rate</label>
+		<description>The rate per second at which a cultivator naturally recovers their qi.</description>
+		<hideAtValue>0</hideAtValue>
+		<defaultBaseValue>1</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<formatString>{0}/s</formatString>
+		<displayPriorityInCategory>5</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaCore_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+
+	<StatDef ParentName = "YaomaCore_CultivationStat">
+		<defName>YaomaCore_Qi</defName>
+		<label>qi</label>
+		<description>The energy unit of cultivation.</description>
+		<hideAtValue>0</hideAtValue> <!-- pawn shouldn't show this -->
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>6</displayPriorityInCategory>
+	</StatDef>
+	
 </Defs>

@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <RulePackDef>
-    <defName>YaomaCore_NamerPersonYaoma</defName>
-    <include>
-      <li>YaomaCore_WordUtility</li>
-    </include>
-    <rulePack>
-      <rulesStrings>
-        <li>r_name(p=1)->[YaomaFamily] '[YaomaMoniker]' [YaomaGiven]</li>	  
-        <li>r_name(p=3)->[YaomaFamily] [YaomaGiven]</li>
-      </rulesStrings>
-	</rulePack>
-   </RulePackDef>
+	<RulePackDef>
+		<defName>YaomaCore_NamerPersonYaoma</defName>
+		<include>
+		  <li>YaomaCore_WordUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name(p=1)->[YaomaFamily] '[YaomaMoniker]' [YaomaGiven]</li>	  
+				<li>r_name(p=3)->[YaomaFamily] [YaomaGiven]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
 
 </Defs>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<BackstoryDef Abstract = "True" Name = "YaomaCore_ChildBackstory"> <!-- base childhood def -->
+		<slot>Childhood</slot>
+		<spawnCategories>
+			<li>YaomaCore_YaomaBackstory</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 1) Beggar’s eye (beggar’s eye) Int +2, Crafting +2, Social +2 -->
+		<defName>YaomaCore_Child_BeggarEye1</defName>
+		<title>beggar’s eye</title>
+		<titleShort>beggar’s eye</titleShort>
+		<baseDesc>There is a Yaoma platitude reminding children to act properly in public: “Nobody escapes a beggar’s sight”. [PAWN_nameDef] can attest to that, having served as one of many eyes of an information broker. For a child, [PAWN_pronoun] was exceptionally crafty with [PAWN_possessive] tongue and hands, able to glean information through conversation and trickery.</baseDesc>
+				
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Crafting>2</Crafting>
+			<Social>2</Social>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 2) Diaspora delinquent (delinquent): Shooting +2, Social +2, Crafting +2 -->
+		<defName>YaomaCore_Child_DiasporaDelinquent2</defName>
+		<title>diaspora delinquent</title>
+		<titleShort>delinquent</titleShort>
+		<baseDesc>Growing up on the streets of a neon-lit urbworld, [PAWN_nameDef] felt out of place when performing the Yaoma traditions of [PAWN_possessive] parents. So [PAWN_pronoun] ended up getting involved in organized crime, working [PAWN_possessive] way up into becoming a full-fledged gang member. After [PAWN_pronoun] cajoled and rioted for a couple of years, [PAWN_pronoun] returned home, having learned a lesson on the meaning of community.</baseDesc>
+				
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Crafting>2</Crafting>
+			<Social>2</Social>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 3) Gongsi intern (intern): Int +4, +Hard worker -->
+		<defName>YaomaCore_Child_GongsiIntern3</defName>
+		<title>gongsi intern</title>
+		<titleShort>intern</titleShort>
+		<baseDesc>Quick of mind, [PAWN_nameDef] worked [PAWN_possessive] way into the offices of a Yaoma business. [PAWN_pronoun] swiftly picked up a firm understanding of how [PAWN_possessive] employer operated from those [PAWN_possessive] worked with. At the end of [PAWN_possessive] time with the company, [PAWN_pronoun] found [PAWN_possessive]self with a coveted return offer, due to [PAWN_possessive] work ethic.</baseDesc>
+				
+		<forcedTraits>
+			<Industriousness>1</Industriousness>
+		</forcedTraits>
+		<skillGains>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 4) Exchange student (student): Int +2, Art +2, Social +2 -->
+		<defName>YaomaCore_Child_ExchangeStudent4</defName>
+		<title>exchange student</title>
+		<titleShort>student</titleShort>
+		<baseDesc>As part of an intercultural program between the Yaoma and other human civilizations, [PAWN_nameDef] studied at a foreign school. [PAWN_pronoun] took part in a varied education, sharing [PAWN_possessive] experiences with other humans. From [PAWN_possessive] time in required coursework and electives, [PAWN_pronoun] developed into an intelligent, artistic soul.</baseDesc>
+				
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Artistic>2</Artistic>
+			<Social>2</Social>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 5) Chef’s assistant (chef assistant): Cooking +7, Int -3 -->
+		<defName>YaomaCore_Child_ChefAssistant5</defName>
+		<title>chef assistant</title>
+		<titleShort>chef assistant</titleShort>
+		<baseDesc>[PAWN_possessive] parents were busy managing an inn, so from an early age, [PAWN_nameDef] was in the kitchen. Though clumsy at first when assisting the line chefs, [PAWN_pronoun] eventually got the hang of the work pace doing food prep and dishwashing. Eventually, at the detriment of [PAWN_possessive] studies, [PAWN_pronoun] had the chance to create a few meals for the tavern.</baseDesc>
+		
+		<skillGains>
+			<Intellectual>-3</Intellectual>
+			<Cooking>7</Cooking>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 6) Game hunter (hunter): Animals +3, Shooting +2 -->
+		<defName>YaomaCore_Child_GameHunter6</defName>
+		<title>game hunter</title>
+		<titleShort>hunter</titleShort>
+		<baseDesc>In [PAWN_nameDef] parent’s home were taxidermied wild game, some of which [PAWN_pronoun] hunted and killed [PAWN_possessive]self. From [PAWN_possessive] father, [PAWN_pronoun] learned to hold a firearm steady; from [PAWN_possessive] mother, [PAWN_pronoun] studied the characteristics of [PAWN_possessive] prey. In time, [PAWN_nameDef] could track beasts in rough weather, before returning to [PAWN_possessive] sect with the products of [PAWN_possessive] hunt.</baseDesc>
+			
+		<skillGains>
+			<Animals>3</Animals>
+			<Shooting>2</Shooting>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 7) Alchemist’s student (apprentice): Plants +2, Int. +2, Med. +2, Social -3 -->
+		<defName>YaomaCore_Child_AlchemistStudent7</defName>
+		<title>alchemist’s student</title>
+		<titleShort>apprentice</titleShort>
+		<baseDesc>[PAWN_nameDef] came of age under the care of an alchemist. Under [PAWN_possessive] adoptive parent, [PAWN_pronoun] developed a social deficiency as well as medical capability, picking up the ins and outs of medicinal compounds and their delivery methods. Ultimately, [PAWN_pronoun] became a welcome sight within [PAWN_possessive] community as a healer.</baseDesc>
+			
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Plants>2</Plants>
+			<Medicine>2</Medicine>
+			<Social>-3</Social>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 8) Silkwatcher (silkwatcher): Crafting +2, Animals +3 -->
+		<defName>YaomaCore_Child_Silkwatcher8</defName>
+		<title>silkwatcher</title>
+		<titleShort>silkwatcher</titleShort>
+		<baseDesc>Under [PAWN_possessive] master’s tutelage, [PAWN_nameDef] studied the properties and manufacturing of silk, gaining the foundational knowledge required to become a competent seamstress. In addition to mastering fundamental skills, [PAWN_pronoun] watched the silkworms under [PAWN_possessive] master’s guidance, harvesting them when they formed their cocoon.</baseDesc>
+			
+		<skillGains>
+			<Crafting>2</Crafting>
+			<Animals>3</Animals>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 9) Jadecutter (jadecutter): Mining +3, Crafting +1 -->
+		<defName>YaomaCore_Child_Jadecutter9</defName>
+		<title>jadecutter</title>
+		<titleShort>jadecutter</titleShort>
+		<baseDesc>[PAWN_nameDef] knew it took more than a steady hand to become a jadecarver’s apprentice. [PAWN_possessive] unhealthy appreciation of jade led [PAWN_pronoun] to quarry and trade for the jewel under the guidance of [PAWN_possessive] master. From there, [PAWN_pronoun] further processed the gem, learning various hardstone carving techniques firsthand from [PAWN_possessive] teacher.</baseDesc>
+			
+		<skillGains>
+			<Crafting>1</Crafting>
+			<Mining>3</Mining>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 10) Contraband courier (courier): Social +3, Construction +1, Plants +1 -->
+		<defName>YaomaCore_Child_ContrabandCourier10</defName>
+		<title>contraband courier</title>
+		<titleShort>courier</titleShort>
+		<baseDesc>Born into an ailing clan, [PAWN_nameDef] supported [PAWN_possessive] family by discreetly transporting “supplies” for an unknown employer. [PAWN_pronoun] never ascertained who [PAWN_possessive] recipients were, as [PAWN_pronoun] only delivered “goods” to various dead drops, some of which were concealed within mortar or beneath flora. By playing on the biases of [PAWN_possessive] sect’s enforcement, [PAWN_pronoun] was never caught.</baseDesc>
+			
+		<skillGains>
+			<Social>3</Social>
+			<Construction>1</Construction>
+			<Plants>1</Plants>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 11) Auspicious child (auspicious): Social -2, Int +2, Crafting +1, Plants +1, Art +1 -->
+		<defName>YaomaCore_Child_AuspiciousChild11</defName>
+		<title>auspicious child</title>
+		<titleShort>auspicious</titleShort>
+		<baseDesc>[PAWN_nameDef]’s superstitious family believed [PAWN_pronoun] was born with good fortune, placing great expectations on [PAWN_objective]. Under their care, [PAWN_pronoun] endured [PAWN_possessive] clan’s education, developing proficiency in various spheres from academia to arts and crafts to become the “ideal” Yaoma child. However, this also meant [PAWN_pronoun] rarely had a chance to practice [PAWN_possessive] social skills.</baseDesc>
+			
+		<skillGains>
+			<Social>-2</Social>
+			<Intellectual>2</Intellectual>
+			<Crafting>1</Crafting>
+			<Plants>1</Plants>
+			<Artistic>1</Artistic>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 12) Inauspicious child (inauspicious): Int +2, Social +2, +Neurotic -->
+		<defName>YaomaCore_Child_InauspiciousChild12</defName>
+		<title>inauspicious child</title>
+		<titleShort>inauspicious</titleShort>
+		<baseDesc>All [PAWN_nameDef] knew was that [PAWN_pronoun] was born under an ill omen- reason enough for [PAWN_possessive] family to worry over [PAWN_possessive] actions. Smothered by [PAWN_possessive] clan’s love, [PAWN_pronoun] made use of [PAWN_possessive] social grace and intellect to soothe their worries. This constant back and forth between [PAWN_objective] and the family stressed [PAWN_objective], which motivated [PAWN_objective] to be more productive.</baseDesc>
+			
+		<forcedTraits>
+			<Neurotic>1</Neurotic>
+		</forcedTraits>
+		<skillGains>
+			<Social>2</Social>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 13) Young master (heir): Shooting +2, Melee +2, Social +3, -Dumb -->
+		<defName>YaomaCore_Child_YoungMaster13</defName>
+		<title>young master</title>
+		<titleShort>heir</titleShort>
+		<baseDesc>[PAWN_nameDef] was spoiled by [PAWN_possessive] wealthy clan, and pursued a life of leisure. [PAWN_pronoun] made use of [PAWN_possessive] lofty position to network with members of other clans, as well as to train in combat arts. [PAWN_possessive] status, however, left [PAWN_objective] with a disdain for manual labor.</baseDesc>
+			
+		<workDisables>ManualDumb</workDisables>
+		<skillGains>
+			<Social>3</Social>
+			<Melee>2</Melee>
+			<Shooting>2</Shooting>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 14) Trafficking victim (trafficked): Plants +3, Mining + 1, Construction +1, Int +2, -Social -->
+		<defName>YaomaCore_Child_TraffickingVictim14</defName>
+		<title>trafficking victim</title>
+		<titleShort>trafficked</titleShort>
+		<baseDesc>Abducted from [PAWN_possessive] parents, [PAWN_nameDef] was put to work in a foreign land. [PAWN_pronoun] labored at construction and mining, and was left to feed [PAWN_possessive]self with rations and wild plants. Eventually, Yaoma mercenaries rescued [PAWN_pronoun], but the damage was done: [PAWN_pronoun] withdrew into [PAWN_possessive]self, even in the safety of [PAWN_possessive] adoptive family’s home.</baseDesc>
+			
+		<workDisables>Social</workDisables>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Construction>1</Construction>
+			<Mining>1</Mining>
+			<Plants>3</Plants>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 15) Research patient (patient): Int +1, Crafting +1, Med +2, +Sickly -->
+		<defName>YaomaCore_Child_ResearchPatient15</defName>
+		<title>research patient</title>
+		<titleShort>patient</titleShort>
+		<baseDesc>Born with a rare condition, whose aftereffect made [PAWN_objective] chronically more vulnerable to disease, [PAWN_nameDef] caught the attention of union doctors. [PAWN_pronoun] spent a portion of [PAWN_possessive] childhood in a lab that studied [PAWN_possessive] ailment, and between daily visits from [PAWN_possessive] parents, [PAWN_pronoun] absorbed medical knowledge from [PAWN_possesive] caretakers. Eventually, [PAWN_pronoun] was treated for [PAWN_possessive] illness.</baseDesc>
+			
+		<forcedTraits>
+			<Immunity>-1</Immunity>
+		</forcedTraits>
+		<skillGains>
+			<Intellectual>1</Intellectual>
+			<Crafting>1</Crafting>
+			<Medicine>2</Medicine>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 16) Daostudent (daostudent): Int +7, Social -3 -->
+		<defName>YaomaCore_Child_Daostudent16</defName>
+		<title>daostudent</title>
+		<titleShort>daostudent</titleShort>
+		<baseDesc>At a young age, [PAWN_nameDef] pursued academia in the hope of contributing to the Great Dao, associating the Great Dao with virtue. Thus, [PAWN_pronoun] attended an excessive amount of lectures, developing an inquisitive nature. This passion, however, alienated other children of [PAWN_possessive] age, leading to a rather solitary childhood.</baseDesc>
+			
+		<skillGains>
+			<Intellectual>7</Intellectual>
+			<Social>-3</Social>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 17) Expeditionary trainee (trainee): Shooting +1, Med +2, Plants +2 -->
+		<defName>YaomaCore_Child_ExpeditionaryTrainee17</defName>
+		<title>expeditionary trainee</title>
+		<titleShort>trainee</titleShort>
+		<baseDesc>[PAWN_nameDef] enrolled in a Yaoma cult program that served as one of [PAWN_possessive] sect’s pipelines between primary education and the armed forces. [PAWN_pronoun] explored low-risk areas, and took lessons from senior members of [PAWN_possessive] expeditionary team on marksmanship, emergency first aid, and ecology.</baseDesc>
+			
+		<skillGains>
+			<Shooting>1</Shooting>
+			<Medicine>2</Medicine>
+			<Plants>2</Plants>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 18) Woodworker’s pupil (wood pupil): Plants +2, Construction +2, Crafting +1 -->
+		<defName>YaomaCore_Child_WoodworkerPupil18</defName>
+		<title>woodworker’s pupil</title>
+		<titleShort>wood pupil</titleShort>
+		<baseDesc>[PAWN_nameDef] picked up both hammer and chisel in [PAWN_possessive] childhood, and went under the tutelage of a carpenter in service of [PAWN_possessive] sect. [PAWN_pronoun] trained to process a plethora of wood types, enough to theoretically employ their unique properties for either construction or woodcarving.</baseDesc>
+			
+		<skillGains>
+			<Crafting>1</Crafting>
+			<Construction>2</Construction>
+			<Plants>2</Plants>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 19) Merchant’s child (trader’s child): Int +3, Social +3, +Social, -Violent -->
+		<defName>YaomaCore_Child_MerchantChild19</defName>
+		<title>merchant’s child</title>
+		<titleShort>trader’s child</titleShort>
+		<baseDesc>Surrounded by [PAWN_possessive] family’s hard earned wealth, [PAWN_nameDef] grew up intrinsically understanding “value”. [PAWN_pronoun] observed both civil and discordant negotiations between [PAWN_possessive] parents and their clients, and developed a distaste for physical violence. By the time [PAWN_pronoun] joined [PAWN_possessive] family’s caravans, [PAWN_pronoun] had a firm business foundation.</baseDesc>
+			
+		<workDisables>Violent</workDisables>
+		<requiredWorkTags>Social</requiredWorkTags>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+			<Social>3</Social>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 20) Sword disciple (sword disciple): Melee +3, +Violent, +Brawler -->
+		<defName>YaomaCore_Child_SwordDisciple20</defName>
+		<title>sword disciple</title>
+		<titleShort>sword disciple</titleShort>
+		<baseDesc>[PAWN_nameDef] took to swordplay as part of [PAWN_possessive] sect’s martial education, catching the attention of a swordmaster. Under [PAWN_possessive] master’s stringent instruction, [PAWN_pronoun] grasped proper form during [PAWN_possessive] spars with [PAWN_possessive] teacher. This extensive muscle and close-quarters training made [PAWN_objective] proficient in melee, but left habits that were counterproductive for ranged combat.</baseDesc>
+			
+		<forcedTraits>
+			<Brawler>0</Brawler>
+		</forcedTraits>
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<skillGains>
+			<Melee>3</Melee>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 21) Musical neophyte (neophyte): Art +6 -->
+		<defName>YaomaCore_Child_MusicalNeophyte21</defName>
+		<title>musical neophyte</title>
+		<titleShort>neophyte</titleShort>
+		<baseDesc>There was an elegance to Yaoma musical tradition that appealed to [PAWN_nameDef], and so [PAWN_pronoun] sought to pursue the art. From the airy notes of the flute to the warm tone of the erhu, [PAWN_pronoun] explored every instrument [PAWN_pronoun] came across. In this way, [PAWN_pronoun] built a solid foundation for [PAWN_possessive]self in the performance and appreciation of music.</baseDesc>
+			
+		<skillGains>
+			<Artistic>6</Artistic>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 22) Prodigy (prodigy): Int +2, Art +2, Crafting +2, -Social, +Lazy, +Fast learner -->
+		<defName>YaomaCore_Child_Prodigy22</defName>
+		<title>prodigy</title>
+		<titleShort>prodigy</titleShort>
+		<baseDesc>The most defining aspect of [PAWN_nameDef]’s childhood was how banal it was. [PAWN_pronoun] found that whatever [PAWN_pronoun] touched at [PAWN_possessive] sect posed little challenge to pick up, from philosophy to calligraphy. This isolated [PAWN_objective] from [PAWN_possessive] envious peers, which further sapped [PAWN_possessive] motivation to be productive.</baseDesc>
+			
+		<forcedTraits>
+			<Industriousness>-1</Industriousness>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+		<workDisables>Social</workDisables>
+		<skillGains>
+			<Intellectual>2</Intellectual>
+			<Artistic>2</Artistic>
+			<Crafting>2</Crafting>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 23) Meditative trainee (meditative): Cooking +2, Crafting +1, Construction +1, Plants +1 -->
+		<defName>YaomaCore_Child_MeditativeTrainee23</defName>
+		<title>meditative trainee</title>
+		<titleShort>meditative</titleShort>
+		<baseDesc>[PAWN_nameDef] was sent to a temple to reflect on [PAWN_possessive] actions, in the hope that [PAWN_pronoun]’d learn self-control. [PAWN_possessive] time was spent cleaning the ancestral shrines, as well as cooking vegetarian meals for the site’s curators. [PAWN_possessive] activities gave [PAWN_objective] the time to temper [PAWN_possessive] own attitude.</baseDesc>
+			
+		<skillGains>
+			<Cooking>2</Cooking>
+			<Crafting>1</Crafting>
+			<Construction>1</Construction>
+			<Plants>1</Plants>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 24) Xide xiaoje (xiaoje): Int +6, Med -2, -Social -->
+		<defName>YaomaCore_Child_XideXiaoje24</defName>
+		<title>xide xiaoje</title>
+		<titleShort>xiaoje</titleShort>
+		<baseDesc>Born in an emotionally absent household, [PAWN_nameDef] isolated [PAWN_possessive]self from [PAWN_possessive] family and neighbors. [PAWN_pronoun] inundated [PAWN_possessive]self with entertainment, even optimizing [PAWN_pronoun] gameplay to manipulate the very ticks of [PAWN_possessive] favorite MMORPG. This excessive devotion to technology had [PAWN_possessive] derisively labeled as a “xide xiaoje”: a mistress to silicon.</baseDesc>
+			
+		<workDisables>Social</workDisables>
+		<skillGains>
+			<Intellectual>6</Intellectual>
+			<Medicine>-2</Medicine>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 25) Exiled juvenile (exile): Shooting +2, Cooking +1, Crafting +1 -->
+		<defName>YaomaCore_Child_ExiledJuvenile25</defName>
+		<title>exiled juvenile</title>
+		<titleShort>exile</titleShort>
+		<baseDesc>After failing to live up to the expectations of [PAWN_possessive] clan, [PAWN_nameDef] was disinherited and banished from the household. [PAWN_pronoun] was subsequently raised by an elder of another sect, and by [PAWN_possessive] request received training on how to survive on [PAWN_possessive] own within the wilderness.</baseDesc>
+			
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Cooking>1</Cooking>
+			<Crafting>1</Crafting>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 26) Culinary scholar (scholar): Cooking +3, Int +2 -->
+		<defName>YaomaCore_Child_CulinaryScholar26</defName>
+		<title>culinary scholar</title>
+		<titleShort>scholar</titleShort>
+		<baseDesc>[PAWN_nameDef] elected to take courses on culinary traditions and techniques that were offered by [PAWN_possessive] palace sect; from there, [PAWN_possessive] academics became a hobby. [PAWN_pronoun] joined a research group that traced the lineage of foods and their regional variants that popped up as a result of culture, resources, and history.</baseDesc>
+			
+		<skillGains>
+			<Cooking>3</Cooking>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 27) Agricultural understudy (understudy): Plants +3, Int +2 -->
+		<defName>YaomaCore_Child_AgriculturalUnderstudy27</defName>
+		<title>agricultural understudy</title>
+		<titleShort>understudy</titleShort>
+		<baseDesc>Coming from a rural family, [PAWN_nameDef]’s thoughts turned to home while studying at [PAWN_possessive] sect. These musings became the motivation for [PAWN_objective] to investigate every facet of farming with the guidance of a palace elder: how to improve crop yields, how to efficiently harvest, how to selectively breed seed, and so on. [PAWN_pronoun] hoped that [PAWN_possessive] research would aid [PAWN_possessive] home community’s livelihood.</baseDesc>
+			
+		<skillGains>
+			<Plants>3</Plants>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 28) Ranged disciple (disciple): Shooting +6 -->
+		<defName>YaomaCore_Child_RangedDisciple28</defName>
+		<title>ranged disciple</title>
+		<titleShort>disciple</titleShort>
+		<baseDesc>As part of the martial curriculum at [PAWN_possessive] sect, [PAWN_nameDef] focused on polishing [PAWN_possessive] marksmanship. [PAWN_pronoun] became well acquainted with ballistics as well as the proper handling of firearms and other projectile weapons, enough to semi-reliably hit [PAWN_possessive] targets.</baseDesc>
+			
+		<skillGains>
+			<Shooting>6</Shooting>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 29) Architectural aide (aide): Construction +6 -->
+		<defName>YaomaCore_Child_ArchitecturalAide29</defName>
+		<title>architectural aide</title>
+		<titleShort>aide</titleShort>
+		<baseDesc>[PAWN_nameDef] interned at an union construction firm, temping under a team of designers and engineers. [PAWN_pronoun] gained first-hand experience from the program through [PAWN_possessive] exposure to technical drawing sessions, structural load calculations, and building specifications. The experience left [PAWN_objective] with an appreciation for [PAWN_possessive] sect’s appearance.</baseDesc>
+			
+		<skillGains>
+			<Construction>6</Construction>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 30) Line assembler (assembler): Crafting +6 -->
+		<defName>YaomaCore_Child_LineAssembler30</defName>
+		<title>line assembler</title>
+		<titleShort>assembler</titleShort>
+		<baseDesc>Taking on a part-time job at a palace-owned workshop, [PAWN_nameDef] made use of [PAWN_possessive] dexterity and spatial awareness to assemble a myriad of products. [PAWN_pronoun] conducted quality checks as well as joined together components, enabling [PAWN_possessive] employer to pass the final product to other palace businesses.</baseDesc>
+			
+		<skillGains>
+			<Crafting>6</Crafting>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 31) Tea picker (picker): Plants +6, +Plants -->
+		<defName>YaomaCore_Child_TeaPicker31</defName>
+		<title>tea picker</title>
+		<titleShort>picker</titleShort>
+		<baseDesc>[PAWN_nameDef] supported the Yaoma tea industry as one of the many hands on a palace tea farm. Taking the instructions of the landowner, [PAWN_pronoun] watched the trees for disease between flushes, and gathered the freshest leaves during the harvests. The role attuned [PAWN_objective] to minute factors that could affect the shrub’s growth, granting [PAWN_objective] a bit of a green thumb.</baseDesc>
+			
+		<requiredWorkTags>PlantWork</requiredWorkTags>
+		<skillGains>
+			<Plants>6</Plants>
+		</skillGains>
+	</BackstoryDef>
+	
+	<BackstoryDef ParentName = "YaomaCore_ChildBackstory"> <!-- 32) Mercenary recruit (recruit): Melee +4, Shooting +4, Int -3, +Violent -->
+		<defName>YaomaCore_Child_MercenaryRecruit32</defName>
+		<title>mercenary recruit</title>
+		<titleShort>recruit</titleShort>
+		<baseDesc>[PAWN_nameDef] was adopted by a mercenary during a tour to a Yaoma community. Surviving many combat encounters, [PAWN_pronoun] understood how to cut flesh and shoot men before [PAWN_pronoun] had ever gone to school. While [PAWN_pronoun] eventually received primary education at a sectct, [PAWN_possessive] academic performance was stunted by [PAWN_possessive] focus on the battlefront- the only place [PAWN_pronoun] felt she belonged.</baseDesc>
+			
+		<requiredWorkTags>Violent</requiredWorkTags>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Intellectual>-3</Intellectual>
+		</skillGains>
+	</BackstoryDef>
+
+</Defs>

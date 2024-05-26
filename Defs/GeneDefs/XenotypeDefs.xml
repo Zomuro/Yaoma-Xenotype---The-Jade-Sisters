@@ -4,10 +4,12 @@
 	<XenotypeDef>
 		<defName>YaomaCore_YaomaXenotype</defName>
 		<label>yaoma</label>
-		<description>A naturally-evolved human with no major significant genetic modifications.</description>
+		<description>Designed to integrate with humanity, the yaoma are a hermaphroditic xenotype with ravishing beauty, enhanced productivity, and extended lifespans. Their enfeebled skeletal and immune systems belie a natural affinity for cultivation: their psycho-transhumanist alternative to psycasting, which they abhor due to its archotech association.\n\nOriginating from Cao’s Wisdom, a former glitterworld, the yaoma were designed by the first of them: their mythologized hero-king Ku. Generations since have accrued an outsized influence on humanity despite their minority status, and are commonly found within enclaves on mid- to glitterworlds. These communities, in the name of their Jade Progenitor, abide by his/her tenets of humanity, resilience, and wisdom; these primary beliefs are why practically all yaoma practice cultivation.</description>
+		<descriptionShort>Designed to integrate with humanity, the hermaphroditic yaoma possess ravishing beauty, enhanced productivity, and extended lifespans. Their enfeebled skeletal and immune systems make them more fragile than baseliners, but belie a natural affinity for cultivation: their psycho-transhumanist alternative to psycasting.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
-		<displayPriority>1000</displayPriority>
-		<factionlessGenerationWeight>5</factionlessGenerationWeight>
+		<!-- <factionlessGenerationWeight>1</factionlessGenerationWeight> -->
+		<nameMaker>YaomaCore_NamerPersonYaoma</nameMaker>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		
 		<inheritable>true</inheritable>
 		<genes>
