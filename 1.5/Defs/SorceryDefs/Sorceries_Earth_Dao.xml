@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Technique Dao Base -->
+	<ItsSorceryFramework.SorceryDef Abstract="True" Name="YaomaXenotype_Earth_Technique_Base" ParentName="SorceryBase">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>ISFE_Sorcery_Logos_Experiment</defName>
+		<label>Experiment</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/ISFE_Logos_Experiment</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<!-- Earth Dao: Compress -->
+	<ItsSorceryFramework.SorceryDef ParentName="YaomaXenotype_Earth_Technique_Base">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>YaomaXenotype_Technique_Earth_Compress_Initial</defName>
+		<label>Earth Dao: Compress (initial)</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/Earth_Dao/YaomaXenotype_Compress</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<statBases>
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<!-- Earth Dao: Erode -->
+	<ItsSorceryFramework.SorceryDef ParentName="YaomaXenotype_Earth_Technique_Base">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>YaomaXenotype_Technique_Earth_Erode_Initial</defName>
+		<label>Earth Dao: Erode (initial)</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/Earth_Dao/YaomaXenotype_Erode</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<statBases>
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<!-- Earth Dao: Fracture -->
+	<ItsSorceryFramework.SorceryDef ParentName="YaomaXenotype_Earth_Technique_Base">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>YaomaXenotype_Technique_Earth_Fracture_Initial</defName>
+		<label>Earth Dao: Fracture (initial)</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/Earth_Dao/YaomaXenotype_Fracture</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<statBases>
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<!-- Earth Dao: Transfer -->
+	<ItsSorceryFramework.SorceryDef ParentName="YaomaXenotype_Earth_Technique_Base">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>YaomaXenotype_Technique_Earth_Transfer_Initial</defName>
+		<label>Earth Dao: Transfer (initial)</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/Earth_Dao/YaomaXenotype_Transfer</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<statBases>
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<!-- Earth Dao: Quake -->
+	<ItsSorceryFramework.SorceryDef ParentName="YaomaXenotype_Earth_Technique_Base">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>YaomaXenotype_Technique_Earth_Quake_Initial</defName>
+		<label>Earth Dao: Quake (initial)</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/Earth_Dao/YaomaXenotype_Quake</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<statBases>
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<!-- Earth Dao: Invulnerable -->
+	<ItsSorceryFramework.SorceryDef ParentName="YaomaXenotype_Earth_Technique_Base">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>YaomaXenotype_Technique_Earth_Invulnerable_Initial</defName>
+		<label>Earth Dao: Invulnerable (initial)</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/Earth_Dao/YaomaXenotype_Invulnerable</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		
+		<cooldownTicksRange>60</cooldownTicksRange>
+		<statBases>
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+  
+</Defs>

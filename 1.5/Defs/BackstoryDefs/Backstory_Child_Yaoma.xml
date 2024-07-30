@@ -199,7 +199,7 @@
 		<defName>YaomaCore_Child_ResearchPatient15</defName>
 		<title>research patient</title>
 		<titleShort>patient</titleShort>
-		<baseDesc>Born with a rare condition, whose aftereffect made [PAWN_objective] chronically more vulnerable to disease, [PAWN_nameDef] caught the attention of union doctors. [PAWN_pronoun] spent a portion of [PAWN_possessive] childhood in a lab that studied [PAWN_possessive] ailment, and between daily visits from [PAWN_possessive] parents, [PAWN_pronoun] absorbed medical knowledge from [PAWN_possesive] caretakers. Eventually, [PAWN_pronoun] was treated for [PAWN_possessive] illness.</baseDesc>
+		<baseDesc>Born with a rare condition, whose aftereffect made [PAWN_objective] chronically vulnerable to disease, [PAWN_nameDef] caught the attention of union doctors. [PAWN_pronoun] spent a portion of [PAWN_possessive] childhood in a lab that studied [PAWN_possessive] ailment, and between daily visits from [PAWN_possessive] parents, [PAWN_pronoun] absorbed medical knowledge from [PAWN_possesive] caretakers. Eventually, [PAWN_pronoun] was treated for [PAWN_possessive] illness.</baseDesc>
 			
 		<forcedTraits>
 			<Immunity>-1</Immunity>
