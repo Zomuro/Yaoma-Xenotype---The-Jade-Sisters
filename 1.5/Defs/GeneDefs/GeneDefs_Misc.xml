@@ -5,7 +5,7 @@
 		<defName>YaomaCore_Neuroplasticity</defName>
 		<label>enhanced neuroplasticity</label>
 		<description>Carriers of this gene form neural connections more quickly. This alteration in neuron function allows them to learn more swiftly and work more efficiently, but makes it easier to recall bad memories.</description>
-		<iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_EnhancedNeuroplasticity</iconPath>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>30</displayOrderInCategory>
 		
@@ -33,7 +33,7 @@
 		<defName>YaomaCore_MyeloaffectiveOsteoporosis</defName>
 		<label>Myeloaffective osteoporosis</label>
 		<description>Carriers of this gene have altered osteogenesis cells that create weaker bone structures and reduced bone marrow. This has a variety of knock-on effects that effectively reduce their physical durability and weaken their immune response.</description>
-		<iconPath>UI/Icons/Genes/Gene_Delicate</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_MyeloaffectiveOsteoporosis</iconPath>
 		<displayOrderInCategory>11</displayOrderInCategory>
 		
 		<statFactors>
@@ -64,7 +64,7 @@
 		<customEffectDescriptions>
 			<li>Causes a pawn to appear female, no matter the gender.</li>
 		</customEffectDescriptions>
-		<iconPath>UI/Icons/Genes/Gene_Fertile</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_Intersex</iconPath>
 		<displayCategory>Reproduction</displayCategory>
 		<displayOrderInCategory>40</displayOrderInCategory>
 		
@@ -104,7 +104,7 @@
 		<defName>YaomaCore_DaoAttunement</defName>
 		<label>Dao attunement</label>
 		<description>Carriers of this gene are more amenable to the mental and physiological changes brought upon by Yaoma cultivation. Though the precise mechanism is still unknown, researchers have discovered a category of unique receptors only found in cultivators and carriers. </description>
-		<iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_DaoAttunement</iconPath>
 		<displayCategory>YaomaCore_CategoryCultivation</displayCategory>
 		<displayOrderInCategory>35</displayOrderInCategory>
 		
@@ -130,7 +130,7 @@
 		<defName>YaomaCore_StabilizedSenescence</defName>
 		<label>stabilized senescence</label>
 		<description>Carriers of this gene are granted a longer average life expectancy. Their cells are less likely to die due to reduced DNA damage during the cell replication process. The lower rate of apoptosis, however, gives cells the time to become cancerous through environmental factors.</description>
-		<iconPath>UI/Icons/Genes/Gene_FastLearning</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_StabilisedSenescence</iconPath>
 		<displayOrderInCategory>35</displayOrderInCategory>
 		
 		<statFactors>
@@ -158,7 +158,7 @@
 		<customEffectDescriptions>
 			<li>Every (*DateTime)15-45 days(/DateTime), one old wound or chronic illness is healed.</li>
 		</customEffectDescriptions>
-		<iconPath>UI/Icons/Genes/Gene_TotalHealing</iconPath>
+		<iconPath>UI/Icons/Genes/Gene_Yutaozi</iconPath>
 		<displayCategory>Miscellaneous</displayCategory>
 		<displayOrderInCategory>35</displayOrderInCategory>
 		

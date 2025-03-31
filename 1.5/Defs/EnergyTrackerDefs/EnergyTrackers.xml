@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- Example EnergyTrackers - Logos Experimentia -->
+	<ItsSorceryFramework.EnergyTrackerDef ParentName = "ISF_EnergyTrackerBase">
+		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
+		<defName>YaomaCore_Qi_EnergyTracker</defName>
+		<label>qi</label>
+		
+		<energyUnitStatDef>YaomaCore_Qi</energyUnitStatDef>
+		<energyCostFactorStatDef>YaomaCore_QiCastFactor</energyCostFactorStatDef>
+		<energyMaxStatDef>YaomaCore_QiMax</energyMaxStatDef>
+		<energyMinStatDef>YaomaCore_QiMin</energyMinStatDef>
+		<energyAbsMinStatDef>YaomaCore_QiAbsMin</energyAbsMinStatDef>
+		<disableReasonKey>YaomaCore_DisableReason_Cultivation_Qi</disableReasonKey>
+		
+		<sideEffect>ISFE_Logos_MentalStrain</sideEffect>
+		<hitLimitKey>YaomaCore_Cultivation_Qi_Message_HitLimit</hitLimitKey>
+		
+		<comps>
+			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
+				<energyRecoveryStatDef>YaomaCore_QiRecoveryRate</energyRecoveryStatDef>
+				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
+				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
+			</li>
+		</comps>
+	</ItsSorceryFramework.EnergyTrackerDef>
+
+</Defs>

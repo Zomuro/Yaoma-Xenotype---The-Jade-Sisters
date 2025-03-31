@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Example 1: Logos Experimentia -->
+	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
+		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
+		<defName>YaomaCore_ProgressTracker_Cultivation</defName>
+		<label>Yaoma Cultivation</label>
+		<bgPath>UI/ProgressTracker/ISFE_Logos_Banner</bgPath>
+		
+		<progressLevelUpKey>YaomaCore_Cultivation_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>YaomaCore_Cultivation_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>YaomaCore_Cultivation_SkillPointLabel</skillPointLabelKey>
+		
+		<progressHediff>YaomaCore_ProgressTrackerRPG_Hediff_Cultivation</progressHediff>
+		<baseClass>YaomaCore_Cultivation_Class</baseClass>
+	</ItsSorceryFramework.ProgressTrackerDef>
+	
+	<HediffDef ParentName="ProgressTrackerHediffBase"> 
+		<defName>YaomaCore_ProgressTrackerRPG_Hediff_Cultivation</defName>
+		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
+		<label>Yaoma Cultivation</label>
+		<defaultLabelColor>(0,0.659,0.42)</defaultLabelColor> <!-- jade color -->
+		<description>Cultivation is a psycho-transhumanist method for transcendence, created by Ku and subsequently refined by her many children. It was created in direct competition to psionics, for the Jade Progenitor believed true ascension should come from one’s own efforts- not from communing with archotechs.\n\nIn Yaoma thought, the mind can transform the body, which enables the body to better support its consciousness: refining this cycle is one of the core purposes of cultivation. At the final stage lies the immortal, the pinnacle of development, which comes with both power and prestige unto itself.</description>
+		<initialSeverity>1</initialSeverity> <!-- Severity is bound to level of implant -->
+		<minSeverity>0</minSeverity>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<stages>	
+		</stages>
+	</HediffDef>
+	
+</Defs>

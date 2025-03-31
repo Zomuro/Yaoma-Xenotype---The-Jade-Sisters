@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Example 1 - Logos Experimentia --> 
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_CastEnergyCost">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
+		<defName>YaomaCore_Cultivation_EXPTag_CastEnergyCost</defName>
+		<expFactor>1</expFactor>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamage">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
+		<defName>YaomaCore_Cultivation_EXPTag_OnDamage</defName>
+		<expFactor>1</expFactor>
+		<damageDefs>
+			<li>Cut</li>
+			<li>Blunt</li>
+			<li>ArrowHighVelocity</li>
+		</damageDefs>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamaged">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
+		<defName>YaomaCore_Cultivation_EXPTag_OnDamaged</defName>
+		<expFactor>1</expFactor>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnSkillEXP">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnSkillEXP</workerClass>
+		<defName>YaomaCore_Cultivation_EXPTag_OnSkillEXP</defName>
+		<expFactor>0.3</expFactor>
+		<skillDefs>
+			<li>Melee</li>
+			<li>Shooting</li>
+		</skillDefs>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
+		<defName>YaomaCore_Cultivation_EXPTag_UseItem</defName>
+		<expFactor>1</expFactor>
+		<expItems>
+			<li>
+				<thingDef>Milk</thingDef>
+				<exp>50</exp>
+				<expFactorStat>GlobalLearningFactor</expFactorStat>
+			</li>
+		</expItems>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+</Defs>

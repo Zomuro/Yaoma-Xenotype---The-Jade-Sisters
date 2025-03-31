@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Coomsumerism -->
+	<YaomaCore_Cultivation_LevelUp>Cultivation refined: {0}</YaomaCore_Cultivation_LevelUp>
+	<YaomaCore_Cultivation_LevelUpMessage>This pawn has risen in cultivation level ({0} -> {1}).</YaomaCore_Cultivation_LevelUpMessage>
+	
+</LanguageData>
