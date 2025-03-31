@@ -10,7 +10,7 @@
 			<texPath>Things/Apparel/Hanfu/Hanfu</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.20</drawSize>
+			<!-- <drawSize>1.20</drawSize> -->
 		</graphicData>
 
 		<statBases> <!-- STATS -->
@@ -60,6 +60,70 @@
 			</layers>
 			<tags>
 				<li>YaomaLightMilitary</li>
+				<li>YaomaCivilianApparel</li>
+				<li>YaomaMilitaryT1</li>				
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelLight</li>
+			<li>YaomaApparel</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<ThingDef Name="HanfuHatBase" ParentName="HatMakeableBase">
+		<defName>Yaoma_Headpiece_Hanfu</defName>
+		<label>hanfu veil</label>
+		<description>The accompaniment to the Yaoma hanfu, based on the weimao (“curtained hat”) of the ancient terran Chinese. Though not required to be worn together with the hanfu, it is meant to be complementary, bestowing the wearer with a level of mystique that increases social impact.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/Hanfu_Headpiece/test2/Hanfu_Headpiece</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases> <!-- STATS -->
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+            <SocialImpact>0.1</SocialImpact>	
+		</equippedStatOffsets>
+		
+		<thingCategories Inherit="False"> <!-- TAGS -->
+			<li>Headgear</li>
+		</thingCategories>
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<!-- <researchPrerequisite>YaomaHanfu</researchPrerequisite> -->
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>ElectricTailoringBench</li>
+				<li>HandTailoringBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+	    <costStuffCount>25</costStuffCount>
+		
+		<apparel> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Hanfu_Headpiece/test2/Hanfu_Headpiece</wornGraphicPath>		
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YaomaLightMilitary</li>			
 				<li>YaomaCivilianApparel</li>
 				<li>YaomaMilitaryT1</li>				
 			</tags>
