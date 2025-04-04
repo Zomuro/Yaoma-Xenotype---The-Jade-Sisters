@@ -87,7 +87,7 @@
 				</statOffsets>
 				<pointGain>2</pointGain>
 				<capMods>
-					<li><capacity>Consciousness</capacity><offset>0.1</offset></li>
+					<li><capacity>Consciousness</capacity><offset>0.15</offset></li>
 				</capMods>
 			</li>			
 			<li>

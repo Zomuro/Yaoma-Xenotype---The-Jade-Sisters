@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Example 1: Logos Experimentia -->
 	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
 		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
 		<defName>YaomaCore_ProgressTracker_Cultivation</defName>
 		<label>Yaoma Cultivation</label>
 		<bgPath>UI/ProgressTracker/ISFE_Logos_Banner</bgPath>
+		
+		<!-- target equation: 0.8x^2 - 0.4x + 100 -->
+		<equationType>Polynomial</equationType>
+		<baseEXP>100</baseEXP>
+		<powScalings>
+			<li><key>1</key><value>-0.4</value></li>
+			<li><key>2</key><value>0.8</value></li>
+		</powScalings>
 		
 		<progressLevelUpKey>YaomaCore_Cultivation_LevelUp</progressLevelUpKey>
 		<progressLevelUpDescKey>YaomaCore_Cultivation_LevelUpMessage</progressLevelUpDescKey>
