@@ -5,13 +5,11 @@
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_CastEnergyCost">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
 		<defName>YaomaCore_Cultivation_EXPTag_CastEnergyCost</defName>
-		<expFactor>1</expFactor>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamage">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamage</workerClass>
 		<defName>YaomaCore_Cultivation_EXPTag_OnDamage</defName>
-		<expFactor>1</expFactor>
 		<damageDefs>
 			<li>Cut</li>
 			<li>Blunt</li>
@@ -22,13 +20,11 @@
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnDamaged">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnDamaged</workerClass>
 		<defName>YaomaCore_Cultivation_EXPTag_OnDamaged</defName>
-		<expFactor>1</expFactor>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_OnSkillEXP">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_OnSkillEXP</workerClass>
 		<defName>YaomaCore_Cultivation_EXPTag_OnSkillEXP</defName>
-		<expFactor>0.3</expFactor>
 		<skillDefs>
 			<li>Melee</li>
 			<li>Shooting</li>
@@ -38,7 +34,6 @@
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
 		<defName>YaomaCore_Cultivation_EXPTag_UseItem</defName>
-		<expFactor>1</expFactor>
 		<expItems>
 			<li>
 				<thingDef>Milk</thingDef>
