@@ -12,32 +12,32 @@
 		<defName>YaomaCore_Cultivation_EXPTag_UseItem</defName>
 		<expItems>
 			<li>
-				<thingDef>YaomaCore_QiCoreGrade1</thingDef>
+				<thingDef>YaomaCore_QiCoreGradeOne</thingDef>
 				<exp>50</exp>
 				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
 			</li>
 			<li>
-				<thingDef>YaomaCore_QiCoreGrade1</thingDef>
+				<thingDef>YaomaCore_QiCoreGradeTwo</thingDef>
 				<exp>100</exp>
 				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
 			</li>
 			<li>
-				<thingDef>YaomaCore_QiCoreGrade1</thingDef>
+				<thingDef>YaomaCore_QiCoreGradeThree</thingDef>
 				<exp>200</exp>
 				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
 			</li>
 			<li>
-				<thingDef>YaomaCore_QiCoreGrade1</thingDef>
+				<thingDef>YaomaCore_QiCoreGradeFour</thingDef>
 				<exp>400</exp>
 				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
 			</li>
 			<li>
-				<thingDef>YaomaCore_QiCoreGrade1</thingDef>
+				<thingDef>YaomaCore_QiCoreGradeFive</thingDef>
 				<exp>800</exp>
 				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
 			</li>
 			<li>
-				<thingDef>YaomaCore_QiCoreGrade1</thingDef>
+				<thingDef>YaomaCore_QiCoreGradeSix</thingDef>
 				<exp>1600</exp>
 				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
 			</li>
