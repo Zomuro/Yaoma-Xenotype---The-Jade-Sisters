@@ -16,6 +16,24 @@
 	</StatDef>
 	
 	<StatDef>
+		<defName>YaomaCore_CultivationQiRefinementEfficiency</defName>
+		<label>qi refinement efficiency</label>
+		<description>By integrating more and more qi into their bodies, cultivators can gradually transcend themselves. A higher efficiency rate improves their ability to refine their mind and body.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0.1</minValue>
+		<statFactors>
+      <li>YaomaCore_CultivationTalent</li>
+    </statFactors>
+		
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<showOnAnimals>false</showOnAnimals>
+		<displayPriorityInCategory>3501</displayPriorityInCategory>
+		<scenarioRandomizable>false</scenarioRandomizable>
+	</StatDef>
+	
+	<StatDef>
 		<defName>YaomaCore_HealthScaleFactor</defName>
 		<label>health scale factor</label>
 		<description>A multiplier on the pawn's maximum hit points.</description>
@@ -26,7 +44,7 @@
 		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
-		<scenarioRandomizable>true</scenarioRandomizable>
+		<scenarioRandomizable>false</scenarioRandomizable>
 		<displayPriorityInCategory>99997</displayPriorityInCategory>
 	</StatDef>
 	

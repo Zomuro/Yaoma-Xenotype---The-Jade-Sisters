@@ -110,7 +110,6 @@
 		</levelLabels>
 		<expTags>
 			<li>YaomaCore_Cultivation_EXPTag_CastEnergyCost</li>
-			<li>YaomaCore_Cultivation_EXPTag_OnSkillEXP</li>
 			<li>YaomaCore_Cultivation_EXPTag_UseItem</li>
 		</expTags>
 	</ItsSorceryFramework.ProgressTrackerClassDef>

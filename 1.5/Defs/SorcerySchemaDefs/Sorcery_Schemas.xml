@@ -14,6 +14,10 @@
 			<li>YaomaCore_LearningTracker_Tree_ArrayDao</li>
 			<li>YaomaCore_LearningTracker_Tree_EarthDao</li>
 			<li>YaomaCore_LearningTracker_Tree_FireDao</li>
+			<li>YaomaCore_LearningTracker_Tree_LifeDao</li>
+			<li>YaomaCore_LearningTracker_Tree_SoulDao</li>
+			<li>YaomaCore_LearningTracker_Tree_SpaceDao</li>
+			<li>YaomaCore_LearningTracker_Tree_StarDao</li>
 			<li>YaomaCore_LearningTracker_Tree_SwordDao</li>
 		</learningTrackerDefs>
 		<progressTrackerDef>YaomaCore_ProgressTracker_Cultivation</progressTrackerDef>

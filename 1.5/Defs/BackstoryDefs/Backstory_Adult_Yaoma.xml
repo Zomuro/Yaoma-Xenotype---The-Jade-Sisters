@@ -595,7 +595,7 @@
 		<defName>YaomaCore_Adult_InfluenceAgent42</defName>
 		<title>influence agent</title>
 		<titleShort>agent</titleShort>
-		<baseDesc>Posted outside of the Yaoma’s direct sphere of influence, it was [PAWN_nameDef]’s role to sway public opinion in favor of [PAWN_possessive] sect- and by extension, the Yaoma. [PAWN_pronoun] coordinated with [PAWN_possessive] handlers to form relationships with powerful figures, organize events that increased Yaoma approval, and bias discourse in favor of [PAWN_possessive] xenotype.</baseDesc>
+		<baseDesc>Posted outside of the Yaoma’s direct sphere of influence, it was [PAWN_nameDef]’s role to sway public opinion in favor of [PAWN_possessive] sect- and by extension, the Yaoma. [PAWN_pronoun] coordinated with [PAWN_possessive] handlers to form relationships with powerful figures, organize events that increased Yaoma support, and bias discourse in favor of [PAWN_possessive] xenotype.</baseDesc>
 		
 		<requiredWorkTags>Social</requiredWorkTags>
 		<skillGains>

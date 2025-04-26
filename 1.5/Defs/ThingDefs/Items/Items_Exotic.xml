@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef Abstract="True" Name="YaomaCore_QiCoreBase" ParentName="ResourceBase">
+    <resourceReadoutPriority>Middle</resourceReadoutPriority>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <stackLimit>1</stackLimit>
+    <useHitPoints>true</useHitPoints>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <drawGUIOverlay>false</drawGUIOverlay>
+    <tradeability>All</tradeability>
+    <techLevel>Ultra</techLevel>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+  </ThingDef>
+	
+	<ThingDef ParentName="YaomaCore_QiCoreBase">
+    <defName>YaomaCore_QiCoreGrade1</defName>
+    <label>qi core (grade 1)</label>
+    <description>Crystallized life energy from a cultivator at the Qi Gathering stage.\n\nThese objects form upon death, when qi ceases to flow throughout the body; without motive life force, energy accumulates towards a single point. By the time one scours the body with the business end of a knife, the summation of one’s cultivation will have coalesced into a rough gem. At this point in the Dao-bound journey, though, the cloudy jewel is but the size of a small pebble.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>50</stackLimit>
+    <statBases>
+      <MarketValue>150</MarketValue>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>0.25</Mass>
+      <Flammability>1</Flammability>
+			<Beauty>5</Beauty>
+    </statBases>
+  </ThingDef>
+	
+	<ThingDef ParentName="YaomaCore_QiCoreBase">
+    <defName>YaomaCore_QiCoreGrade2</defName>
+    <label>qi core (grade 2)</label>
+    <description>Crystallized life energy from a cultivator at the Foundation Establishment stage.\n\nAs the insight and cultivation of its former owner expands, the qi core undergoes a qualitative change. It is reflected in the clarity of the gem, which comes as a result of refined qi. In this way, those that seek the Dao are able to easily judge the grade of the remnant jewel. Some Yaoma eccentrics are even known to only trade in these crystals, so valuable they are.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>40</stackLimit>
+    <statBases>
+      <MarketValue>300</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>0.5</Mass>
+      <Flammability>1</Flammability>
+			<Beauty>10</Beauty>
+    </statBases>
+  </ThingDef>
+	
+	<ThingDef ParentName="YaomaCore_QiCoreBase">
+    <defName>YaomaCore_QiCoreGrade3</defName>
+    <label>qi core (grade 3)</label>
+    <description>Crystallized life energy from a cultivator at the Golden Core stage.\n\nThough all qi cores are formed from the same material and process, their tactile nature is influenced by the Dao. However, they themselves cannot aid in comprehending the Dao: such insights are housed in the enhanced consciousness of its former owner. As such, the gems are primarily used to bolster oneself on the journey towards immortality, furthering progress towards the next stage.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>30</stackLimit>
+    <statBases>
+      <MarketValue>600</MarketValue>
+      <MaxHitPoints>140</MaxHitPoints>
+      <Mass>0.75</Mass>
+      <Flammability>1</Flammability>
+			<Beauty>20</Beauty>
+    </statBases>
+  </ThingDef>
+	
+	<ThingDef ParentName="YaomaCore_QiCoreBase">
+    <defName>YaomaCore_QiCoreGrade4</defName>
+    <label>qi core (grade 4)</label>
+    <description>Crystallized life energy from a cultivator at the Nascent Soul stage.\n\nAs the body’s cultivation and the qi core are one and the same, only cultivators resurrected with their own core retain their prowess. Although one could theoretically grant cultivation by implanting the vital jewel, in practice it disperses the gem and kills its implantee. Without the necessary physical and mental development, the qi rampages and induces extreme cell replication, leading to a miserable death from acute metastatic cancer and multiple organ failure.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>20</stackLimit>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+      <MaxHitPoints>160</MaxHitPoints>
+      <Mass>1</Mass>
+      <Flammability>1</Flammability>
+			<Beauty>35</Beauty>
+    </statBases>
+  </ThingDef>
+	
+	<ThingDef ParentName="YaomaCore_QiCoreBase">
+    <defName>YaomaCore_QiCoreGrade5</defName>
+    <label>qi core (grade 5)</label>
+    <description>Crystallized life energy from a cultivator at the Spirit Severing stage.\n\nBy the time one reaches such a point, the qi core begins to settle into its final form. It is at this point where it demonstrates a scintillating metamorphosis, taking a transitory shape highly valued by artists. Traces of its former owner’s personal Dao can also be found, though only enough to slightly influence those that carry it or process it.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>2400</MarketValue>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Mass>1.5</Mass>
+      <Flammability>1</Flammability>
+			<Beauty>55</Beauty>
+    </statBases>
+  </ThingDef>
+	
+	<ThingDef ParentName="YaomaCore_QiCoreBase">
+    <defName>YaomaCore_QiCoreGrade6</defName>
+    <label>qi core (grade 6)</label>
+    <description>Crystallized life energy from a cultivator at the Immortal Ascension stage.\n\nAlthough a qi core can carry more than enough qi to cover multiple stages of cultivation, it cannot always break past the boundary between two stages. In the first place, a cultivator cannot perfectly absorb the energy within the remnant jewel due to entropic factors. Additionally, transitions between stages are as much qualitative as well as quantitative, requiring deliberate reflection to finalize development in a phase.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>5</stackLimit>
+    <statBases>
+      <MarketValue>4800</MarketValue>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>1</Flammability>
+			<Beauty>80</Beauty>
+    </statBases>
+  </ThingDef>
+	
+	<ThingDef ParentName="YaomaCore_QiCoreBase">
+    <defName>YaomaCore_QiCoreGradeImmortal</defName>
+    <label>immortal qi core</label>
+    <description>The crystallized life energy of an immortal.\n\nAt such refinement, the remnant jewel of a truly ascendent cultivator glows with its own radiance, revealing its intense luster and clarity. To the knowledge of the Yaoma, each is one of a kind, formed by the personal Dao of its creator. Such dense qi is able to propel a cultivator to the next stage instantaneously. This property has resulted in intense scuffles between Yaoma sects, often deepening factional rivalries on various worlds… all for a fist-sized gem.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/AIPersonaCore</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>1</stackLimit>
+    <statBases>
+      <MarketValue>7200</MarketValue>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Mass>3</Mass>
+      <Flammability>1</Flammability>
+			<Beauty>120</Beauty>
+    </statBases>
+		
+		<comps>
+      <li Class="CompProperties_Glower"> <!-- glows white -->
+        <glowRadius>1.9</glowRadius>
+        <glowColor>(255,255,255,0.75)</glowColor>
+      </li>
+			<!-- <li Class = "CompProperties_Art"> --> <!-- adjust with custom comp_art to display "art" of the pawn itself. -->
+			<!-- </li> -->
+		</comps>
+  </ThingDef>
+
+</Defs>
