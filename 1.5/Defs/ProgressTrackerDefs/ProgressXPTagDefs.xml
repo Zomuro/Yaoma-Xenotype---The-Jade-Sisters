@@ -1,10 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 
 <Defs>
-	<!-- Example 1 - Logos Experimentia --> 
+	<!-- Yaoma Cultivation ProgressEXPWorkers --> 
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_CastEnergyCost">
 		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
 		<defName>YaomaCore_Cultivation_EXPTag_CastEnergyCost</defName>
+		<scalingStatDef>YaomaCore_CultivationQiRefining</scalingStatDef>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_DuringJob">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_DuringJob</workerClass>
+		<defName>YaomaCore_Cultivation_EXPTag_DuringJob</defName>
+		<fixedEXP>1</fixedEXP>
+		<jobSets>
+			<li>
+				<label>meditating</label>
+				<jobDefs>
+					<li>Meditate</li>
+				</jobDefs>
+			</li>
+		</jobSets>
+		<scalingStatDef>YaomaCore_CultivationQiRefining</scalingStatDef>
 	</ItsSorceryFramework.ProgressEXPTagDef>
 	
 	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
@@ -14,37 +30,37 @@
 			<li>
 				<thingDef>YaomaCore_QiCoreGradeOne</thingDef>
 				<exp>50</exp>
-				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
+				<expFactorStat>YaomaCore_CultivationQiRefining</expFactorStat>
 			</li>
 			<li>
 				<thingDef>YaomaCore_QiCoreGradeTwo</thingDef>
 				<exp>100</exp>
-				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
+				<expFactorStat>YaomaCore_CultivationQiRefining</expFactorStat>
 			</li>
 			<li>
 				<thingDef>YaomaCore_QiCoreGradeThree</thingDef>
 				<exp>200</exp>
-				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
+				<expFactorStat>YaomaCore_CultivationQiRefining</expFactorStat>
 			</li>
 			<li>
 				<thingDef>YaomaCore_QiCoreGradeFour</thingDef>
 				<exp>400</exp>
-				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
+				<expFactorStat>YaomaCore_CultivationQiRefining</expFactorStat>
 			</li>
 			<li>
 				<thingDef>YaomaCore_QiCoreGradeFive</thingDef>
 				<exp>800</exp>
-				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
+				<expFactorStat>YaomaCore_CultivationQiRefining</expFactorStat>
 			</li>
 			<li>
 				<thingDef>YaomaCore_QiCoreGradeSix</thingDef>
 				<exp>1600</exp>
-				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
+				<expFactorStat>YaomaCore_CultivationQiRefining</expFactorStat>
 			</li>
 			<li>
 				<thingDef>YaomaCore_QiCoreGradeImmortal</thingDef>
 				<exp>3200</exp>
-				<expFactorStat>YaomaCore_CultivationQiRefinementEfficiency</expFactorStat>
+				<expFactorStat>YaomaCore_CultivationQiRefining</expFactorStat>
 			</li>
 		</expItems>
 	</ItsSorceryFramework.ProgressEXPTagDef>

@@ -5,7 +5,7 @@
 		<category>YaomaCore_Cultivation</category>
 		<showOnAnimals>false</showOnAnimals>
 		<showOnMechanoids>false</showOnMechanoids>
-		<!-- <showIfHediffsPresent><li>Cultivation</li></showIfHediffsPresent> -->
+		<showIfHediffsPresent><li>YaomaCore_ProgressTrackerRPG_Hediff_Cultivation</li></showIfHediffsPresent>
 	</StatDef>
 	
 	<StatDef ParentName = "YaomaCore_CultivationStat">

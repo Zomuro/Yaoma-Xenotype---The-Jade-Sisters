@@ -5,31 +5,30 @@
 		<defName>YaomaCore_CultivationTalent</defName>
 		<label>cultivation talent</label>
 		<description>Cultivation talent determines a pawn's innate ability to manipulate qi, or life energy. More talented pawns tend to cultivate faster and are able to store more qi.</description>
-		<category>BasicsPawn</category>
+		<category>YaomaCore_Cultivation</category>
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0.1</minValue>
 		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
-		<displayPriorityInCategory>3500</displayPriorityInCategory>
+		<displayPriorityInCategory>100</displayPriorityInCategory>
 		<scenarioRandomizable>true</scenarioRandomizable>
 	</StatDef>
 	
 	<StatDef>
-		<defName>YaomaCore_CultivationQiRefinementEfficiency</defName>
-		<label>qi refinement efficiency</label>
-		<description>By integrating more and more qi into their bodies, cultivators can gradually transcend themselves. A higher efficiency rate improves their ability to refine their mind and body.</description>
-		<category>BasicsPawn</category>
+		<defName>YaomaCore_CultivationQiRefining</defName>
+		<label>qi refining rate</label>
+		<description>By integrating more and more qi into their bodies, cultivators can gradually transcend themselves. A higher qi refining rate increases the efficacy of this process.</description>
+		<category>YaomaCore_Cultivation</category>
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0.1</minValue>
 		<statFactors>
       <li>YaomaCore_CultivationTalent</li>
     </statFactors>
-		
 		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
-		<displayPriorityInCategory>3501</displayPriorityInCategory>
+		<displayPriorityInCategory>99</displayPriorityInCategory>
 		<scenarioRandomizable>false</scenarioRandomizable>
 	</StatDef>
 	
@@ -41,6 +40,22 @@
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0</minValue>
 		<roundValue>false</roundValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<showOnAnimals>false</showOnAnimals>
+		<scenarioRandomizable>false</scenarioRandomizable>
+		<displayPriorityInCategory>99997</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>YaomaCore_DamageNullChance</defName>
+		<label>damage nullification chance</label>
+		<description>The probability a pawn will not be damaged (whether by sheer luck, precognition, or reflexes).</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<maxValue>1</maxValue>
+		<roundValue>true</roundValue>
 		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
@@ -95,21 +110,6 @@
 		<!-- <displayPriorityInCategory>99997</displayPriorityInCategory> -->
 	<!-- </StatDef> -->
 	
-	<!-- <StatDef> -->
-		<!-- <defName>DamageNullChance</defName> -->
-		<!-- <label>damage nullification chance</label> -->
-		<!-- <description>The probability a pawn will not be damaged (whether by sheer luck, precognition, or reflexes).</description> -->
-		<!-- <category>BasicsPawn</category> -->
-		<!-- <defaultBaseValue>0</defaultBaseValue> -->
-		<!-- <minValue>0</minValue> -->
-		<!-- <maxValue>1</maxValue> -->
-		<!-- <roundValue>true</roundValue> -->
-		<!-- <toStringStyle>PercentTwo</toStringStyle> -->
-		<!-- <roundToFiveOver>200</roundToFiveOver> -->
-		<!-- <showNonAbstract>true</showNonAbstract> -->
-		<!-- <scenarioRandomizable>true</scenarioRandomizable> -->
-		<!-- <showOnPawns>false</showOnPawns> -->
-		<!-- <displayPriorityInCategory>99997</displayPriorityInCategory> -->
-	<!-- </StatDef> -->
+	
 
 </Defs>
