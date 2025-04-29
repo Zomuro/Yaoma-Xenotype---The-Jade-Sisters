@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<ItsSorceryFramework.LearningTreeNodeDef Abstract = "True" Name = "YaomaCore_EarthDao_NodeBase">
+	<ItsSorceryFramework.LearningTreeNodeDef Abstract = "True" Name = "YaomaCore_LifeDao_NodeBase">
 		<learningTrackerDef>YaomaCore_LearningTracker_Tree_LifeDao</learningTrackerDef>
 	</ItsSorceryFramework.LearningTreeNodeDef>
 

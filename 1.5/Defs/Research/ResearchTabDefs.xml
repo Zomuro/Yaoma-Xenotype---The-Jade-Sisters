@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchTabDef>
+    <defName>YaomaCore_ResearchTab</defName>
+    <label>Yaoma</label>
+		<generalTitle>Yaoma research projects</generalTitle>
+    <generalDescription>Research Yaoma technologies at a research bench. You can only have one active project at a time.</generalDescription>
+  </ResearchTabDef>
+
+</Defs>

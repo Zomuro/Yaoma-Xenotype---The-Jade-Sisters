@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<!-- <ResearchProjectDef> -->
+		<!-- <defName>YaomaTribulationPillar</defName> -->
+		<!-- <label>Tribulation pillar</label> -->
+		<!-- <description>Tribulation pillars are what makes Yaoma cultivation possible. They allow pawns to begin cultivating, and upon possessing enough qi increase cultivation level.\n\nBe forewarned, however: every step will call a heavenly trial marked by divine lightning.</description> -->
+		<!-- <baseCost>1000</baseCost> -->
+		<!-- <techLevel>Industrial</techLevel> -->
+		<!-- <researchViewX>0</researchViewX> -->
+		<!-- <researchViewY>0</researchViewY> -->
+		<!-- <tab>YaomaR2</tab> -->
+		<!-- <prerequisites> -->
+			<!-- <li>ComplexFurniture</li> -->
+		<!-- </prerequisites> -->
+	<!-- </ResearchProjectDef> -->
+	
+
+	<!-- <ResearchProjectDef> -->
+		<!-- <defName>YaomaContemplationTable</defName> -->
+		<!-- <label>Contemplation table</label> -->
+		<!-- <description>Tables used by the Yaoma to study the mysteries of the Dao. By possessing the appropriate texts and holding a certain amount of esoteric knowledge, a cultivator can learn Yaoma Dao-magic techniques.</description> -->
+		<!-- <baseCost>1000</baseCost> -->
+		<!-- <techLevel>Industrial</techLevel> -->
+		<!-- <researchViewX>0</researchViewX> -->
+		<!-- <researchViewY>0</researchViewY> -->
+		<!-- <tab>YaomaR2</tab> -->
+		<!-- <prerequisites> -->
+			<!-- <li>ComplexFurniture</li> -->
+		<!-- </prerequisites> -->
+	<!-- </ResearchProjectDef> -->
+
+</Defs>

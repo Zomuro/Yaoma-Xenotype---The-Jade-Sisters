@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<!-- Base Research Def -->
+	<ResearchProjectDef Abstract = "True" Name = "YaomaCore_BaseResearch">
+		<tab>YaomaCore_ResearchTab</tab>
+	</ResearchProjectDef>
+	
+	<!-- Melee Weapon Researchs -->
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier1_Melee</defName>
+		<label>Melee weapons</label>
+		<description>Craft three base weapons of the Yaoma: the jian, the qiang, and the gun.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+
+		<prerequisites>
+			<li>LongBlades</li>
+		</prerequisites>
+		
+		<!-- <generalRules> -->
+      <!-- <rulesStrings> -->
+        <!-- <li>subject->psychoid</li> -->
+
+        <!-- <li>subject_story->joined a short-lived psychoid commune on a cult world</li> -->
+        <!-- <li>subject_story->experimented with psychoid to help traumatized soldiers</li> -->
+        <!-- <li>subject_story->legalized psychoid for mass production across several coreworlds, when [ANYPAWN_pronoun] had the power to do so</li> -->
+
+        <!-- <li>subject_gerund->brewing psychoid</li> -->
+      <!-- </rulesStrings> -->
+    <!-- </generalRules> -->
+
+	</ResearchProjectDef> 
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier2_Melee</defName>
+		<label>Refined melee weapons</label>
+		<description>Craft refined variants of the Yaoma jian, qiang, and gun.</description>
+		<baseCost>800</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier1_Melee</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier3_Melee</defName>
+		<label>Grand melee weapons</label>
+		<description>Craft the perfected Yaoma designs of the jian, qiang, and gun.</description>
+		<baseCost>1600</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier2_Melee</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>
+	
+	<!-- Ranged Weapon Researchs -->
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier1_Ranged</defName>
+		<label>Firearms</label>
+		<description>Craft three base firearms of the Yaoma: the fachui, the leiming, and the yuanmao.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+
+		<prerequisites>
+			<li>GasOperation</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier2_Ranged</defName>
+		<label>Refined firearms</label>
+		<description>Craft more powerful Yaoma variants of the fachui, leiming, and yuanmao.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>1</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier1_Ranged</li>
+			<li>PrecisionRifling</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef> 	
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier3_Ranged</defName>
+		<label>Grand firearms</label>
+		<description>Craft the mastered Yaoma designs of the fachui, leiming, and yuanmao.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier2_Ranged</li>
+			<li>ChargedShot</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef> 	
+	
+	<!-- Hanfu Researchs -->
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier1_Hanfu</defName>
+		<label>Hanfu</label>
+		<description>Craft the Yaoma hanfu, symbolizing both authority and serenity.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>0</researchViewY>
+
+		<prerequisites>
+			<li>ComplexClothing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier2_Hanfu</defName>
+		<label>Refined hanfu</label>
+		<description>Craft a more advanced hanfu design, incorporating metallic fibers for improved defense and beauty.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>0</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier1_Hanfu</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>	
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier3_Hanfu</defName>
+		<label>Grand hanfu</label>
+		<description>Craft the perfected hanfu design, integrated with advanced hybrid materials.</description>
+		<baseCost>1800</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>0</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier2_Hanfu</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>
+	
+	<!-- Xuanwu Armor Researchs -->
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier1_XuanwuArmor</defName>
+		<label>Xuanwu armor</label>
+		<description>Craft xuanwu armor, which is used as standard Yaoma combat protection.</description>
+		<baseCost>2400</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+
+		<prerequisites>
+			<li>PlateArmor</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier2_XuanwuArmor</defName>
+		<label>Refined xuanwu</label>
+		<description>Craft an improved variant of xuanwu armor built for greater defense and tactical flexibility with its integrated psychite explosive synthesizer.</description>
+		<baseCost>2400</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier1_XuanwuArmor</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier3_XuanwuArmor</defName>
+		<label>Grand xuanwu</label>
+		<description>Craft hyper-advanced xuanwu armor, designed to handle hectic battlefields with increased tactical options, protection, and awareness.</description>
+		<baseCost>2400</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>1</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier2_XuanwuArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>	
+
+	<!-- Kunlun Armor Researchs -->
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier1_KunlunArmor</defName>
+		<label>Kunlun armor</label>
+		<description>Craft Yaoma Kunlun armor, plate and scale armor comparable to medieval plate without decreasing movement speed.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
+
+		<prerequisites>
+			<li>PlateArmor</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier2_KunlunArmor</defName>
+		<label>Refined kunlun</label>
+		<description>Craft a more refined version of Kunlun armor, which takes advantage of more advanced materials to moderate movement speed decrease while attaching a weak deflector shield.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>2</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier1_KunlunArmor</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_Tier3_KunlunArmor</defName>
+		<label>Grand kunlun</label>
+		<description>Craft the perfected variant of Kunlun armor, which sports significant defensive abilities from advanced materials and optimized deflector shields.</description>
+		<baseCost>1800</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>5</researchViewX>
+		<researchViewY>2</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_Tier2_KunlunArmor</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>	
+
+	<!-- Belt Researchs -->
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_ExcitingCharm</defName>
+		<label>Exciting charm</label>
+		<description>Craft an exciting charm, a trinket dipped in psychoid essence that improves work and move speed slightly.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>3</researchViewY>
+
+		<prerequisites>
+			<li>PsychoidBrewing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_SubliminalTuning</defName>
+		<label>Subliminal tuning</label>
+		<description>The knowledge to precisely influence mental state through the senses.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>3</researchViewY>
+
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_SensingCharm</defName>
+		<label>Sensing charm</label>
+		<description>Craft an sensing charm, a trinket that improves qi detection through psycho-suggestion.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_SubliminalTuning</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_FocusingCharm</defName>
+		<label>Focusing charm</label>
+		<description>Craft an focusing charm, a trinket that improves accuracy through subliminal tuning.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3.5</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_SubliminalTuning</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_GateshieldBelt</defName>
+		<label>Gateshield belt</label>
+		<description>Craft a redesigned shield belt, which implements a selective-repulsion protocol to enable ranged combat at the price of decreased shield energy and recharge rate.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>3</researchViewY>
+
+		<prerequisites>
+			<li>ShieldBelt</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_DeflectorBelt</defName>
+		<label>Deflector belt</label>
+		<description>Craft an optimized shield belt design that leverages energy nanostructures and angling to efficiently deflect incoming projectiles.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>3</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_GateshieldBelt</li>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>
+	
+		<!-- Drug Researchs -->
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch"> <!-- YaomaCore_ShuangchaSyrup -->
+		<defName>YaomaCore_ShuangchaSyrup</defName>
+		<label>shuangcha syrup</label>
+		<description>Produce shuangcha syrup, a thick concoction of cold-brewed yucha leaves and healroot that fights sickness.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0</researchViewX>
+		<researchViewY>4</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_HechenluTea</defName>
+		<label>hechenlu tea</label>
+		<description>Produce hechenlu tea, brewed with yucha and psychite to enhance mindfulness.</description>
+		<baseCost>500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4</researchViewY>
+
+		<prerequisites>
+			<li>PsychoidBrewing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_KunlunBerries</defName>
+		<label>Kunlun berries</label>
+		<description>Produce kunlun berries, which can control pain and expedite healing.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_HechenluTea</li>
+			<li>WakeUpProduction</li>
+		</prerequisites>
+	</ResearchProjectDef> 
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_FireBlood</defName>
+		<label>Fire blood</label>
+		<description>Produce fire blood, a potent and non-addictive adrenaline analogue that boosts combat performance.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4</researchViewY>
+
+		<prerequisites>
+			<li>YaomaCore_KunlunBerries</li>
+			<li>GoJuiceProduction</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName = "YaomaCore_BaseResearch">
+		<defName>YaomaCore_JadePeach</defName>
+		<label>Jade peach</label>
+		<description>Produce jade peach, a closely guarded Yaoma secret that progressively confers physiological boons that can be inherited by future generations.</description>
+		<baseCost>6000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<researchViewX>4</researchViewX>
+		<researchViewY>4</researchViewY>
+
+		<prerequisites>
+			<li>Fabrication</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	</ResearchProjectDef>
+
+</Defs>
