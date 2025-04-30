@@ -5,13 +5,13 @@
 		<defName>YaomaCore_CultivationTalent</defName>
 		<label>cultivation talent</label>
 		<description>Cultivation talent determines a pawn's innate ability to manipulate qi, or life energy. More talented pawns tend to cultivate faster and are able to store more qi.</description>
-		<category>YaomaCore_Cultivation</category>
+		<category>BasicsPawn</category>
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0.1</minValue>
 		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
-		<displayPriorityInCategory>100</displayPriorityInCategory>
+		<displayPriorityInCategory>88888888</displayPriorityInCategory>
 		<scenarioRandomizable>true</scenarioRandomizable>
 	</StatDef>
 	
@@ -19,7 +19,7 @@
 		<defName>YaomaCore_CultivationQiRefining</defName>
 		<label>qi refining rate</label>
 		<description>By integrating more and more qi into their bodies, cultivators can gradually transcend themselves. A higher qi refining rate increases the efficacy of this process.</description>
-		<category>YaomaCore_Cultivation</category>
+		<category>BasicsPawn</category>
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0.1</minValue>
 		<statFactors>
@@ -28,7 +28,7 @@
 		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
-		<displayPriorityInCategory>99</displayPriorityInCategory>
+		<displayPriorityInCategory>88888887</displayPriorityInCategory>
 		<scenarioRandomizable>false</scenarioRandomizable>
 	</StatDef>
 	
@@ -44,7 +44,7 @@
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
 		<scenarioRandomizable>false</scenarioRandomizable>
-		<displayPriorityInCategory>99997</displayPriorityInCategory>
+		<displayPriorityInCategory>88888870</displayPriorityInCategory>
 	</StatDef>
 	
 	<StatDef>
@@ -60,7 +60,7 @@
 		<showOnPawns>true</showOnPawns>
 		<showOnAnimals>false</showOnAnimals>
 		<scenarioRandomizable>false</scenarioRandomizable>
-		<displayPriorityInCategory>99997</displayPriorityInCategory>
+		<displayPriorityInCategory>88888871</displayPriorityInCategory>
 	</StatDef>
 	
 	<!-- <StatDef> -->

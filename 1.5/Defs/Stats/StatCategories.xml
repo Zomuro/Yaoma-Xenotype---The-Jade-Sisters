@@ -5,7 +5,7 @@
 		<defName>YaomaCore_Cultivation</defName>
 		<label>Yaoma Cultivation</label>
 		<displayOrder>400</displayOrder>
-		<displayAllByDefault>true</displayAllByDefault>
+		<displayAllByDefault>false</displayAllByDefault>
 	</StatCategoryDef>
 
 </Defs>
