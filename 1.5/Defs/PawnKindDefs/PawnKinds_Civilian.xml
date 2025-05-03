@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	  <!-- ============================ Yaoma Base ========================== -->
+
+	<PawnKindDef Name="YaomaCore_PawnKind_Base" Abstract="True">
+		<!-- <defaultFactionType>YaomaPalace</defaultFactionType> -->
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<baseRecruitDifficulty>0.75</baseRecruitDifficulty>
+		<backstoryFiltersOverride>
+			<li>
+				<categories> <!-- Yaoma backstories -->
+					<li>YaomaCore_YaomaBackstory</li>
+				</categories>
+				<commonality>2</commonality>
+		  </li>
+			<li>
+				<categories> <!-- Offworld backstories -->
+					<li>OffWorld</li>
+				</categories>
+				<commonality>1</commonality>
+		  </li>
+		</backstoryFiltersOverride>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>IndustrialBasic</li>
+			<!-- <li>YaomaCivilianApparel</li> -->
+		</apparelTags>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~12</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

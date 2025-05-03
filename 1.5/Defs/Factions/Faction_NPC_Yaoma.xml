@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase" Name="YaomaCore_NPCFactionBase">
+		<defName>YaomaCore_Faction_Palace</defName>
+		<label>yaoma palace</label>
+		<description>A gathering of Yaoma in a stable community aimed at developing the area.\n\nThey regard themselves as envoys of an enigmatic being known as "Suffering", who gave them a mission to prepare humanity against the unknown.</description>
+		<pawnsPlural>yaoma</pawnsPlural>
+		<techLevel>Ultra</techLevel>
+		<listOrderPriority>9</listOrderPriority> <!-- List below pirates and above Yaoma Cult -->		
+
+		<!-- <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath> <!-- Faction textures --> -->
+		<factionIconPath>World/WorldObjects/Faction_Icon/YaomaPalace</factionIconPath>
+		<colorSpectrum Inherit = "False">
+			<li>(0, 0.659, 0.42)</li>
+		</colorSpectrum>
+		
+		<factionNameMaker>YaomaCore_NamerFaction</factionNameMaker> <!-- Faction naming -->
+		<settlementNameMaker>YaomaCore_NamerSettlement</settlementNameMaker>
+
+		<requiredCountAtGameStart>1</requiredCountAtGameStart> <!-- Faction settings -->
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>sect master</leaderTitle>
+		
+		<!-- <structureMemeWeights> -->
+			<!-- <Structure_Theist_Yaoma_Palace MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Theist_Yaoma_Palace> -->
+		<!-- </structureMemeWeights> -->
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+		</disallowedMemes>
+		<disallowedPrecepts>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Disapproved</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Acceptable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Slavery_Honorable</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Abhorrent</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">IdeoDiversity_Horrible</li>
+		</disallowedPrecepts>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>1</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>YaomaCore_YaomaBackstory</li>
+				</categories>
+				<commonality>3</commonality>
+			</li>
+		</backstoryFilters>
+		<xenotypeSet> <!-- set the default xenotype set -->
+			<xenotypeChances>
+				<YaomaCore_YaomaXenotype>1</YaomaCore_YaomaXenotype>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<visitorTraderKinds>
+			<li>YaomaCore_Trader_Visitor_Standard</li>
+		</visitorTraderKinds>
+		<caravanTraderKinds>
+			<li>YaomaCore_Trader_Caravan_Palace</li>
+		</caravanTraderKinds>
+		<baseTraderKinds>
+			<li>YaomaCore_Trader_Base_Standard</li>
+		</baseTraderKinds>
+		<allowedArrivalTemperatureRange>
+			<min>-50</min>
+			<max>45</max>
+		</allowedArrivalTemperatureRange>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,50)</li>			<!-- disciples can come in -->
+				<li>(1000, 300)</li>	<!-- elders can come in -->
+				<li>(4000, 800)</li>	<!-- ancestors can come in -->
+				<li>(8000, 2500)</li>	<!-- immortals can come in -->			
+				<li>(10000, 10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+	</FactionDef>
+	
+
+</Defs>
