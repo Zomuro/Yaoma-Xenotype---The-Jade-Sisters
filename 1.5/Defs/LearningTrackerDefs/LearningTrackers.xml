@@ -3,55 +3,55 @@
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerProgress">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Progress</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Progress</defName>
+		<defName>YaomaXenotype_LearningTracker_Progress</defName>
 		<label>Summary</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_ArrayDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_ArrayDao</defName>
 		<label>Array Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_EarthDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_EarthDao</defName>
 		<label>Earth Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_FireDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_FireDao</defName>
 		<label>Fire Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_LifeDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_LifeDao</defName>
 		<label>Life Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_SoulDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_SoulDao</defName>
 		<label>Soul Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_SpaceDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_SpaceDao</defName>
 		<label>Space Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_StarDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_StarDao</defName>
 		<label>Star Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	
 	<ItsSorceryFramework.LearningTrackerDef ParentName = "LearningTrackerTree">
 		<learningTrackerClass>ItsSorceryFramework.LearningTracker_Tree</learningTrackerClass>
-		<defName>YaomaCore_LearningTracker_Tree_SwordDao</defName>
+		<defName>YaomaXenotype_LearningTracker_Tree_SwordDao</defName>
 		<label>Sword Dao</label>
 	</ItsSorceryFramework.LearningTrackerDef>
 	

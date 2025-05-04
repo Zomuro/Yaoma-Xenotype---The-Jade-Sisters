@@ -2,7 +2,7 @@
 <Defs>
 	
 	<StatCategoryDef>
-		<defName>YaomaCore_Cultivation</defName>
+		<defName>YaomaXenotype_Cultivation</defName>
 		<label>Yaoma Cultivation</label>
 		<displayOrder>400</displayOrder>
 		<displayAllByDefault>false</displayAllByDefault>

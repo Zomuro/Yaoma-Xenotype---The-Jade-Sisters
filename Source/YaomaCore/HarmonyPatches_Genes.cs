@@ -32,7 +32,7 @@ namespace YaomaCore.HarmonyPatches
         // POSTFIX: when generating a pawn, forces male and fat bodytype to be female when the pawn has YaomaCore's Hermaproditism gene.
         public static void GetBodyTypeFor_PostFix(Pawn pawn, ref BodyTypeDef __result)
         {
-            if (pawn.genes.GetGene(DefOfs.YaomaCore_Hermaphroditism) != null && 
+            if (pawn.genes.GetGene(DefOfs.YaomaXenotype_Hermaphroditism) != null && 
                 (__result == BodyTypeDefOf.Male || __result == BodyTypeDefOf.Fat))
                 __result = bodyTypes.RandomElementWithFallback(BodyTypeDefOf.Female);
         }
@@ -40,7 +40,7 @@ namespace YaomaCore.HarmonyPatches
         // POSTFIX: when adding this gene, forces male and fat bodytype to be female when the pawn has YaomaCore's Hermaproditism gene.
         public static void ToBodyType_PostFix(Pawn pawn, ref BodyTypeDef __result)
         {
-            if (pawn.genes.GetGene(DefOfs.YaomaCore_Hermaphroditism) != null &&
+            if (pawn.genes.GetGene(DefOfs.YaomaXenotype_Hermaphroditism) != null &&
                 (__result == BodyTypeDefOf.Male || __result == BodyTypeDefOf.Fat))
                 __result = bodyTypes.RandomElementWithFallback(BodyTypeDefOf.Female);
         }

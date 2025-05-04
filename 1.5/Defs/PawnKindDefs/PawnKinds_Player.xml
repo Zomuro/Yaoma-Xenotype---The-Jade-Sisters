@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	 <PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>YaomaCore_PawnKind_Player</defName>
+		<defName>YaomaXenotype_PawnKind_Player</defName>
 		<label>Yaoma colonist</label>
 		
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
 		<backstoryFiltersOverride>
 			<li>
 				<categories> <!-- Yaoma backstories -->
-					<li>YaomaCore_YaomaBackstory</li>
+					<li>YaomaXenotype_YaomaBackstory</li>
 				</categories>
 				<commonality>3</commonality>
 		  </li>
@@ -32,7 +32,7 @@
 		<useFactionXenotypes>False</useFactionXenotypes>
 		<xenotypeSet>
 			<xenotypeChances>
-				<YaomaCore_YaomaXenotype>1</YaomaCore_YaomaXenotype>
+				<YaomaXenotype_YaomaXenotype>1</YaomaXenotype_YaomaXenotype>
 			</xenotypeChances>
 		</xenotypeSet>
 		

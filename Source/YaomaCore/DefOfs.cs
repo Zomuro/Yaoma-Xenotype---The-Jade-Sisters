@@ -12,10 +12,10 @@ namespace YaomaCore
 	public static class DefOfs
 	{
 		// GeneDef
-		public static GeneDef YaomaCore_Hermaphroditism;
+		public static GeneDef YaomaXenotype_Hermaphroditism;
 
 		// StatDef
-		public static StatDef YaomaCore_HealthScaleFactor;
+		public static StatDef YaomaXenotype_HealthScaleFactor;
 
 		static DefOfs()
 		{

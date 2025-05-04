@@ -2,9 +2,9 @@
 <Defs>
 
   <RulePackDef>
-    <defName>YaomaCore_NamerFaction</defName>
+    <defName>YaomaXenotype_NamerFaction</defName>
     <include>
-      <li>YaomaCore_WordUtility</li>
+      <li>YaomaXenotype_WordUtility</li>
     </include>
     <rulePack>
       <rulesStrings>

@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 
+	<ThingDef Name="YaomaXenotype_XuanwuArmorBase" ParentName="ArmorMachineableBase">
+		<defName>YaomaXenotype_Tier1_Xuanwu</defName>
+		<label>xuanwu armor</label>
+		<description>A lamellar armor that’s been a reliable constant in early Yaoma history. Equipped by warriors on the front lines, its enjoined plates provide noticeable protection without compromising movement severely. With good defense against slashing and blunt attacks, the Yaoma fielded xuanwu armor for generations to come.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Item/Apparel/Body/LamellarSimple/LamellarSimpleIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType> <!-- TICKER TYPE -->
+
+		<statBases> <!-- STATS -->
+			<WorkToMake>20000</WorkToMake>
+			<MaxHitPoints>190</MaxHitPoints>
+			<Mass>10.0</Mass>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>		
+		</equippedStatOffsets>		
+		
+		<thingCategories> <!-- TAGS -->
+			<li>ApparelArmor</li>
+		</thingCategories>
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_XuanwuArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	    <costStuffCount>100</costStuffCount>
+		
+		<apparel> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Item/Apparel/Body/LamellarSimple/LamellarSimple</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>YaomaXenotype_MediumMilitary</li>
+				<li>YaomaXenotype_MilitaryT1</li>	
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaXenotype_ApparelMedium</li>
+			<li>YaomaXenotype_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<ThingDef Name="YaomaXenotype_XuanwuArmorHelmetBase" ParentName="ArmorHelmetMakeableBase">
+		<defName>YaomaXenotype_Tier1_Helmet_Xuanwu</defName>
+		<label>xuanwu armor helmet</label>
+		<description>The companion to xuanwu armor, composed of a single-piece cap and chain armor. It boasts lightweight protection against slashing and crushing weapons, while maintaining the wearer’s range of vision. Many Yaoma warriors have kept their life because of this, avoiding the deadliest strikes by the narrowest of margins.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Item/Apparel/Head/Lamellar_Helmet_Simple/LamellarSimpleHelmet_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>105</MaxHitPoints>
+			<Mass>3.0</Mass>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+
+		<!-- TAGS --> <!-- ArmorHelmetMakeableBase has ArmorHeadgear thingCategories -->
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_XuanwuArmor</researchPrerequisite>			
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	    <costStuffCount>50</costStuffCount>
+
+		<apparel> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Item/Apparel/Head/Lamellar_Helmet_Simple/LamellarSimpleHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YaomaXenotype_MediumMilitary</li>
+				<li>YaomaXenotype_MilitaryT1</li>	
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaXenotype_ApparelMedium</li>
+			<li>YaomaXenotype_Apparel</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="YaomaXenotype_XuanwuArmorBase">
+		<defName>YaomaXenotype_Tier2_Xuanwu</defName>
+		<label>refined xuanwu armor</label>
+		<description>An updated variant of the traditional xuanwu armor, brought up to modernized standards. As military doctrine necessitated tools that could break enemy formations, Yaoma engineers worked upon designing an armor that could serve both a frontline and support role. The result was protective equipment that could synthesize explosives on the fly, utilizing wild and plentiful psychoid leaves. Worn by veteran elders, the armor demonstrates its value quickly.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Item/Apparel/Body/LamellarRefined/LamellarRefinedIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType> <!-- TICKER TYPE -->
+
+		<statBases> <!-- STATS -->
+			<WorkToMake>35000</WorkToMake>
+			<MaxHitPoints>270</MaxHitPoints>
+			<Mass>10.0</Mass>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.4</MoveSpeed>		
+		</equippedStatOffsets>			
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_XuanwuArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	    <costStuffCount>125</costStuffCount>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Item/Apparel/Body/LamellarRefined/LamellarRefined</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>YaomaXenotype_MediumMilitary</li>
+				<li>YaomaXenotype_MilitaryT2</li>	
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>5</maxCharges>
+				<ammoDef>PsychoidLeaves</ammoDef>
+				<ammoCountPerCharge>16</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>psychoid</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		<verbs>
+			<li>
+				<label>throw psychoid grenade</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadePsychoid_Yaoma</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+		</verbs>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BaseFragGrenadeProjectile">
+		<defName>Proj_GrenadePsychoid_Yaoma</defName>
+		<label>psychoid grenade</label>
+		<projectile>
+			<explosionRadius>2.5</explosionRadius >
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<explosionDelay>100</explosionDelay>
+		</projectile>
+	 </ThingDef>
+	  
+	<ThingDef ParentName="YaomaXenotype_XuanwuArmorHelmetBase">
+		<defName>YaomaXenotype_Tier2_Helmet_Xuanwu</defName>
+		<label>refined xuanwu armor helmet</label>
+		<description>An enhanced version of the xuanwu helm. Spacer manufacturing techniques have lightened the next-generation helms. This weight reduction was utilized to cover the neck with chainmail, as well as increase the density of the chainmail with additional links. And despite the bolstered protection, the wearer’s field of view has been expanded, allowing him or her to avoid melee attacks. As many expeditions to the infestation-ridden urbworlds of Uyth-Gurant can attest, Yaoma disciples and elders appreciate the improvements.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Item/Apparel/Head/Lamellar_Helmet_Refined/LamellarRefinedHelmet_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>
+			<WorkToMake>10500</WorkToMake>
+			<MaxHitPoints>145</MaxHitPoints>
+			<Mass>3.0</Mass>
+			<StuffEffectMultiplierArmor>0.7</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+            <MeleeDodgeChance>3</MeleeDodgeChance>		
+		</equippedStatOffsets>	
+
+		<!-- TAGS --> <!-- ArmorHelmetMakeableBase has ArmorHeadgear thingCategories -->
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_XuanwuArmor</researchPrerequisite>			
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	    <costStuffCount>75</costStuffCount>
+		<costList>
+			<Plasteel>25</Plasteel>
+		</costList>
+
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Item/Apparel/Head/Lamellar_Helmet_Refined/LamellarRefinedHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YaomaXenotype_MediumMilitary</li>
+				<li>YaomaXenotype_MilitaryT2</li>	
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="YaomaXenotype_XuanwuArmorBase">
+		<defName>YaomaXenotype_Tier3_Xuanwu</defName>
+		<label>grand xuanwu armor</label>
+		<description>The optimized armor of Yaoma ancestors, reserved for the cream of the crop. Expanding the onboard psychite synthesis system, Yaoma engineers included parameters to create a vapor cloud grenade, formed from aerosolized peace dew. Many Yaoma disciples have found their spirits lifted when they pass through the cloud, even in the heat of battle. Additional alterations to the metal plate composition as well as the thread lacing them together have also fortified the armor’s resilience while reducing mobility restrictions. Were it not for these upgrades, the Yaoma cults would never have settled the once-hive infested lands of Xundi (“earth flood”) within The Tianting.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Item/Apparel/Body/LamellarGrand/LamellarGrandIcon</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases> <!-- STATS -->
+			<WorkToMake>50000</WorkToMake>
+			<MaxHitPoints>320</MaxHitPoints>
+			<Mass>10.0</Mass>
+			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+            <MoveSpeed>-0.2</MoveSpeed>		
+		</equippedStatOffsets>	
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_XuanwuArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	    <costStuffCount>150</costStuffCount>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Item/Apparel/Body/LamellarGrand/LamellarGrand</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>YaomaXenotype_MediumMilitary</li>
+				<li>YaomaXenotype_MilitaryT3</li>	
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>5</maxCharges>
+				<ammoDef>PsychoidLeaves</ammoDef>
+				<ammoCountPerCharge>16</ammoCountPerCharge>
+				<baseReloadTicks>60</baseReloadTicks>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>psychoid</chargeNoun>
+				<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			</li>
+		</comps>
+		
+		<verbs>
+			<li>
+				<label>throw psychoid grenade</label>
+				<verbClass>Verb_LaunchProjectileStatic</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>12.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<warmupTime>1.5</warmupTime>
+				<noiseRadius>4</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+				  <canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>Proj_GrenadePsychoid_Yaoma</defaultProjectile>
+				<rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack>
+			</li>
+			<!-- <li> -->
+				<!-- <label>throw peace dew grenade</label> -->
+				<!-- <verbClass>Verb_LaunchProjectileStatic</verbClass> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <range>12.9</range> -->
+				<!-- <forcedMissRadius>1.9</forcedMissRadius> -->
+				<!-- <warmupTime>1.5</warmupTime> -->
+				<!-- <noiseRadius>4</noiseRadius> -->
+				<!-- <ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer> -->
+				<!-- <soundCast>ThrowGrenade</soundCast> -->
+				<!-- <targetParams> -->
+				  <!-- <canTargetLocations>true</canTargetLocations> -->
+				<!-- </targetParams> -->
+				<!-- <defaultProjectile>Proj_GrenadePeaceDew_Yaoma</defaultProjectile> -->
+				<!-- <rangedFireRulepack>Combat_RangedFire_Thrown</rangedFireRulepack> -->
+			<!-- </li> -->
+		</verbs>
+		
+	</ThingDef>
+	
+	<!-- <ThingDef ParentName="BaseFragGrenadeProjectile"> -->
+		<!-- <defName>Proj_GrenadePeaceDew_Yaoma</defName> -->
+		<!-- <label>peace dew grenade</label> -->
+		<!-- <projectile> -->
+			<!-- <explosionRadius>3.9</explosionRadius > -->
+			<!-- <damageDef>DMG_PeaceDew</damageDef> -->
+			<!-- <damageAmountBase>0</damageAmountBase> -->
+			<!-- <explosionDelay>100</explosionDelay> -->
+			<!-- <postExplosionSpawnThingDef>Gas_PeaceDew_Yaoma</postExplosionSpawnThingDef> -->
+			<!-- <postExplosionSpawnChance>1</postExplosionSpawnChance> -->
+		<!-- </projectile> -->
+	 <!-- </ThingDef> -->
+	  
+	<ThingDef ParentName="YaomaXenotype_XuanwuArmorHelmetBase">
+		<defName>YaomaXenotype_Tier3_Helmet_Xuanwu</defName>
+		<label>grand xuanwu armor helmet</label>
+		<description>An ultratech variant of the xuanwu helm. Psycho-suggestive adjustments made to the helmet lining further boosted the reflexes of the wearer, allowing them to dodge melee strikes more reliably. Additional reinforcement of the grand xuanwu’s crown as well as alterations to the structural mesh of the alloy led to incredible protective capabilities of the finalized helm. The result is a headpiece beloved by Yaoma weapon users, often seeing action in close quarters within urbworlds.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Item/Apparel/Head/Lamellar_Helmet_Grand/LamellarGrandHelmet_Item</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>175</MaxHitPoints>
+			<Mass>3.0</Mass>
+			<StuffEffectMultiplierArmor>0.95</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>1</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+            <MeleeDodgeChance>5</MeleeDodgeChance>		
+		</equippedStatOffsets>	
+
+		<!-- TAGS --> <!-- ArmorHelmetMakeableBase has ArmorHeadgear thingCategories -->
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_XuanwuArmor</researchPrerequisite>			
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+	    <costStuffCount>100</costStuffCount>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Item/Apparel/Head/Lamellar_Helmet_Grand/LamellarGrandHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YaomaXenotype_MediumMilitary</li>
+				<li>YaomaXenotype_MilitaryT3</li>	
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>		
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>	
+  
+</Defs>

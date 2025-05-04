@@ -2,9 +2,9 @@
 <Defs>
 
   <RulePackDef>
-    <defName>YaomaCore_NamerArt</defName>
+    <defName>YaomaXenotype_NamerArt</defName>
     <include>
-      <li>YaomaCore_WordUtility</li>
+      <li>YaomaXenotype_WordUtility</li>
     </include>
     <rulePack>
       <rulesStrings>
@@ -34,9 +34,9 @@
   </RulePackDef>
   
   <RulePackDef>
-    <defName>YaomaCore_NamerArtWeapon</defName>
+    <defName>YaomaXenotype_NamerArtWeapon</defName>
     <include>
-      <li>YaomaCore_WordUtility</li>
+      <li>YaomaXenotype_WordUtility</li>
 	  <li>ArtNameUtility</li>
     </include>
     <rulePack>
@@ -65,16 +65,16 @@
   </RulePackDef>
 
   <RulePackDef>
-    <defName>YaomaCore_NamerArtWeaponMelee</defName>
+    <defName>YaomaXenotype_NamerArtWeaponMelee</defName>
     <include>
-      <li>YaomaCore_NamerArtWeapon</li>
+      <li>YaomaXenotype_NamerArtWeapon</li>
     </include>
   </RulePackDef>
 
   <RulePackDef>
-    <defName>YaomaCore_NamerArtWeaponGun</defName>
+    <defName>YaomaXenotype_NamerArtWeaponGun</defName>
     <include>
-      <li>YaomaCore_NamerArtWeapon</li>
+      <li>YaomaXenotype_NamerArtWeapon</li>
     </include>
   </RulePackDef>
 

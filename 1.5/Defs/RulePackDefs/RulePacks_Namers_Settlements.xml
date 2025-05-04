@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
   <RulePackDef>
-    <defName>YaomaCore_NamerSettlement</defName>
+    <defName>YaomaXenotype_NamerSettlement</defName>
     <include>
-      <li>YaomaCore_WordUtility</li>
+      <li>YaomaXenotype_WordUtility</li>
     </include>
     <rulePack>
       <rulesStrings>	

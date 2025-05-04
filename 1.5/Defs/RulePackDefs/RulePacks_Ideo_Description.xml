@@ -2,7 +2,7 @@
 <Defs>
 
   <IdeoStoryPatternDef>
-    <defName>YaomaCore_MythicDeity</defName>
+    <defName>YaomaXenotype_MythicDeity</defName>
     <segments>
       <li>setting</li>
       <li>intro</li>
@@ -12,7 +12,7 @@
     <rules>
       <include>
         <li>IdeoDescriptionGlobal</li>
-		<li>YaomaCore_WordUtility</li>
+		<li>YaomaXenotype_WordUtility</li>
       </include>
       <rulesStrings>
         <li>setting->It was in the chill of winter that the first Yaoma set foot in [place_summary] [place_name], seeking to contemplate [memeConcept].</li>
@@ -40,7 +40,7 @@
   </IdeoStoryPatternDef>
   
   <IdeoStoryPatternDef>
-    <defName>YaomaCore_PredecessorDeity</defName>
+    <defName>YaomaXenotype_PredecessorDeity</defName>
     <segments>
       <li>setting</li>
       <li>intro</li>
@@ -50,7 +50,7 @@
     <rules>
       <include>
         <li>IdeoDescriptionGlobal</li>
-		<li>YaomaCore_WordUtility</li>
+		<li>YaomaXenotype_WordUtility</li>
       </include>
       <rulesStrings>
 		<li>moodRain->ashes</li>
@@ -81,7 +81,7 @@
   </IdeoStoryPatternDef>
   
   <IdeoStoryPatternDef>
-    <defName>YaomaCore_EnlightenedDeity</defName>
+    <defName>YaomaXenotype_EnlightenedDeity</defName>
     <segments>
       <li>setting</li>
       <li>intro</li>
@@ -91,7 +91,7 @@
     <rules>
       <include>
         <li>IdeoDescriptionGlobal</li>
-		<li>YaomaCore_WordUtility</li>
+		<li>YaomaXenotype_WordUtility</li>
       </include>
       <rulesStrings> 
         <li>setting->Those who once bore [place_personalWeapon]s now take up the pen, under the watchful eye of [place_summary] [place_name]’s star.</li>

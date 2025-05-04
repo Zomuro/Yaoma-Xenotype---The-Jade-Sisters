@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>YaomaCore_WordUtility</defName>
+		<defName>YaomaXenotype_WordUtility</defName>
 		<rulePack>
 			<rulesFiles>			
 				<!-- Names -->

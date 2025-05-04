@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<BackstoryDef Abstract = "True" Name = "YaomaCore_AdultBackstory"> <!-- base adulthood def -->
+	<BackstoryDef Abstract = "True" Name = "YaomaXenotype_AdultBackstory"> <!-- base adulthood def -->
 		<slot>Adulthood</slot>
 		<spawnCategories>
-			<li>YaomaCore_YaomaBackstory</li>
+			<li>YaomaXenotype_YaomaBackstory</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 1) Alchemist (alchemist): Plants +5, Med. + 5, Social -4, +Skilled -->
-		<defName>YaomaCore_Adult_Alchemist1</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 1) Alchemist (alchemist): Plants +5, Med. + 5, Social -4, +Skilled -->
+		<defName>YaomaXenotype_Adult_Alchemist1</defName>
 		<title>alchemist</title>
 		<titleShort>alchemist</titleShort>
 		<baseDesc>[PAWN_nameDef] has seen [PAWN_possessive] fair share of work concocting curative elixirs. Though [PAWN_pronoun] is undoubtedly highly competent at [PAWN_possessive] trade, able to balance the active components of medicines and herbs, [PAWN_possessive] lack of social grace has caused friction within the medical community.</baseDesc>
@@ -24,8 +24,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 2) Pharmacist (pharmacist): Med +8, +Skilled -->
-		<defName>YaomaCore_Adult_Pharmacist2</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 2) Pharmacist (pharmacist): Med +8, +Skilled -->
+		<defName>YaomaXenotype_Adult_Pharmacist2</defName>
 		<title>pharmacist</title>
 		<titleShort>pharmacist</titleShort>
 		<baseDesc>[PAWN_nameDef] focused on medicine development and synthesis, enhancing the preventative capabilities of [PAWN_possessive] sect. [PAWN_possessive] studies and practical experience has taught [PAWN_objective] how to compound and administer various remedies, depending on the patient.</baseDesc>
@@ -38,8 +38,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 3) Tea master (tea master): Plants +3, Cooking +4, Social +2, +Social -->
-		<defName>YaomaCore_Adult_TeaMaster3</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 3) Tea master (tea master): Plants +3, Cooking +4, Social +2, +Social -->
+		<defName>YaomaXenotype_Adult_TeaMaster3</defName>
 		<title>tea master</title>
 		<titleShort>tea master</titleShort>
 		<baseDesc>[PAWN_nameDef] was an heir of the Yaoma tea making tradition, carrying on the heritage of generations before [PAWN_objective]. [PAWN_possessive] reputation arose from [PAWN_possessive] masterful selection and preparation of tea, as well as from [PAWN_possessive] ability to set the atmosphere.</baseDesc>
@@ -55,8 +55,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 4) Tea farmer (tea farmer): Plants +5, Cooking +3, +Dumb, +Plants -->
-		<defName>YaomaCore_Adult_TeaFarmer4</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 4) Tea farmer (tea farmer): Plants +5, Cooking +3, +Dumb, +Plants -->
+		<defName>YaomaXenotype_Adult_TeaFarmer4</defName>
 		<title>tea farmer</title>
 		<titleShort>tea farmer</titleShort>
 		<baseDesc>An expert with the evolutionary descendants of Camellia sinensis, [PAWN_nameDef] made a living off of growing, picking, and preparing tea leaves. [PAWN_possessive] understanding of the tea’s characteristics, along with their own selective breeding of the plant for a variety of purposes and conditions, helped the Yaoma spread their brand of tea to humanity.</baseDesc>
@@ -71,8 +71,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 5) Herb cultivator (herbalist): Plants +6, Mining +2, Med. +2, +Dumb, +Plants -->
-		<defName>YaomaCore_Adult_Herbalist5</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 5) Herb cultivator (herbalist): Plants +6, Mining +2, Med. +2, +Dumb, +Plants -->
+		<defName>YaomaXenotype_Adult_Herbalist5</defName>
 		<title>herb cultivator</title>
 		<titleShort>herbalist</titleShort>
 		<baseDesc>[PAWN_nameDef] was the caretaker of several species of rare flora, often at the request of many alchemists. Growing these medicinally potent plants optimally required [PAWN_objective] to replicate the specific environments each came from, from soil composition to climate, requiring not only botanical but also geological knowledge.</baseDesc>
@@ -88,8 +88,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 6) Jadecarver (jadecarver): Mining +2, Artistic +4, Crafting +4, +Dumb, +Skilled -->
-		<defName>YaomaCore_Adult_Jadecarver6</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 6) Jadecarver (jadecarver): Mining +2, Artistic +4, Crafting +4, +Dumb, +Skilled -->
+		<defName>YaomaXenotype_Adult_Jadecarver6</defName>
 		<title>jadecarver</title>
 		<titleShort>jadecarver</titleShort>
 		<baseDesc>After passing the stringent occupational exams, dedicating years of practice to the tools of the trade and the properties of the gem itself, [PAWN_nameDef] was recognized as a professional jade craftsman. [PAWN_possessive] works are emblematic of Yaoma gemcutting, polishing and carving the viridescent gem into fantastical creatures as well as stately ornaments.</baseDesc>
@@ -105,8 +105,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 7) Wushu competitor (competitor): Melee +7, Int -2, +Violent -->
-		<defName>YaomaCore_Adult_WushuCompetitor7</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 7) Wushu competitor (competitor): Melee +7, Int -2, +Violent -->
+		<defName>YaomaXenotype_Adult_WushuCompetitor7</defName>
 		<title>wushu competitor</title>
 		<titleShort>competitor</titleShort>
 		<baseDesc>[PAWN_nameDef] demonstrated [PAWN_possessive] skill in competitive martial arts by taking part in tournaments. While [PAWN_possessive] proficiency in martial arts has risen with each match, so have the concussive effects of each of [PAWN_possessive] injuries.</baseDesc>
@@ -120,8 +120,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 8) Wushu performer (performer): Melee +7, Int -2, +Violent -->
-		<defName>YaomaCore_Adult_WushuPerformer8</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 8) Wushu performer (performer): Melee +7, Int -2, +Violent -->
+		<defName>YaomaXenotype_Adult_WushuPerformer8</defName>
 		<title>wushu performer</title>
 		<titleShort>performer</titleShort>
 		<baseDesc>More a dancer than a fighter, [PAWN_nameDef] trained to obtain the fitness and flexibility required to perform [PAWN_possessive] martial art routines. Seamlessly transitioning between forms, [PAWN_possessive] synchronized movements have earned [PAWN_objective] technical marks and the crowd’s appreciation.</baseDesc>
@@ -135,8 +135,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 9) Silkweaver (silkweaver): Artistic +3, Crafting +6, +Dumb, +Skilled -->
-		<defName>YaomaCore_Adult_Silkweaver9</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 9) Silkweaver (silkweaver): Artistic +3, Crafting +6, +Dumb, +Skilled -->
+		<defName>YaomaXenotype_Adult_Silkweaver9</defName>
 		<title>silkweaver</title>
 		<titleShort>silkweaver</titleShort>
 		<baseDesc>[PAWN_nameDef] has earned the right to professionally work the Yaoma’s silks, a family of fabrics refined by material science, genetic engineering, and selective breeding. From working the thread into bolts to embroidering brilliant patterns, [PAWN_possessive] tailored and decorated garments that attracted a discerning clientele.</baseDesc>
@@ -151,8 +151,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 10) Exchange teacher (teacher): Social +4, Int +4, +Social -->
-		<defName>YaomaCore_Adult_ExchangeTeacher10</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 10) Exchange teacher (teacher): Social +4, Int +4, +Social -->
+		<defName>YaomaXenotype_Adult_ExchangeTeacher10</defName>
 		<title>exchange teacher</title>
 		<titleShort>silkweaver</titleShort>
 		<baseDesc>[PAWN_nameDef] has earned the right to professionally work the Yaoma’s silks, a family of fabrics refined by material science, genetic engineering, and selective breeding. From working the thread into bolts to embroidering brilliant patterns, [PAWN_possessive] tailored and decorated garments that attracted a discerning clientele.</baseDesc>
@@ -166,8 +166,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 11) Enchantress (enchantress): Social +8, Artistic +4, Int +2, +Social, +Skilled, -Dumb  -->
-		<defName>YaomaCore_Adult_Enchantress11</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 11) Enchantress (enchantress): Social +8, Artistic +4, Int +2, +Social, +Skilled, -Dumb  -->
+		<defName>YaomaXenotype_Adult_Enchantress11</defName>
 		<title>enchantress</title>
 		<titleShort>enchantress</titleShort>
 		<baseDesc>By night, [PAWN_nameDef] tantalized [PAWN_possessive] guests with song and dance, wrapping them around [PAWN_possessive] fingers. By day, [PAWN_pronoun] recorded and organized the information [PAWN_pronoun] gathered from [PAWN_possessive] clientele. These responsibilities isolated [PAWN_nameDef] from manual labor.</baseDesc>
@@ -185,8 +185,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 12) Soothsayer (soothsayer): Plants +4, Crafting +3, Int +3, +Chemical Fascination  -->
-		<defName>YaomaCore_Adult_Soothsayer12</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 12) Soothsayer (soothsayer): Plants +4, Crafting +3, Int +3, +Chemical Fascination  -->
+		<defName>YaomaXenotype_Adult_Soothsayer12</defName>
 		<title>soothsayer</title>
 		<titleShort>soothsayer</titleShort>
 		<baseDesc>[PAWN_nameDef] was known in [PAWN_possessive] sect for reading omens through an altered state of mind. Imbibing wisps of psychoactive incense, which [PAWN_pronoun] made [PAWN_objective] with [PAWN_possessive] own herbs, [PAWN_possessive] subconscious and conscious mind made predictions of the future.</baseDesc>
@@ -201,8 +201,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 13) Calligraphist (calligraphist): Art +8, +Skilled  -->
-		<defName>YaomaCore_Adult_Calligraphist13</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 13) Calligraphist (calligraphist): Art +8, +Skilled  -->
+		<defName>YaomaXenotype_Adult_Calligraphist13</defName>
 		<title>calligraphist</title>
 		<titleShort>calligraphist</titleShort>
 		<baseDesc>With a flourish of [PAWN_possessive] brush, [PAWN_nameDef] precisely conveyed character and tone in the letters [PAWN_pronoun] wrote. [PAWN_possessive] works were appreciated by many Yaoma, from advertisers to store owners, and [PAWN_possessive] poetry highlighted a range of topics.</baseDesc>
@@ -215,8 +215,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 14) Ink maker (ink maker): Animals +2, Plants +3, Mining +2, +Skilled  -->
-		<defName>YaomaCore_Adult_InkMaker14</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 14) Ink maker (ink maker): Animals +2, Plants +3, Mining +2, +Skilled  -->
+		<defName>YaomaXenotype_Adult_InkMaker14</defName>
 		<title>ink maker</title>
 		<titleShort>ink maker</titleShort>
 		<baseDesc>[PAWN_nameDef] supported Yaoma calligraphy by producing the ink for its practice. Taking into account its use case, [PAWN_pronoun] compounded materials sourced from animals, plants, and rocks, relying on their chemical composition to create the ideal writing medium.</baseDesc>
@@ -231,8 +231,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 15) Disciplinary officer (officer): Melee +4, Social +3, +Social, +Violent  -->
-		<defName>YaomaCore_Adult_DisciplinaryOfficer15</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 15) Disciplinary officer (officer): Melee +4, Social +3, +Social, +Violent  -->
+		<defName>YaomaXenotype_Adult_DisciplinaryOfficer15</defName>
 		<title>disciplinary officer</title>
 		<titleShort>officer</titleShort>
 		<baseDesc>[PAWN_nameDef] enforced law and order in [PAWN_possessive] sect with [PAWN_possessive] sword-arm and commanding voice. [PAWN_pronoun] resolved disputes between disciples and took part in internal investigations, both of which required [PAWN_objective] to be equally diplomatic and menacing.</baseDesc>
@@ -247,8 +247,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 16) Daoscholar (daoscholar): Int +9, +Intellectual  -->
-		<defName>YaomaCore_Adult_Daoscholar16</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 16) Daoscholar (daoscholar): Int +9, +Intellectual  -->
+		<defName>YaomaXenotype_Adult_Daoscholar16</defName>
 		<title>daoscholar</title>
 		<titleShort>daoscholar</titleShort>
 		<baseDesc>Few have interacted with the Dao Canon as much as [PAWN_nameDef], with the sheer sum of study [PAWN_pronoun] has conducted. [PAWN_possessive] academic contribution to the Dao, whether from proprietary research or rigorous analysis, has furthered the evolution of Yaoma technology and sorceries.</baseDesc>
@@ -261,8 +261,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 17) Aquaculturist (aquaculturist): Animals +4, Plants +4  -->
-		<defName>YaomaCore_Adult_Aquaculturist17</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 17) Aquaculturist (aquaculturist): Animals +4, Plants +4  -->
+		<defName>YaomaXenotype_Adult_Aquaculturist17</defName>
 		<title>aquaculturist</title>
 		<titleShort>aquaculturist</titleShort>
 		<baseDesc>Working in cooperation with farmers, [PAWN_nameDef] ensured bountiful food production with Yaoma aquaponic and aquacultural agriculture. [PAWN_possessive] extensive knowledge of fish and produce ensured the Yaoma could continually grow crops, through the proper caretaking of fish and other aquatic life.</baseDesc>
@@ -273,8 +273,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 18) Shrine keeper (keeper): Crafting +2, Art +1, Social +2, Construction +2  -->
-		<defName>YaomaCore_Adult_ShrineKeeper18</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 18) Shrine keeper (keeper): Crafting +2, Art +1, Social +2, Construction +2  -->
+		<defName>YaomaXenotype_Adult_ShrineKeeper18</defName>
 		<title>shrine keeper</title>
 		<titleShort>keeper</titleShort>
 		<baseDesc>[PAWN_nameDef] served [PAWN_possessive] local sect by tending to a shrine, which many Yaoma visited. Besides maintaining the building’s structure and decorations, [PAWN_pronoun] led services for worshiping deified immortals and family ancestors, imbuing visitors with [PAWN_possessive] blessings on behalf of the divine.</baseDesc>
@@ -287,8 +287,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 19) Reliquary watch (watcher): Crafting +4, Construction +3, Melee +2  -->
-		<defName>YaomaCore_Adult_ReliquaryWatch19</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 19) Reliquary watch (watcher): Crafting +4, Construction +3, Melee +2  -->
+		<defName>YaomaXenotype_Adult_ReliquaryWatch19</defName>
 		<title>reliquary watch</title>
 		<titleShort>watcher</titleShort>
 		<baseDesc>A silent observer of an immortal’s final resting place, [PAWN_nameDef] maintains the earthly remains of deified figures. [PAWN_pronoun] repairs any damage to the mausoleum itself and the relics it contains, keeping a detailed record of the tomb shrine’s state. In this way, [PAWN_pronoun] preserved the dignity and knowledge of [PAWN_possessive] sect’s ancestors.</baseDesc>
@@ -300,8 +300,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 20) Legacy seeker (seeker): Crafting +3, Shooting +2, Medical +2  -->
-		<defName>YaomaCore_Adult_LegacySeeker20</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 20) Legacy seeker (seeker): Crafting +3, Shooting +2, Medical +2  -->
+		<defName>YaomaXenotype_Adult_LegacySeeker20</defName>
 		<title>legacy seeker</title>
 		<titleShort>seeker</titleShort>
 		<baseDesc>[Pawn_nameDef] was a traveler of faraway places, intent on advancing the Dao Canon with the wisdom of long-dead immortals. [PAWN_possessive] journeys have taken [PAWN_objective] through civilization and wilderness, meeting friend and foe alike. When [PAWN_pronoun] reached [PAWN_possesive] intended destination, [PAWN_pronoun] paid her respects before returning home to share [PAWN_possessive] learnings.</baseDesc>
@@ -313,8 +313,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 21) Sect foreman (foreman): Construction +8, Crafting +5, Social -3, +Constructing  -->
-		<defName>YaomaCore_Adult_SectForeman21</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 21) Sect foreman (foreman): Construction +8, Crafting +5, Social -3, +Constructing  -->
+		<defName>YaomaXenotype_Adult_SectForeman21</defName>
 		<title>sect foreman</title>
 		<titleShort>foreman</titleShort>
 		<baseDesc>[Pawn_nameDef] was a traveler of faraway places, intent on advancing the Dao Canon with the wisdom of long-dead immortals. [PAWN_possessive] journeys have taken [PAWN_objective] through civilization and wilderness, meeting friend and foe alike. When [PAWN_pronoun] reached [PAWN_possesive] intended destination, [PAWN_pronoun] paid her respects before returning home to share [PAWN_possessive] learnings.</baseDesc>
@@ -329,8 +329,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 22) Hermit (hermit): Int +4, Plants +4, Animals +4, Social -5  -->
-		<defName>YaomaCore_Adult_Hermit22</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 22) Hermit (hermit): Int +4, Plants +4, Animals +4, Social -5  -->
+		<defName>YaomaXenotype_Adult_Hermit22</defName>
 		<title>hermit</title>
 		<titleShort>hermit</titleShort>
 		<baseDesc>[PAWN_nameDef] is one of the Yaoma who sought wisdom in the wilderness. Without contact with others, [PAWN_pronoun] was free to focus on [PAWN_objective]self and eke out a living among the verdant greenery and bountiful fauna. Eventually, [PAWN_pronoun] returned to civilization with a honed wisdom, but not the eloquence to share it.</baseDesc>
@@ -343,8 +343,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 23) Wandering doctor (doctor): Int +4, Med. +7, Animals +3, -Violent  -->
-		<defName>YaomaCore_Adult_WanderingDoctor23</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 23) Wandering doctor (doctor): Int +4, Med. +7, Animals +3, -Violent  -->
+		<defName>YaomaXenotype_Adult_WanderingDoctor23</defName>
 		<title>wandering doctor</title>
 		<titleShort>doctor</titleShort>
 		<baseDesc>From the moment [PAWN_pronoun] picked up a blade, [PAWN_nameDef] knew it was not for [PAWN_objective]. But treating the wounds left on man and beast were, and so [PAWN_pronoun] exchanged [PAWN_possessive] sword for medicine and sutures. Through [PAWN_possessive] journeys from world to world, [PAWN_nameDef] polished both wit and healing, earning rare acclaim from the Yaoma sects [PAWN_pronoun] visited.</baseDesc>
@@ -357,8 +357,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 24) Spelunker (spelunker): Mining +8, Int +2, +Slowpoke, +Dumb, +Mining  -->
-		<defName>YaomaCore_Adult_Spelunker24</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 24) Spelunker (spelunker): Mining +8, Int +2, +Slowpoke, +Dumb, +Mining  -->
+		<defName>YaomaXenotype_Adult_Spelunker24</defName>
 		<title>spelunker</title>
 		<titleShort>spelunker</titleShort>
 		<baseDesc>Despite [PAWN_possesive] superstitions of the underworld, [PAWN_nameDef] delved into the earth for ore and riches. Through [PAWN_possessive] forays into the depths, [PAWN_pronoun] learned where and how to quarry effectively, without risking [PAWN_possessive] safety. Because of [PAWN_possessive] deliberate, cautious steps, [PAWN_nameDef] has managed to stay alive.</baseDesc>
@@ -373,8 +373,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 25) Zither player (zither player): Art +9  -->
-		<defName>YaomaCore_Adult_ZitherPlayer25</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 25) Zither player (zither player): Art +9  -->
+		<defName>YaomaXenotype_Adult_ZitherPlayer25</defName>
 		<title>zither player</title>
 		<titleShort>zither player</titleShort>
 		<baseDesc>Well attuned with harmony and melody, [PAWN_nameDef] made a living stirring hearts with [PAWN_possessive] zither. In many Yaoma concert halls, [PAWN_pronoun] captivated [PAWN_possessive] audience with the scenery [PAWN_pronoun] evoked: at one moment, [PAWN_possessive] tune could be reminiscent of a burbling spring, before conjuring the sight of whistling mountains.</baseDesc>
@@ -384,8 +384,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 26) Sect envoy (envoy): Social + 7, Int +3, +Social  -->
-		<defName>YaomaCore_Adult_SectEnvoy26</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 26) Sect envoy (envoy): Social + 7, Int +3, +Social  -->
+		<defName>YaomaXenotype_Adult_SectEnvoy26</defName>
 		<title>sect envoy</title>
 		<titleShort>envoy</titleShort>
 		<baseDesc>[PAWN_nameDef] was responsible for representing [PAWN_possessive] sect’s foreign policy in the eyes of other sects and human civilizations. [PAWN_pronoun] tried to uphold [PAWN_possessive] community’s face by brokering alliances and trade deals, while attempting to counter the schemes of [PAWN_possessive] sect’s enemies.</baseDesc>
@@ -397,8 +397,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 27) Cultural ambassador (ambassador): Social +3, Arts +2, Crafting +2  -->
-		<defName>YaomaCore_Adult_CulturalAmbassador27</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 27) Cultural ambassador (ambassador): Social +3, Arts +2, Crafting +2  -->
+		<defName>YaomaXenotype_Adult_CulturalAmbassador27</defName>
 		<title>cultural ambassador</title>
 		<titleShort>ambassador</titleShort>
 		<baseDesc>A spokesperson for Yaoma culture, [PAWN_nameDef] shared [PAWN_possessive] xenotype’s traditions with other civilizations, raising interest in the Yaoma. [PAWN_pronoun] encouraged those [PAWN_pronoun] met to travel to their nearest sect, and often visited members of the Yaoma diaspora, tying foreign nations closer to [PAWN_possessive] people.</baseDesc>
@@ -410,8 +410,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 28) Clan head (clan head): Social +7, +Social  -->
-		<defName>YaomaCore_Adult_ClanHead28</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 28) Clan head (clan head): Social +7, +Social  -->
+		<defName>YaomaXenotype_Adult_ClanHead28</defName>
 		<title>clan head</title>
 		<titleShort>clan head</titleShort>
 		<baseDesc>With the succession of [PAWN_possessive] clan falling upon [PAWN_possessive] shoulders, [PAWN_nameDef] has stepped fully into the role of [PAWN_possessive] family’s head. Given the circumstances, [PAWN_pronoun] had to develop a keen understanding of politics, a plethora of advantageous relationships, and an aura of authority.</baseDesc>
@@ -422,8 +422,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 29) Virtual idol (idol): Social +4, Arts + 2, Int +2, +Social  -->
-		<defName>YaomaCore_Adult_VirtualIdol29</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 29) Virtual idol (idol): Social +4, Arts + 2, Int +2, +Social  -->
+		<defName>YaomaXenotype_Adult_VirtualIdol29</defName>
 		<title>virtual idol</title>
 		<titleShort>idol</titleShort>
 		<baseDesc>[PAWN_nameDef] developed a social presence on the internet as an online entertainer. Under the persona of [PAWN_possessive] virtual avatar, [PAWN_pronoun] gathered a loyal following, who interacted with [PAWN_objective] as [PAWN_pronoun] completed various activities. These pursuits ranged from playing video games to introducing Yaoma culture.</baseDesc>
@@ -436,8 +436,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 30) Traditionalist (traditionalist): Arts + 4, Crafting +4, Cooking +3, Int -2  -->
-		<defName>YaomaCore_Adult_Traditionalist30</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 30) Traditionalist (traditionalist): Arts + 4, Crafting +4, Cooking +3, Int -2  -->
+		<defName>YaomaXenotype_Adult_Traditionalist30</defName>
 		<title>traditionalist</title>
 		<titleShort>traditionalist</titleShort>
 		<baseDesc>Following in the footsteps of [PAWN_possessive] foremothers,  [PAWN_nameDef] practiced many ancient Yaoma traditions to preserve them for posterity. [PAWN_pronoun] became a living record for many of these cultural artifacts, which included celebratory dances, traditional crafts, and culinary products. This conservatism, however, led [PAWN_nameDef] to neglect higher learning.</baseDesc>
@@ -450,8 +450,8 @@
 		</skillGains>
 	</BackstoryDef>
 
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 31) Yaomese chef (chef): Cooking +9, +Cooking  -->
-		<defName>YaomaCore_Adult_YaomeseChef31</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 31) Yaomese chef (chef): Cooking +9, +Cooking  -->
+		<defName>YaomaXenotype_Adult_YaomeseChef31</defName>
 		<title>yaomese chef</title>
 		<titleShort>chef</titleShort>
 		<baseDesc>[PAWN_nameDef] served up Yaoma cuisine for hungry patrons. Based on the specific style [PAWN_pronoun] practiced, [PAWN_pronoun] made use of cooking techniques and ingredients that enabled [PAWN_objective] to prepare appetizing food, enticing [PAWN_possessive] customers’ palates.</baseDesc>
@@ -462,8 +462,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 32) Expeditionary surveyor (surveyor): Mining +3, Plants +3, Animals +3  -->
-		<defName>YaomaCore_Adult_ExpeditionarySurveyor32</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 32) Expeditionary surveyor (surveyor): Mining +3, Plants +3, Animals +3  -->
+		<defName>YaomaXenotype_Adult_ExpeditionarySurveyor32</defName>
 		<title>expeditionary surveyor</title>
 		<titleShort>surveyor</titleShort>
 		<baseDesc>Once [PAWN_possessive] group established a bulwark in an unexplored region, it was [PAWN_nameDef]’s job to quantify and qualify the land. [PAWN_possessive] responsibilities involved immense amounts of travel, cataloging local fauna and flora as well as identifying local strategic areas. [PAWN_possessive] work enabled many Yaoma colonization efforts in foreign lands.</baseDesc>
@@ -475,8 +475,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 33) Veteran mercenary (veteran): Shooting +4, Medical +2, Cooking +2, +Violent  -->
-		<defName>YaomaCore_Adult_VeteranMercenary33</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 33) Veteran mercenary (veteran): Shooting +4, Medical +2, Cooking +2, +Violent  -->
+		<defName>YaomaXenotype_Adult_VeteranMercenary33</defName>
 		<title>veteran mercenary</title>
 		<titleShort>veteran</titleShort>
 		<baseDesc>[PAWN_nameDef] took part in various conflicts as a mercenary sanctioned by [PAWN_possessive] sect. [PAWN_pronoun] experience on the battlefield sharpened [PAWN_possessive] aim and survival instinct, allowing [PAWN_objective] to further promote [PAWN_possessive] sect’s foreign policy objectives. This continued presence spread Yaoma practices to far-flung lands.</baseDesc>
@@ -489,8 +489,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 34) Tactician (tactician): Int +9, +Violent, +Intellectual  -->
-		<defName>YaomaCore_Adult_Tactician34</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 34) Tactician (tactician): Int +9, +Violent, +Intellectual  -->
+		<defName>YaomaXenotype_Adult_Tactician34</defName>
 		<title>tactician</title>
 		<titleShort>tactician</titleShort>
 		<baseDesc>[PAWN_nameDef] tried to resolve [PAWN_possessive] sect’s short-term logistical, military, and political issues. [PAWN_pronoun] consulted various resources to determine pragmatic approaches for these problems before delegating orders to [PAWN_possessive] subordinates, and was not afraid to conduct field research if required. This approach to problem solving and management underlined [PAWN_possessive] ability to act effectively and efficiently.</baseDesc>
@@ -501,8 +501,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 35) Strategist (strategist): Int +11, +Violent, +Intellectual, -Dumb  -->
-		<defName>YaomaCore_Adult_Strategist35</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 35) Strategist (strategist): Int +11, +Violent, +Intellectual, -Dumb  -->
+		<defName>YaomaXenotype_Adult_Strategist35</defName>
 		<title>strategist</title>
 		<titleShort>strategist</titleShort>
 		<baseDesc>[PAWN_nameDef] dealt with the long term planning of [PAWN_possessive] sect’s policies, advising leadership on how to execute various measures while accounting for their potential consequences. [PAWN_pronoun] supported these efforts by conducting extensive predictive analyses, synthesizing information about the current situation, its potential opportunities, and its risk areas. However, [PAWN_possessive] lofty position and theorycrafting habit isolated [PAWN_objective] from the drudgery involved with [PAWN_possessive] solutions.</baseDesc>
@@ -514,8 +514,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 36) Blademaster (blademaster): Melee +12, Shooting -5, +Violent  -->
-		<defName>YaomaCore_Adult_Blademaster36</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 36) Blademaster (blademaster): Melee +12, Shooting -5, +Violent  -->
+		<defName>YaomaXenotype_Adult_Blademaster36</defName>
 		<title>blademaster</title>
 		<titleShort>blademaster</titleShort>
 		<baseDesc>[PAWN_nameDef] sought to return to a time where might and valor were closely intertwined. [PAWN_possessive] wanderings brought [PAWN_objective] to many a battlefield, where [PAWN_pronoun] spilled the blood of [PAWN_possessive] opponents in melee combat. Thus, [PAWN_pronoun] honed [PAWN_possessive] weapon’s arts at the detriment of [PAWN_possessive] aim.</baseDesc>
@@ -527,8 +527,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 37) Array engineer (engineer): Construction +6, Crafting +2  -->
-		<defName>YaomaCore_Adult_ArrayEngineer37</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 37) Array engineer (engineer): Construction +6, Crafting +2  -->
+		<defName>YaomaXenotype_Adult_ArrayEngineer37</defName>
 		<title>array engineer</title>
 		<titleShort>engineer</titleShort>
 		<baseDesc>With years of experience in the Yaoma defense industry, [PAWN_nameDef] was no stranger to constructing arrays, and proved [PAWN_possessive] capability at each stage of the building process from design to production. [PAWN_pronoun] had the engineering know-how for a variety of array engineering topics; this glut of knowledge assisted [PAWN_objective] with delivering arrays on time and in good condition.</baseDesc>
@@ -539,8 +539,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 38) Martial trainer (trainer): Melee +7, +Violent  -->
-		<defName>YaomaCore_Adult_MartialTrainer38</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 38) Martial trainer (trainer): Melee +7, +Violent  -->
+		<defName>YaomaXenotype_Adult_MartialTrainer38</defName>
 		<title>martial trainer</title>
 		<titleShort>trainer</titleShort>
 		<baseDesc>Under [PAWN_possessive] tutelage, [PAWN_nameDef]’s students learned martial arts for self defense. In addition to educating young disciples on the Yaoma’s common curriculum, [PAWN_pronoun] taught classes on specialized martial arts, encouraging [PAWN_possessive] trainees to practice with a hands-on approach. The nature of [PAWN_possessive] work encouraged [PAWN_objective] to maintain [PAWN_possessive] fitness and combat prowess.</baseDesc>
@@ -551,8 +551,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 39) Goldcrow sniper (sniper): Shooting +12, Melee -5, +Violent  -->
-		<defName>YaomaCore_Adult_GoldcrowSniper39</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 39) Goldcrow sniper (sniper): Shooting +12, Melee -5, +Violent  -->
+		<defName>YaomaXenotype_Adult_GoldcrowSniper39</defName>
 		<title>goldcrow sniper</title>
 		<titleShort>sniper</titleShort>
 		<baseDesc>[PAWN_nameDef] developed [PAWN_possessive] specialty in the long range elimination of high value targets, often from a concealed or elevated vantage point, during [PAWN_possessive] deployments. This single-minded focus on ballistics meant that [PAWN_possessive] almost never saw close combat. However, the extreme accuracy [PAWN_possessive] honed was honored with a prestigious commendation for [PAWN_possessive] marksmanship.</baseDesc>
@@ -564,8 +564,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 40) Logistics officer (logistics): Int +2, Social +3, Animals +3  -->
-		<defName>YaomaCore_Adult_LogisticsOfficer40</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 40) Logistics officer (logistics): Int +2, Social +3, Animals +3  -->
+		<defName>YaomaXenotype_Adult_LogisticsOfficer40</defName>
 		<title>logistics officer</title>
 		<titleShort>logistics</titleShort>
 		<baseDesc>As a coordinator for the Yaoma, [PAWN_nameDef] verified the details of [PAWN_possessive] sect’s operations, whether it involved supplying disciples on tour or requisitioning materials for repairs. [PAWN_possessive] recordkeeping and organization ensured [PAWN_possessive] sect delivered goods on time, while minimizing delays in receiving and storing any imports.</baseDesc>
@@ -577,8 +577,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 41) Covert operative (operative): Int +3, Social +3, Shooting +3, +Violent, +Social  -->
-		<defName>YaomaCore_Adult_CovertOperative41</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 41) Covert operative (operative): Int +3, Social +3, Shooting +3, +Violent, +Social  -->
+		<defName>YaomaXenotype_Adult_CovertOperative41</defName>
 		<title>covert operative</title>
 		<titleShort>operative</titleShort>
 		<baseDesc>[PAWN_nameDef] infiltrated various locations to conduct clandestine actions for [PAWN_possessive] sect, including sabotage and intelligence gathering. With a cover identity, along with other methods of deception, [PAWN_pronoun] attempted to complete [PAWN_possessive] objectives while avoiding detection, worming [PAWN_possessive] way into the good graces of others and discreetly disposing of [PAWN_possessive] targets.</baseDesc>
@@ -591,8 +591,8 @@
 		</skillGains>
 	</BackstoryDef>
 	
-	<BackstoryDef ParentName = "YaomaCore_AdultBackstory"> <!-- 42) Influence agent (agent): Social +6, Int +2, +Social  -->
-		<defName>YaomaCore_Adult_InfluenceAgent42</defName>
+	<BackstoryDef ParentName = "YaomaXenotype_AdultBackstory"> <!-- 42) Influence agent (agent): Social +6, Int +2, +Social  -->
+		<defName>YaomaXenotype_Adult_InfluenceAgent42</defName>
 		<title>influence agent</title>
 		<titleShort>agent</titleShort>
 		<baseDesc>Posted outside of the Yaoma’s direct sphere of influence, it was [PAWN_nameDef]’s role to sway public opinion in favor of [PAWN_possessive] sect- and by extension, the Yaoma. [PAWN_pronoun] coordinated with [PAWN_possessive] handlers to form relationships with powerful figures, organize events that increased Yaoma support, and bias discourse in favor of [PAWN_possessive] xenotype.</baseDesc>

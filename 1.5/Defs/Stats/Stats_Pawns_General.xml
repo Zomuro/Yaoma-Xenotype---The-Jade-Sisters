@@ -2,7 +2,7 @@
 <Defs>
 
 	<StatDef>
-		<defName>YaomaCore_CultivationTalent</defName>
+		<defName>YaomaXenotype_CultivationTalent</defName>
 		<label>cultivation talent</label>
 		<description>Cultivation talent determines a pawn's innate ability to manipulate qi, or life energy. More talented pawns tend to cultivate faster and are able to store more qi.</description>
 		<category>BasicsPawn</category>
@@ -16,14 +16,14 @@
 	</StatDef>
 	
 	<StatDef>
-		<defName>YaomaCore_CultivationQiRefining</defName>
+		<defName>YaomaXenotype_CultivationQiRefining</defName>
 		<label>qi refining rate</label>
 		<description>By integrating more and more qi into their bodies, cultivators can gradually transcend themselves. A higher qi refining rate increases the efficacy of this process.</description>
 		<category>BasicsPawn</category>
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0.1</minValue>
 		<statFactors>
-      <li>YaomaCore_CultivationTalent</li>
+      <li>YaomaXenotype_CultivationTalent</li>
     </statFactors>
 		<toStringStyle>PercentZero</toStringStyle>
 		<showOnPawns>true</showOnPawns>
@@ -33,7 +33,7 @@
 	</StatDef>
 	
 	<StatDef>
-		<defName>YaomaCore_HealthScaleFactor</defName>
+		<defName>YaomaXenotype_HealthScaleFactor</defName>
 		<label>health scale factor</label>
 		<description>A multiplier on the pawn's maximum hit points.</description>
 		<category>BasicsPawn</category>
@@ -48,7 +48,7 @@
 	</StatDef>
 	
 	<StatDef>
-		<defName>YaomaCore_DamageNullChance</defName>
+		<defName>YaomaXenotype_DamageNullChance</defName>
 		<label>damage nullification chance</label>
 		<description>The probability a pawn will not be damaged (whether by sheer luck, precognition, or reflexes).</description>
 		<category>BasicsPawn</category>

@@ -2,7 +2,7 @@
 <Defs>
 
 	<GeneCategoryDef>
-		<defName>YaomaCore_CategoryCultivation</defName>
+		<defName>YaomaXenotype_CategoryCultivation</defName>
 		<label>cultivators</label>
 		<displayPriorityInXenotype>489</displayPriorityInXenotype>
 	</GeneCategoryDef>

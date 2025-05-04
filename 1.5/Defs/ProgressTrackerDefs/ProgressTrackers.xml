@@ -3,7 +3,7 @@
 
 	<ItsSorceryFramework.ProgressTrackerDef ParentName = "ProgressTrackerLevelBase">
 		<progressTrackerClass>ItsSorceryFramework.ProgressTracker_Level</progressTrackerClass>
-		<defName>YaomaCore_ProgressTracker_Cultivation</defName>
+		<defName>YaomaXenotype_ProgressTracker_Cultivation</defName>
 		<label>Yaoma Cultivation</label>
 		<bgPath>UI/ProgressTracker/ISFE_Logos_Banner</bgPath>
 		
@@ -15,16 +15,16 @@
 			<li><key>2</key><value>0.8</value></li>
 		</powScalings>
 		
-		<progressLevelUpKey>YaomaCore_Cultivation_LevelUp</progressLevelUpKey>
-		<progressLevelUpDescKey>YaomaCore_Cultivation_LevelUpMessage</progressLevelUpDescKey>
-		<skillPointLabelKey>YaomaCore_Cultivation_SkillPointLabel</skillPointLabelKey>
+		<progressLevelUpKey>YaomaXenotype_Cultivation_LevelUp</progressLevelUpKey>
+		<progressLevelUpDescKey>YaomaXenotype_Cultivation_LevelUpMessage</progressLevelUpDescKey>
+		<skillPointLabelKey>YaomaXenotype_Cultivation_SkillPointLabel</skillPointLabelKey>
 		
-		<progressHediff>YaomaCore_ProgressTrackerRPG_Hediff_Cultivation</progressHediff>
-		<baseClass>YaomaCore_Cultivation_Class</baseClass>
+		<progressHediff>YaomaXenotype_ProgressTrackerRPG_Hediff_Cultivation</progressHediff>
+		<baseClass>YaomaXenotype_Cultivation_Class</baseClass>
 	</ItsSorceryFramework.ProgressTrackerDef>
 	
 	<HediffDef ParentName="ProgressTrackerHediffBase"> 
-		<defName>YaomaCore_ProgressTrackerRPG_Hediff_Cultivation</defName>
+		<defName>YaomaXenotype_ProgressTrackerRPG_Hediff_Cultivation</defName>
 		<hediffClass>ItsSorceryFramework.Hediff_ProgressLevel</hediffClass>
 		<label>Yaoma Cultivation</label>
 		<defaultLabelColor>(0,0.659,0.42)</defaultLabelColor> <!-- jade color -->

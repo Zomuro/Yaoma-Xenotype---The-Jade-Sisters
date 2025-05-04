@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	 
-	<ThingDef Name="YaomaCore_HanfuBase" ParentName="ApparelMakeableBase">
-		<defName>YaomaCore_Hanfu</defName>
+	<ThingDef Name="YaomaXenotype_HanfuBase" ParentName="ApparelMakeableBase">
+		<defName>YaomaXenotype_Tier1_Hanfu</defName>
 		<label>hanfu</label>
 		<description>A piece of traditional clothing that takes inspiration from ancient Chinese designs.\n\nMany Yaoma prefer to wear this robe daily, due to ancestral respect and habit: it is considered formal wear in most sects. With the benefit of timeless grace, the hanfu is situated for both easy wearing and social impact.</description>
 		<techLevel>Industrial</techLevel>
@@ -32,7 +32,7 @@
 		
 		<recipeMaker> <!-- RECIPE -->
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>YaomaCore_Research_Tier1_Hanfu</researchPrerequisite>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_Hanfu</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
@@ -70,8 +70,8 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<ThingDef Name="YaomaCore_HanfuHatBase" ParentName="HatMakeableBase">
-		<defName>YaomaCore_Headpiece_Hanfu</defName>
+	<ThingDef Name="YaomaXenotype_HanfuHatBase" ParentName="HatMakeableBase">
+		<defName>YaomaXenotype_Tier1_Headpiece_Hanfu</defName>
 		<label>hanfu veil</label>
 		<description>The accompaniment to the Yaoma hanfu, based on the weimao (“curtained hat”) of the ancient terran Chinese. Though not required to be worn together with the hanfu, it is meant to be complementary, bestowing the wearer with a level of mystique that increases social impact.</description>
 		<techLevel>Industrial</techLevel>
@@ -99,7 +99,7 @@
 		
 		<recipeMaker> <!-- RECIPE -->
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>YaomaCore_Research_Tier1_Hanfu</researchPrerequisite>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_Hanfu</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>3</Crafting>
 			</skillRequirements>
@@ -134,8 +134,8 @@
 		</tradeTags>
 	</ThingDef>
 	
-	<ThingDef ParentName="YaomaCore_HanfuBase">
-		<defName>YaomaCore_Hanfu_Refined</defName>
+	<ThingDef ParentName="YaomaXenotype_HanfuBase">
+		<defName>YaomaXenotype_Tier2_Hanfu</defName>
 		<label>refined hanfu</label>
 		<description>An Yaoma hanfu reinforced with additional padding and plasteel deposition.\n\nOriginally conceived to protect Yaoma dignitaries in style, it has since proven popular with wealthy clans and intelligence agents alike in urbanized areas. The plasteel integration within the hanfu’s fibers allows it to occupy the intersection of fashionability, durability, and maneuverability.</description>
 		<techLevel>Spacer</techLevel>
@@ -163,7 +163,7 @@
 		
 		<recipeMaker> <!-- RECIPE -->
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>YaomaCore_Research_Tier2_Hanfu</researchPrerequisite>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_Hanfu</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
@@ -199,8 +199,8 @@
 		</apparel>
 	</ThingDef>
 	
-	<ThingDef ParentName="YaomaCore_HanfuBase">
-		<defName>YaomaCore_Hanfu_Grand</defName>
+	<ThingDef ParentName="YaomaXenotype_HanfuBase">
+		<defName>YaomaXenotype_Tier3_Hanfu</defName>
 		<label>grand hanfu</label>
 		<description>An ultratech hanfu with an authoritative appearance, employing synthetic exo-muscles and material hybridization.\n\nEight generations ago, sect masters and immortals alike began to wear the grand hanfu; it has since been the unofficial “uniform” of Yaoma leadership. Its fabric-based outer shell is reinforced with plasteel molecules, altering its physical properties to better resist bullet penetration. At the same time, the inner exo-muscular suit serves a dual purpose: its synth-tissue enhances its user’s agility, while padding their body to absorb impacts.</description>	
 		<techLevel>Ultra</techLevel>
@@ -229,7 +229,7 @@
 		
 		<recipeMaker> <!-- RECIPE -->
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
-			<researchPrerequisite>YaomaCore_Research_Tier3_Hanfu</researchPrerequisite>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_Hanfu</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>

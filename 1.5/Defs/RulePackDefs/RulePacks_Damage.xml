@@ -2,7 +2,7 @@
 <Defs>
 
 	<RulePackDef>
-		<defName>YaomaCore_DamageShock</defName>
+		<defName>YaomaXenotype_DamageShock</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>damaged_past(p=2)->blasted</li>
@@ -53,7 +53,7 @@
 	</RulePackDef>
 	
 	<RulePackDef>
-		<defName>YaomaCore_DamageSoul</defName>
+		<defName>YaomaXenotype_DamageSoul</defName>
 		<rulePack>
 			<rulesStrings>
 				<li>damaged_past(p=2)->splintered</li>

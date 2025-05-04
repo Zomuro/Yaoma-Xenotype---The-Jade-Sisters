@@ -4,22 +4,22 @@
 	<!-- Example EnergyTrackers - Logos Experimentia -->
 	<ItsSorceryFramework.EnergyTrackerDef ParentName = "ISF_EnergyTrackerBase">
 		<energyTrackerClass>ItsSorceryFramework.EnergyTracker</energyTrackerClass>
-		<defName>YaomaCore_Qi_EnergyTracker</defName>
+		<defName>YaomaXenotype_Qi_EnergyTracker</defName>
 		<label>qi</label>
 		
-		<energyUnitStatDef>YaomaCore_Qi</energyUnitStatDef>
-		<energyCostFactorStatDef>YaomaCore_QiCastFactor</energyCostFactorStatDef>
-		<energyMaxStatDef>YaomaCore_QiMax</energyMaxStatDef>
-		<energyMinStatDef>YaomaCore_QiMin</energyMinStatDef>
-		<energyAbsMinStatDef>YaomaCore_QiAbsMin</energyAbsMinStatDef>
-		<disableReasonKey>YaomaCore_DisableReason_Cultivation_Qi</disableReasonKey>
+		<energyUnitStatDef>YaomaXenotype_Qi</energyUnitStatDef>
+		<energyCostFactorStatDef>YaomaXenotype_QiCastFactor</energyCostFactorStatDef>
+		<energyMaxStatDef>YaomaXenotype_QiMax</energyMaxStatDef>
+		<energyMinStatDef>YaomaXenotype_QiMin</energyMinStatDef>
+		<energyAbsMinStatDef>YaomaXenotype_QiAbsMin</energyAbsMinStatDef>
+		<disableReasonKey>YaomaXenotype_DisableReason_Cultivation_Qi</disableReasonKey>
 		
 		<sideEffect>ISFE_Logos_MentalStrain</sideEffect>
-		<hitLimitKey>YaomaCore_Cultivation_Qi_Message_HitLimit</hitLimitKey>
+		<hitLimitKey>YaomaXenotype_Cultivation_Qi_Message_HitLimit</hitLimitKey>
 		
 		<comps>
 			<li Class = "ItsSorceryFramework.EnergyTrackerCompProperties_PerTick">
-				<energyRecoveryStatDef>YaomaCore_QiRecoveryRate</energyRecoveryStatDef>
+				<energyRecoveryStatDef>YaomaXenotype_QiRecoveryRate</energyRecoveryStatDef>
 				<overchargeRecoveryFactor>-0.5</overchargeRecoveryFactor>
 				<deficitRecoveryFactor>0.5</deficitRecoveryFactor>
 			</li>

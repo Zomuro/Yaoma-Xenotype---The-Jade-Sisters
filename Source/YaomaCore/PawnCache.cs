@@ -27,7 +27,7 @@ namespace YaomaCore
 
         public void CacheHealthFactor()
         {
-            healthScaleFactor = pawn.GetStatValue(DefOfs.YaomaCore_HealthScaleFactor);
+            healthScaleFactor = pawn.GetStatValue(DefOfs.YaomaXenotype_HealthScaleFactor);
         }
 
         public void ResetCache()

@@ -2,7 +2,7 @@
 <Defs>
 
   <TraderKindDef>
-    <defName>YaomaCore_Trader_Caravan_Palace</defName>
+    <defName>YaomaXenotype_Trader_Caravan_Palace</defName>
     <label>palace caravan</label>
     <stockGenerators>
 
@@ -43,19 +43,26 @@
         <thingDef>Chocolate</thingDef>
         <totalPriceRange>10~40</totalPriceRange>
       </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Dye</thingDef>
+        <countRange>15~20</countRange>
+      </li>
       <li Class="StockGenerator_ReinforcedBarrels">
         <countRange>1~4</countRange>
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>3~3</thingDefCountRange>
+        <totalPriceRange>150~600</totalPriceRange>
         <excludedCategories>
           <li>EggsFertilized</li>
         </excludedCategories>
-        <thingDefCountRange>3~3</thingDefCountRange>
-        <totalPriceRange>150~600</totalPriceRange>
       </li>
       <li Class="StockGenerator_Category">
         <categoryDef>Textiles</categoryDef>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+        </excludedThingDefs>
       </li>
       <li Class="StockGenerator_MultiDef">
         <thingDefs>
@@ -72,26 +79,35 @@
       
       <!-- Techprints -->
       <!-- none -->
+
+      <!-- Books -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>TextBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Novel</thingDef>
+        <countRange>1~1</countRange>
+      </li>
       
       <!-- Weapons -->
       <!-- none -->
       
       <!-- Apparel -->
-      <li Class="StockGenerator_Clothes">
-        <countRange>10~10</countRange>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>BasicClothing</tradeTag>
+        <countRange>7~7</countRange>
       </li>
-	  
-			<!-- <li Class="StockGenerator_Tag"> -->
-				<!-- <tradeTag>YaomaApparelLight</tradeTag> -->
-				<!-- <thingDefCountRange>1~2</thingDefCountRange> -->
-				<!-- <countRange>3</countRange> -->
-			<!-- </li> -->
-			
-			<!-- <li Class="StockGenerator_Tag"> -->
-				<!-- <tradeTag>YaomaApparelBeltsCharms</tradeTag> -->
-				<!-- <thingDefCountRange>1~3</thingDefCountRange> -->
-				<!-- <countRange>1~2</countRange> -->
-			<!-- </li> -->
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Clothing</tradeTag>
+        <countRange>3~3</countRange>
+      </li>
       
       <!-- Implants -->
       <!-- none -->
@@ -124,6 +140,16 @@
           <li>AnimalFarm</li>
         </createMatingPair>
       </li>
+
+      <!-- Cultist apparel -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CeremonialCultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
       
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
@@ -134,7 +160,7 @@
   </TraderKindDef>
 
   <TraderKindDef>
-    <defName>YaomaCore_Trader_Caravan_Cult</defName>
+    <defName>YaomaXenotype_Trader_Caravan_Cult</defName>
     <label>cult convoy</label>
     <stockGenerators>
 
@@ -144,53 +170,112 @@
         <countRange>750~1200</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>MedicineIndustrial</thingDef>
-        <countRange>10~20</countRange>
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>30~40</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>-10~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>250~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>250~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>250~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>70~160</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <totalPriceRange>-100~100</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chocolate</thingDef>
+        <totalPriceRange>10~40</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Dye</thingDef>
+        <countRange>15~20</countRange>
+      </li>
+      <li Class="StockGenerator_ReinforcedBarrels">
+        <countRange>1~4</countRange>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>3~3</thingDefCountRange>
+        <totalPriceRange>150~600</totalPriceRange>
+        <excludedCategories>
+          <li>EggsFertilized</li>
+        </excludedCategories>
+      </li>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Textiles</categoryDef>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+        </excludedThingDefs>
+      </li>
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Chocolate</li>
+          <li>Kibble</li>
+          <li>Pemmican</li>
+        </thingDefs>
       </li>
       
       <!-- Drugs -->
-      <!-- none -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+      </li>
       
       <!-- Techprints -->
-      <li Class="StockGenerator_Techprints">
-        <countChances>
-          <li>
-            <count>1</count>
-            <chance>1</chance>
-          </li>
-        </countChances>
+      <!-- none -->
+
+      <!-- Books -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>TextBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Novel</thingDef>
+        <countRange>1~1</countRange>
       </li>
       
       <!-- Weapons -->
-			<!-- <li Class="StockGenerator_Tag"> -->
-				<!-- <tradeTag>YaomaWeapons</tradeTag> -->
-				<!-- <thingDefCountRange>8~9</thingDefCountRange> -->
-				<!-- <countRange>1~2</countRange> -->
-			<!-- </li> -->
-      <li Class="StockGenerator_Tag">
-        <tradeTag>MortarShell</tradeTag>
-        <thingDefCountRange>1~2</thingDefCountRange>
-        <countRange>3~15</countRange>
-      </li>
+      <!-- none -->
       
       <!-- Apparel -->
-	  <!-- <li Class="StockGenerator_Tag"> -->
-		<!-- <tradeTag>YaomaApparel</tradeTag> -->
-		<!-- <thingDefCountRange>3~4</thingDefCountRange> -->
-		<!-- <countRange>1~2</countRange> -->
-	  <!-- </li> -->
-	  
-	  <!-- <li Class="StockGenerator_Tag"> -->
-		<!-- <tradeTag>YaomaApparelBeltsCombat</tradeTag> -->
-		<!-- <thingDefCountRange>1~3</thingDefCountRange> -->
-		<!-- <countRange>1~2</countRange> -->
-	  <!-- </li> -->
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>BasicClothing</tradeTag>
+        <countRange>7~7</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Clothing</tradeTag>
+        <countRange>3~3</countRange>
+      </li>
       
       <!-- Implants -->
       <!-- none -->
       
       <!-- Buildings -->
-      <!-- none -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>BuildingsFurniture</categoryDef>
+        <thingDefCountRange>3~3</thingDefCountRange>
+        <countRange>1~1</countRange>
+      </li>
       
       <!-- Exotic -->
       <!-- none -->
@@ -199,20 +284,41 @@
       <!-- none -->
       
       <!-- Animals -->
-      <!-- none -->
+      <li Class="StockGenerator_Animals">
+        <maxWildness>0.70</maxWildness>
+        <tradeTagsSell>
+          <li>AnimalFarm</li>
+        </tradeTagsSell>
+        <tradeTagsBuy>
+          <li>AnimalExotic</li>
+        </tradeTagsBuy>
+        <kindCountRange>1</kindCountRange>
+        <countRange>3~4</countRange>
+        <createMatingPair>
+          <li>AnimalFarm</li>
+        </createMatingPair>
+      </li>
+
+      <!-- Cultist apparel -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CeremonialCultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
       
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>HiTechArmor</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>Drugs</tag></li>
       
     </stockGenerators>
   </TraderKindDef>
 
   <TraderKindDef>
-    <defName>YaomaCore_Trader_Caravan_Union</defName>
+    <defName>YaomaXenotype_Trader_Caravan_Union</defName>
     <label>union dealer</label>
     <stockGenerators>
 
@@ -223,102 +329,147 @@
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
-        <countRange>6~20</countRange>
+        <countRange>30~40</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentSpacer</thingDef>
+        <countRange>-10~2</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Steel</thingDef>
+        <countRange>250~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Cloth</thingDef>
+        <countRange>250~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chemfuel</thingDef>
+        <countRange>250~400</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>70~160</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <totalPriceRange>-100~100</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Chocolate</thingDef>
+        <totalPriceRange>10~40</totalPriceRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Dye</thingDef>
+        <countRange>15~20</countRange>
+      </li>
+      <li Class="StockGenerator_ReinforcedBarrels">
         <countRange>1~4</countRange>
       </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>Plasteel</thingDef>
-        <countRange>50~150</countRange>
+      <li Class="StockGenerator_Category">
+        <categoryDef>FoodRaw</categoryDef>
+        <thingDefCountRange>3~3</thingDefCountRange>
+        <totalPriceRange>150~600</totalPriceRange>
+        <excludedCategories>
+          <li>EggsFertilized</li>
+        </excludedCategories>
       </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>Gold</thingDef>
-        <countRange>40~80</countRange>
+      <li Class="StockGenerator_Category">
+        <categoryDef>Textiles</categoryDef>
+        <excludedThingDefs>
+          <li MayRequire="Ludeon.RimWorld.Anomaly">Leather_Dread</li>
+        </excludedThingDefs>
       </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>MedicineUltratech</thingDef>
-        <countRange>2~8</countRange>
+      <li Class="StockGenerator_MultiDef">
+        <thingDefs>
+          <li>Chocolate</li>
+          <li>Kibble</li>
+          <li>Pemmican</li>
+        </thingDefs>
       </li>
       
       <!-- Drugs -->
-      <!-- none -->
+      <li Class="StockGenerator_Category">
+        <categoryDef>Drugs</categoryDef>
+      </li>
       
       <!-- Techprints -->
-      <li Class="StockGenerator_Techprints">
-        <countChances>
-          <li>
-            <count>3</count>
-            <chance>1</chance>
-          </li>
-        </countChances>
+      <!-- none -->
+
+      <!-- Books -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>TextBook</thingDef>
+        <countRange>0~2</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>1~1</countRange>
+      </li>
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Novel</thingDef>
+        <countRange>1~1</countRange>
       </li>
       
       <!-- Weapons -->
       <!-- none -->
-        
+      
       <!-- Apparel -->
-      <!-- none -->
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>BasicClothing</tradeTag>
+        <countRange>7~7</countRange>
+      </li>
+      <li Class="StockGenerator_MarketValue">
+        <tradeTag>Clothing</tradeTag>
+        <countRange>3~3</countRange>
+      </li>
       
       <!-- Implants -->
-      <li Class="StockGenerator_Tag">
-        <tradeTag>TechHediff</tradeTag>
-        <thingDefCountRange>3</thingDefCountRange>
-        <countRange>1</countRange>
-      </li>
+      <!-- none -->
       
       <!-- Buildings -->
-      <li Class="StockGenerator_Tag">
-        <tradeTag>Television</tradeTag>
-        <thingDefCountRange>1~2</thingDefCountRange>
+      <li Class="StockGenerator_Category">
+        <categoryDef>BuildingsFurniture</categoryDef>
+        <thingDefCountRange>3~3</thingDefCountRange>
         <countRange>1~1</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>Telescope</thingDef>
-        <countRange>0~1</countRange>
       </li>
       
       <!-- Exotic -->
-      <li Class="StockGenerator_Tag">
-        <tradeTag>ExoticMisc</tradeTag>
-        <thingDefCountRange>3~3</thingDefCountRange>
-        <countRange>1~1</countRange>
-        <excludedThingDefs>
-          <li>MedicineUltratech</li> <!-- already handled by single def -->
-          <li>ComponentSpacer</li> <!-- already handled by single def -->
-        </excludedThingDefs>
-        <customCountRanges>
-          <Luciferium>7~25</Luciferium>
-          <Hyperweave>40~120</Hyperweave>
-        </customCountRanges>
-      </li>
+      <!-- none -->
+      
+      <!-- Slaves -->
+      <!-- none -->
       
       <!-- Animals -->
       <li Class="StockGenerator_Animals">
+        <maxWildness>0.70</maxWildness>
         <tradeTagsSell>
-          <li>AnimalUncommon</li>
-          <li>AnimalFighter</li>
           <li>AnimalFarm</li>
-          <li>AnimalPet</li>
         </tradeTagsSell>
         <tradeTagsBuy>
           <li>AnimalExotic</li>
         </tradeTagsBuy>
-        <kindCountRange>3~3</kindCountRange>
-        <countRange>1~3</countRange>
+        <kindCountRange>1</kindCountRange>
+        <countRange>3~4</countRange>
         <createMatingPair>
           <li>AnimalFarm</li>
         </createMatingPair>
+      </li>
+
+      <!-- Cultist apparel -->
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Anomaly" Class="StockGenerator_SingleDef">
+        <thingDef>Apparel_CeremonialCultistMask</thingDef>
+        <countRange>-1~2</countRange> <!-- 50% chance for 1~2 -->
       </li>
       
       <!-- Buying -->
       <li Class="StockGenerator_BuyExpensiveSimple" />
       <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
-      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
-      <!--<li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>-->
-      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
       <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
       
     </stockGenerators>

@@ -1,22 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="FactionBase" Name="YaomaCore_NPCFactionBase">
-		<defName>YaomaCore_Faction_Palace</defName>
+	<FactionDef ParentName="FactionBase" Name="YaomaXenotype_NPCFactionBase">
+		<defName>YaomaXenotype_Faction_Palace</defName>
 		<label>yaoma palace</label>
 		<description>A gathering of Yaoma in a stable community aimed at developing the area.\n\nThey regard themselves as envoys of an enigmatic being known as "Suffering", who gave them a mission to prepare humanity against the unknown.</description>
 		<pawnsPlural>yaoma</pawnsPlural>
 		<techLevel>Ultra</techLevel>
 		<listOrderPriority>9</listOrderPriority> <!-- List below pirates and above Yaoma Cult -->		
 
-		<!-- <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath> <!-- Faction textures --> -->
 		<factionIconPath>World/WorldObjects/Faction_Icon/YaomaPalace</factionIconPath>
 		<colorSpectrum Inherit = "False">
 			<li>(0, 0.659, 0.42)</li>
 		</colorSpectrum>
 		
-		<factionNameMaker>YaomaCore_NamerFaction</factionNameMaker> <!-- Faction naming -->
-		<settlementNameMaker>YaomaCore_NamerSettlement</settlementNameMaker>
+		<factionNameMaker>YaomaXenotype_NamerFaction</factionNameMaker> <!-- Faction naming -->
+		<settlementNameMaker>YaomaXenotype_NamerSettlement</settlementNameMaker>
 
 		<requiredCountAtGameStart>1</requiredCountAtGameStart> <!-- Faction settings -->
 		<maxCountAtGameStart>1</maxCountAtGameStart>
@@ -26,9 +25,6 @@
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>sect master</leaderTitle>
 		
-		<!-- <structureMemeWeights> -->
-			<!-- <Structure_Theist_Yaoma_Palace MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Theist_Yaoma_Palace> -->
-		<!-- </structureMemeWeights> -->
 		<requiredMemes>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
@@ -55,25 +51,25 @@
 			</li>
 			<li>
 				<categories>
-					<li>YaomaCore_YaomaBackstory</li>
+					<li>YaomaXenotype_YaomaBackstory</li>
 				</categories>
 				<commonality>3</commonality>
 			</li>
 		</backstoryFilters>
 		<xenotypeSet> <!-- set the default xenotype set -->
 			<xenotypeChances>
-				<YaomaCore_YaomaXenotype>1</YaomaCore_YaomaXenotype>
+				<YaomaXenotype_YaomaXenotype>1</YaomaXenotype_YaomaXenotype>
 			</xenotypeChances>
 		</xenotypeSet>
 		
 		<visitorTraderKinds>
-			<li>YaomaCore_Trader_Visitor_Standard</li>
+			<li>YaomaXenotype_Trader_Visitor_Standard</li>
 		</visitorTraderKinds>
 		<caravanTraderKinds>
-			<li>YaomaCore_Trader_Caravan_Palace</li>
+			<li>YaomaXenotype_Trader_Caravan_Palace</li>
 		</caravanTraderKinds>
 		<baseTraderKinds>
-			<li>YaomaCore_Trader_Base_Standard</li>
+			<li>YaomaXenotype_Trader_Base_Standard</li>
 		</baseTraderKinds>
 		<allowedArrivalTemperatureRange>
 			<min>-50</min>

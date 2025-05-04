@@ -2,24 +2,24 @@
 <Defs>
 
 	<XenotypeDef>
-		<defName>YaomaCore_YaomaXenotype</defName>
+		<defName>YaomaXenotype_YaomaXenotype</defName>
 		<label>yaoma</label>
 		<description>Designed to integrate with humanity, the yaoma are a hermaphroditic xenotype with ravishing beauty, enhanced productivity, and extended lifespans. Their enfeebled skeletal and immune systems belie a natural affinity for cultivation: their psycho-transhumanist alternative to psycasting, which they abhor due to its archotech association.\n\nOriginating from Cao’s Wisdom, a former glitterworld, the yaoma were designed by the first of them: their mythologized hero-king Ku. Generations since have accrued an outsized influence on humanity despite their minority status, and are commonly found within enclaves on mid- to glitterworlds. These communities, in the name of their Jade Progenitor, abide by his/her tenets of humanity, resilience, and wisdom; these primary beliefs are why practically all yaoma practice cultivation.</description>
 		<descriptionShort>Designed to integrate with humanity, the hermaphroditic yaoma possess ravishing beauty, enhanced productivity, and extended lifespans. Their enfeebled skeletal and immune systems make them more fragile than baseliners, but belie a natural affinity for cultivation: their psycho-transhumanist alternative to psycasting.</descriptionShort>
 		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
 		<!-- <factionlessGenerationWeight>1</factionlessGenerationWeight> -->
-		<nameMaker>YaomaCore_NamerPersonYaoma</nameMaker>
+		<nameMaker>YaomaXenotype_NamerPersonYaoma</nameMaker>
 		<chanceToUseNameMaker>1</chanceToUseNameMaker>
 		
 		<inheritable>true</inheritable>
 		<genes>
-			<li>YaomaCore_Neuroplasticity</li>
-			<li>YaomaCore_MyeloaffectiveOsteoporosis</li>
+			<li>YaomaXenotype_Neuroplasticity</li>
+			<li>YaomaXenotype_MyeloaffectiveOsteoporosis</li>
 			<li>PsychicAbility_Dull</li>
 			<li>Beauty_Beautiful</li>
-			<li>YaomaCore_Hermaphroditism</li>
-			<li>YaomaCore_DaoAttunement</li>
-			<li>YaomaCore_StabilizedSenescence</li>
+			<li>YaomaXenotype_Hermaphroditism</li>
+			<li>YaomaXenotype_DaoAttunement</li>
+			<li>YaomaXenotype_StabilizedSenescence</li>
 			<li>Beard_NoBeardOnly</li>
 			<li>Hair_Grayless</li>
 			<li>Skin_Melanin2</li>
