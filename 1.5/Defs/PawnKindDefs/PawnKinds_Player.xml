@@ -5,10 +5,6 @@
 		<label>Yaoma colonist</label>
 		
 		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
-		<backstoryCategories Inherit = "False">
-			<li>YaomaCore_YaomaBackstory</li>
-			<li>Offworld</li>
-		</backstoryCategories>
 		<backstoryFiltersOverride>
 			<li>
 				<categories> <!-- Yaoma backstories -->
