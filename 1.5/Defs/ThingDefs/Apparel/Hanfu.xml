@@ -23,7 +23,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets Inherit="False">
-            <SocialImpact>0.1</SocialImpact>			
+			<SocialImpact>0.1</SocialImpact>			
 		</equippedStatOffsets>
 		
 		<thingCategories Inherit="False"> <!-- TAGS -->
@@ -67,13 +67,14 @@
 		<tradeTags>
 			<li>YaomaApparelLight</li>
 			<li>YaomaApparel</li>
+			<li>Clothing</li>
 		</tradeTags>
 	</ThingDef>
 	
 	<ThingDef Name="YaomaXenotype_HanfuHatBase" ParentName="HatMakeableBase">
-		<defName>YaomaXenotype_Tier1_Headpiece_Hanfu</defName>
+		<defName>YaomaXenotype_Tier1_Hat_Hanfu</defName>
 		<label>hanfu veil</label>
-		<description>The accompaniment to the Yaoma hanfu, based on the weimao (“curtained hat”) of the ancient terran Chinese. Though not required to be worn together with the hanfu, it is meant to be complementary, bestowing the wearer with a level of mystique that increases social impact.</description>
+		<description>An accompaniment to the Yaoma hanfu, based on the ancient terran Chinese weimao.\n\nThough not required to be worn together with the hanfu, it is meant to be complementary, bestowing the wearer with greater social impact. It is common to see the veil down to either block out excess sunlight or afford its user privacy.</description>
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<texPath>Things/Apparel/Hanfu_Headpiece/test2/Hanfu_Headpiece</texPath>
@@ -90,7 +91,7 @@
 			<EquipDelay>1.5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets Inherit="False">
-            <SocialImpact>0.1</SocialImpact>	
+			<SocialImpact>0.1</SocialImpact>	
 		</equippedStatOffsets>
 		
 		<thingCategories Inherit="False"> <!-- TAGS -->
@@ -175,9 +176,10 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-	  <costStuffCount>150</costStuffCount>
+	  <costStuffCount>100</costStuffCount>
 		<costList>
-			<Steel>25</Steel>
+			<Plasteel>25</Plasteel>
+			<Silver>20</Silver>
 		</costList>		
 		
 		<apparel> <!-- APPAREL -->
@@ -194,9 +196,77 @@
 			</layers>
 			<tags Inherit="False">
 				<li>YaomaLightMilitary</li>
-				<li>YaomaMilitaryT2</li>					
+				<li>YaomaMilitaryT2</li>
+				<li>YaomaLightMilitaryT2</li>				
 			</tags>
 		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="YaomaXenotype_HanfuHatBase">
+		<defName>YaomaXenotype_Tier2_Hat_Hanfu</defName>
+		<label>refined hanfu veil</label>
+		<description>A veiled hat that boasts increased protection without sacrificing style.\n\nLuxury weimaos became vogue on Gavelut, a glitterworld host to a Yaoma diaspora, due to the light-refracting patterns delicately embroidered into the veil. The same method used to fabricate these motifs was also employed to strengthen the headwear’s durability and bullet resistance, further lending mystique to its wearer.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/Hanfu_Headpiece/test2/Hanfu_Headpiece</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases> <!-- STATS -->
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.4</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+			<SocialImpact>0.15</SocialImpact>	
+		</equippedStatOffsets>
+		
+		<thingCategories Inherit="False"> <!-- TAGS -->
+			<li>Headgear</li>
+		</thingCategories>
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_Hanfu</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+	  <costStuffCount>50</costStuffCount>
+		<costList>
+			<Plasteel>25</Plasteel>
+			<Silver>20</Silver>
+		</costList>		
+		
+		<apparel> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Hanfu_Headpiece/test2/Hanfu_Headpiece</wornGraphicPath>		
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags Inherit="False">
+				<li>YaomaLightMilitary</li>			
+				<li>YaomaMilitaryT2</li>
+				<li>YaomaLightMilitaryT2</li>						
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelLight</li>
+			<li>YaomaApparel</li>
+		</tradeTags>
 	</ThingDef>
 	
 	<ThingDef ParentName="YaomaXenotype_HanfuBase">
@@ -231,7 +301,7 @@
 			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
 			<researchPrerequisite>YaomaXenotype_Research_Tier3_Hanfu</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>5</Crafting>
+				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
@@ -241,9 +311,9 @@
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-	    <costStuffCount>225</costStuffCount>
+	    <costStuffCount>125</costStuffCount>
 		<costList>
-			<Steel>50</Steel>
+			<Plasteel>50</Plasteel>
 			<ComponentSpacer>2</ComponentSpacer>
 			<Gold>20</Gold>
 		</costList>		
@@ -262,9 +332,79 @@
 			</layers>
 			<tags Inherit="False">
 				<li>YaomaLightMilitary</li>
-				<li>YaomaMilitaryT3</li>					
+				<li>YaomaMilitaryT3</li>
+				<li>YaomaLightMilitaryT3</li>		
 			</tags>
 		</apparel>
+	</ThingDef>
+	
+	<ThingDef ParentName="YaomaXenotype_HanfuHatBase">
+		<defName>YaomaXenotype_Tier3_Hat_Hanfu</defName>
+		<label>grand hanfu veil</label>
+		<description>A veiled hat enhanced with plasteel nanostructures and a firm understanding of cultivation mechanics.\n\nIn the past, due to the xenotype’s abundant beauty, these veils were the norm in the highest echelons of Yaoma power: sect leaders wore them to emphasize their authority and experience. Beyond its social impact, though, the veil serves as both protection and cultivation aid. Its fabric mimics hyperweave’s functionality, while its padding enhances its wearer’s qi sensitivity.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/Hanfu_Headpiece/test2/Hanfu_Headpiece</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases> <!-- STATS -->
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>3500</WorkToMake>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+			<SocialImpact>0.2</SocialImpact>
+			<YaomaXenotype_CultivationTalent>0.5</YaomaXenotype_CultivationTalent>
+		</equippedStatOffsets>
+		
+		<thingCategories Inherit="False"> <!-- TAGS -->
+			<li>Headgear</li>
+		</thingCategories>
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedApparel</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_Hanfu</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>3</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+	  <costStuffCount>50</costStuffCount>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<Gold>20</Gold>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>	
+		
+		<apparel> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Hanfu_Headpiece/test2/Hanfu_Headpiece</wornGraphicPath>		
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags Inherit="False">
+				<li>YaomaLightMilitary</li>			
+				<li>YaomaMilitaryT3</li>
+				<li>YaomaLightMilitaryT3</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelLight</li>
+			<li>YaomaApparel</li>
+		</tradeTags>
 	</ThingDef>
   
 </Defs>

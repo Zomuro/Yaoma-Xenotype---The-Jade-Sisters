@@ -19,7 +19,7 @@
     <Optimize>false</Optimize>
     <OutputPath>..\..\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
+    <ErrorReport>none</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DamageWorker_AddGlobalFleshOnly.cs" />
     <Compile Include="Gene_Healing_Yutaozi.cs" />
     <Compile Include="PawnCacheDict.cs" />
     <Compile Include="PawnCache.cs" />

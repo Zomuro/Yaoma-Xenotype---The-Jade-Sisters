@@ -2,7 +2,7 @@
 <Defs>
   
 	<ThingDef ParentName="BuildingBase"> <!-- Tribulation Pillar -->
-		<defName>YaomaXenotype_Building_TribulationPillar</defName>
+		<defName>YaomaXenotype_TribulationPillar</defName>
 		<label>tribulation pillar</label>
 		<description>A pillar of Yaoma design that empowers its users to cultivate.\n\nMeant to be positioned within the main hall, the device is the centerpiece of a sect’s initiation ceremony for its coming-of-age and immigrants. It grants access to the Dao Canon along with the ability to sense qi. This same quantum-level technology also enables high-density energy storage, supporting the early stages of a Yaoma colony by serving as part of its electrical infrastructure.</description>
 		<tickerType>Normal</tickerType>

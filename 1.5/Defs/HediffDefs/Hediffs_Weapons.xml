@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>YaomaXenotype_Hediff_OlfactoryOverload</defName>
+    <label>olfactory overload</label>
+    <description>Disorientation induced by an overwhelming stench. For biological creatures, it makes it difficult to breath and taste things, as even induces vomiting.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <vomitMtbDays>0.0005</vomitMtbDays>
+				<capMods>
+					<li><capacity>Breathing</capacity><setMax>0.7</setMax></li>
+					<li><capacity>Eating</capacity><setMax>0.3</setMax></li>
+				</capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disorientation">
+        <wanderMtbHours>0.05</wanderMtbHours>
+        <singleWanderDurationTicks>180</singleWanderDurationTicks>
+        <wanderRadius>3</wanderRadius>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2000~2500</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+
+</Defs>
