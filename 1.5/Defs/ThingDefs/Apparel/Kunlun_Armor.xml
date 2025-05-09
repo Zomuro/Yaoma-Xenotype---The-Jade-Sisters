@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 
+	<ThingDef Name="YaomaXenotype_KunlunArmorBase" ParentName="ArmorMachineableBase">
+		<defName>YaomaXenotype_Tier1_Kunlun</defName>
+		<label>kunlun armor</label>
+		<description>A heavy armor built to defend against gunfire and explosives.\n\nWhile incredibly protective, the ballistic fabric, plating, and padding that make up the suit significantly hampers mobility due to their sheer weight. For this reason, it’s rarely fielded by most Yaoma sects, as they see the drawback as a liability for their maneuverable warfighting style.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/MountainSimple/MountainSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+
+		<statBases> <!-- STATS -->
+			<WorkToMake>40000</WorkToMake>
+			<MaxHitPoints>320</MaxHitPoints>
+			<Mass>30</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>1.01</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>28</Insulation_Cold>
+      <Insulation_Heat>-3</Insulation_Heat>
+      <EquipDelay>25</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-1.8</MoveSpeed>
+		</equippedStatOffsets>
+		
+		<thingCategories> <!-- TAGS -->
+			<li>ApparelArmor</li>
+		</thingCategories>
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_KunlunArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>150</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<Cloth>75</Cloth>
+		</costList>
+		
+		<apparel> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/MountainSimple/MountainSimple</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>YaomaHeavyMilitary</li>
+				<li>YaomaMilitaryT1</li>
+				<li>YaomaHeavyMilitaryT1</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelHeavy</li>
+			<li>YaomaApparel</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<ThingDef Name="YaomaXenotype_KunlunArmorHelmetBase" ParentName="ArmorHelmetMakeableBase">
+		<defName>YaomaXenotype_Tier1_Helmet_Kunlun</defName>
+		<label>kunlun armor helmet</label>
+		<description>A helmet that maximizes head protection, packaged with integrated communications.\n\nThe helm has been employed in bomb disposal, where its padding and plating counters an explosive’s main sources of lethality: the shrapnel and blast wave. By fully enclosing the user’s head, however, it reduces their situational awareness.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/Mountain_Helmet_Simple/MountainSimpleHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Mass>5</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>1.01</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.54</ArmorRating_Heat>
+      <Insulation_Cold>7</Insulation_Cold>
+      <Insulation_Heat>-2</Insulation_Heat>
+      <EquipDelay>12</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+      <MeleeDodgeChance>-5</MeleeDodgeChance>
+			<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_KunlunArmor</researchPrerequisite>			
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>		
+	  <costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<Cloth>25</Cloth>
+		</costList>
+
+		<apparel> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Mountain_Helmet_Simple/MountainSimpleHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YaomaHeavyMilitary</li>
+				<li>YaomaMilitaryT1</li>
+				<li>YaomaHeavyMilitaryT1</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelHeavy</li>
+			<li>YaomaApparel</li>
+			<li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+
+	<ThingDef ParentName="YaomaXenotype_KunlunArmorBase">
+		<defName>YaomaXenotype_Tier2_Kunlun</defName>
+		<label>refined kunlun armor</label>
+		<description>A power armor enhanced by spacer-era metallurgy and a deflector shield.\n\nOn Karyesh, a rimworld controlled by raider nations, Yaoma colonizers shifted to a defensive military doctrine. Many sects fielded this armor to hold the line, benefiting from the suit’s improved bullet resistance and weight reduction. These features, along with its one-way shield, enhanced their users’ endurance against pirate hordes.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/MountainRefined/MountainRefined</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType> <!-- TICKER TYPE -->
+
+		<statBases> <!-- STATS -->
+			<MaxHitPoints>360</MaxHitPoints>
+			<WorkToMake>67000</WorkToMake>
+			<Mass>20</Mass>
+			<Flammability>0.4</Flammability>
+			<EnergyShieldRechargeRate>0.09</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>1.1</EnergyShieldEnergyMax>
+      <ArmorRating_Sharp>1.07</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.57</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.38</ArmorRating_Heat>
+      <Insulation_Cold>35</Insulation_Cold>
+      <Insulation_Heat>2</Insulation_Heat>
+      <EquipDelay>10</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-1.4</MoveSpeed>		
+		</equippedStatOffsets>			
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_KunlunArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>140</Plasteel>
+			<ComponentSpacer>5</ComponentSpacer>
+			<Steel>25</Steel>
+			<Uranium>20</Uranium>
+		</costList>
+		
+		<comps>
+      <li Class="CompProperties_Shield">
+				<energyLossPerDamage>0.02</energyLossPerDamage>
+				<blocksRangedWeapons>False</blocksRangedWeapons>
+			</li>
+    </comps>
+		
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/MountainRefined/MountainRefined</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>YaomaHeavyMilitary</li>
+				<li>YaomaMilitaryT2</li>	
+				<li>YaomaHeavyMilitaryT2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelMedium</li>
+			<li>YaomaApparel</li>
+			<li>HiTechArmor</li>
+      <li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<ThingDef ParentName="YaomaXenotype_KunlunArmorHelmetBase">
+		<defName>YaomaXenotype_Tier2_Helmet_Kunlun</defName>
+		<label>refined kunlun armor helmet</label>
+		<description>A kunlun helm equipped with plasteel-weave plating and proximity sensors.\n\nTo compensate for its reduced field of view, the helmet displays a proximity mapping that alerts the user of nearby objects and enemies. This enhanced awareness was as valuable to its wearer as the helmet’s protective coverage on the desolate tundras of Bryll, as it expedited close-quarter evasion against hordes of scythers.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/Mountain_Helmet_Refined/MountainRefinedHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>
+			<WorkToMake>24500</WorkToMake>
+			<MaxHitPoints>165</MaxHitPoints>
+			<Mass>3.5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.07</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.57</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.38</ArmorRating_Heat>
+      <Insulation_Cold>10</Insulation_Cold>
+      <Insulation_Heat>1</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+
+		<!-- TAGS -->
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_KunlunArmor</researchPrerequisite>	
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>		
+		<costList>
+			<Plasteel>50</Plasteel>
+			<Uranium>5</Uranium>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Mountain_Helmet_Refined/MountainRefinedHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YaomaHeavyMilitary</li>
+				<li>YaomaMilitaryT2</li>	
+				<li>YaomaHeavyMilitaryT2</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelMedium</li>
+			<li>YaomaApparel</li>
+			<li>HiTechArmor</li>
+      <li>Armor</li>
+		</tradeTags>
+	</ThingDef>	
+	
+	<ThingDef ParentName="YaomaXenotype_KunlunArmorBase">
+		<defName>YaomaXenotype_Tier3_Kunlun</defName>
+		<label>grand kunlun armor</label>
+		<description>A heavy power suit that maximizes protection through material optimization and deflector technology.\n\nWhen their relations with the Empire broke down, Yaoma cults designed this armor to counteract the staying power of Imperial cataphracts. The suit achieves improved mobility through stringent weight management by implementing an internal support skeleton while adding plasteel-alloyed plating. This paradigm provided the leeway for cult engineers to install denser power systems, raising the armor’s shield capacity and recharge rate.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/MountainGrand/MountainGrand</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<tickerType>Normal</tickerType> <!-- TICKER TYPE -->
+
+		<statBases> <!-- STATS -->			
+			<MaxHitPoints>380</MaxHitPoints>
+			<WorkToMake>80000</WorkToMake>
+			<Mass>15</Mass>
+			<Flammability>0.4</Flammability>
+			<EnergyShieldRechargeRate>0.13</EnergyShieldRechargeRate>
+			<EnergyShieldEnergyMax>1.6</EnergyShieldEnergyMax>
+      <ArmorRating_Sharp>1.11</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.47</ArmorRating_Heat>
+      <Insulation_Cold>44</Insulation_Cold>
+      <Insulation_Heat>6</Insulation_Heat>
+      <EquipDelay>12</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>-1</MoveSpeed>
+		</equippedStatOffsets>	
+		
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_KunlunArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Plasteel>160</Plasteel>
+			<Uranium>40</Uranium>
+			<ComponentSpacer>7</ComponentSpacer>
+			<Steel>50</Steel>
+		</costList>
+		
+		<comps>
+      <li Class="CompProperties_Shield">
+				<energyLossPerDamage>0.02</energyLossPerDamage>
+				<blocksRangedWeapons>False</blocksRangedWeapons>
+			</li>
+    </comps>
+		
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/MountainGrand/MountainGrand</wornGraphicPath>
+			<layers>
+				<li>Middle</li>
+				<li>Shell</li>
+			</layers>
+			<tags>
+				<li>YaomaHeavyMilitary</li>
+				<li>YaomaMilitaryT3</li>
+				<li>YaomaHeavyMilitaryT3</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelMedium</li>
+			<li>YaomaApparel</li>
+			<li>HiTechArmor</li>
+      <li>Armor</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<ThingDef ParentName="YaomaXenotype_KunlunArmorHelmetBase">
+		<defName>YaomaXenotype_Tier3_Helmet_Kunlun</defName>
+		<label>grand kunlun armor helmet</label>
+		<description>An ultratech helmet built for stalwart defense and sustained firefights.\n\nBeyond adding nano-optimized plating and force-absorbent padding to the helm, Yaoma cult engineers incorporated a neural interface to bolster the user’s endurance; this feature controls pain shock while increasing mental resilience, keeping its wearer in the fight. These additions gave Yaoma mercenaries the grit to seize heavy fortifications during Venexlor’s savage Mourning War- a period of civil strife for the midworld.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Things/Apparel/Mountain_Helmet_Grand/MountainGrandHelmet</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<statBases>		
+			<WorkToMake>28500</WorkToMake>
+			<MaxHitPoints>190</MaxHitPoints>
+			<Mass>3</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>1.11</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.58</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.47</ArmorRating_Heat>
+      <Insulation_Cold>18</Insulation_Cold>
+      <Insulation_Heat>3</Insulation_Heat>
+      <EquipDelay>5</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+      <PainShockThreshold>-0.3</PainShockThreshold>
+			<MentalBreakThreshold>-0.06</MentalBreakThreshold>
+			<ShootingAccuracyPawn>-5</ShootingAccuracyPawn>
+		</equippedStatOffsets>
+	
+		<recipeMaker> <!-- RECIPE -->
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_KunlunArmor</researchPrerequisite>			
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>	
+		<costList>
+			<Plasteel>75</Plasteel>
+			<Uranium>5</Uranium>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+
+		<apparel Inherit = "False"> <!-- APPAREL -->
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+			<wornGraphicPath>Things/Apparel/Mountain_Helmet_Grand/MountainGrandHelmet</wornGraphicPath>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<tags>
+				<li>YaomaHeavyMilitary</li>
+				<li>YaomaMilitaryT3</li>
+				<li>YaomaHeavyMilitaryT3</li>
+			</tags>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>YaomaApparelMedium</li>
+			<li>YaomaApparel</li>
+			<li>HiTechArmor</li>
+      <li>Armor</li>
+		</tradeTags>
+	</ThingDef>	
+  
+</Defs>

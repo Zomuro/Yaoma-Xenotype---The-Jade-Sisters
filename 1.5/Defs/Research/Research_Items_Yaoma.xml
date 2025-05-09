@@ -225,7 +225,7 @@
 	<ResearchProjectDef ParentName = "YaomaXenotype_BaseResearch">
 		<defName>YaomaXenotype_Research_Tier2_KunlunArmor</defName>
 		<label>Refined kunlun</label>
-		<description>Craft a more refined version of Kunlun armor, which takes advantage of more advanced materials to moderate movement speed decrease while attaching a weak deflector shield.</description>
+		<description>Craft a more refined version of Kunlun armor, which takes advantage of more advanced materials while attaching a weak deflector shield.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>4</researchViewX>
@@ -244,7 +244,7 @@
 	<ResearchProjectDef ParentName = "YaomaXenotype_BaseResearch">
 		<defName>YaomaXenotype_Research_Tier3_KunlunArmor</defName>
 		<label>Grand kunlun</label>
-		<description>Craft the perfected variant of Kunlun armor, which sports significant defensive abilities from advanced materials and optimized deflector shields.</description>
+		<description>Craft the perfected variant of Kunlun armor, which sports significant defensive abilities and optimized deflector shields.</description>
 		<baseCost>1800</baseCost>
 		<techLevel>Ultra</techLevel>
 		<researchViewX>5</researchViewX>

@@ -85,7 +85,7 @@
 		<uiIconScale>1.4</uiIconScale>
 		<statBases>
 			<WorkToMake>12000</WorkToMake>
-      <MaxHitPoints>145</MaxHitPoints>
+      <MaxHitPoints>140</MaxHitPoints>
       <Mass>1.4</Mass>
       <Flammability>0.6</Flammability>
       <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
@@ -99,23 +99,21 @@
 		<!-- TAGS --> <!-- ArmorHelmetMakeableBase has ArmorHeadgear thingCategories -->
 		
 		<recipeMaker> <!-- RECIPE -->
-			<unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+			<unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
 			<researchPrerequisite>YaomaXenotype_Research_Tier1_XuanwuArmor</researchPrerequisite>			
 			<skillRequirements>
 				<Crafting>5</Crafting>
 			</skillRequirements>
-			<recipeUsers Inherit="False">
-				<li>FabricationBench</li>
-			</recipeUsers>
 		</recipeMaker>		
-		<stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-	    <costStuffCount>50</costStuffCount>
+		<costList>
+      <Cloth>25</Cloth>
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
 
 		<apparel> <!-- APPAREL -->
 			<bodyPartGroups>
-				<li>UpperHead</li>
+				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Lamellar_Helmet_Simple/LamellarSimpleHelmet</wornGraphicPath>
 			<layers>
@@ -302,7 +300,7 @@
 
 		<apparel Inherit = "False"> <!-- APPAREL -->
 			<bodyPartGroups>
-				<li>UpperHead</li>
+				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Lamellar_Helmet_Refined/LamellarRefinedHelmet</wornGraphicPath>
 			<layers>
@@ -365,7 +363,7 @@
 		<costList>
 			<ComponentSpacer>6</ComponentSpacer>
       <Plasteel>100</Plasteel>
-      <Uranium>30</Uranium>
+      <Uranium>25</Uranium>
 			<Steel>20</Steel>
 			<Chemfuel>75</Chemfuel>
 		</costList>
@@ -508,7 +506,7 @@
 
 		<apparel Inherit = "False"> <!-- APPAREL -->
 			<bodyPartGroups>
-				<li>UpperHead</li>
+				<li>FullHead</li>
 			</bodyPartGroups>
 			<wornGraphicPath>Things/Apparel/Lamellar_Helmet_Grand/LamellarGrandHelmet</wornGraphicPath>
 			<layers>
