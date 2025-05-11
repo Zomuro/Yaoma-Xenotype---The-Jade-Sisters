@@ -185,6 +185,7 @@
 		
 		<comps>
       <li Class="CompProperties_Shield">
+				<compClass>YaomaCore.CompDeflectorShield</compClass>
 				<energyLossPerDamage>0.02</energyLossPerDamage>
 				<blocksRangedWeapons>False</blocksRangedWeapons>
 			</li>
