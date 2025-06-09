@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef Name="YaomaXenotype_BaseHumanMakeableGun" ParentName="BaseHumanMakeableGun" Abstract="True">
+    <weaponClasses>
+      <li>Ranged</li>
+    </weaponClasses>
+		<weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>YaomaWeaponsRanged</li>
+		</tradeTags>
+		
+    <comps Inherit = "False">
+			<li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompEquippable</compClass>
+      </li>
+			<li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Styleable"/>
+      <li Class="CompProperties_Biocodable"/>
+    </comps>
+  </ThingDef>
+	
+</Defs>

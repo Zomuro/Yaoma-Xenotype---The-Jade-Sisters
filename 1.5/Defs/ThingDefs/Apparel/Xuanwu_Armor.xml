@@ -453,7 +453,7 @@
 		<label>putrid aerosol grenade</label>
 		<projectile>
 			<explosionRadius>3.9</explosionRadius >
-			<damageDef>YaomaXenotype_Damage_Putrescence</damageDef>
+			<damageDef>YaomaXenotype_Damage_Stink</damageDef>
 			<damageAmountBase>1</damageAmountBase>
 			<explosionDelay>100</explosionDelay>
 		</projectile>

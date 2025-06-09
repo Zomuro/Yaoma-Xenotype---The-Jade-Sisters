@@ -61,6 +61,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ModExtension_BulletChain.cs" />
+    <Compile Include="Bullet_Chain.cs" />
+    <Compile Include="HediffComp_ShouldRemoveGeneric.cs" />
+    <Compile Include="HediffCompProperties_ShouldRemoveGeneric.cs" />
     <Compile Include="CompDeflectorShield.cs" />
     <Compile Include="Gizmo_DeflectorShieldStatus.cs" />
     <Compile Include="DamageWorker_AddGlobalFleshOnly.cs" />

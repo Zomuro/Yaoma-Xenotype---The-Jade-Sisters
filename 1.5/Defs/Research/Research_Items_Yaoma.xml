@@ -65,6 +65,7 @@
 
 		<prerequisites>
 			<li>GasOperation</li>
+			<li>PrecisionRifling</li>
 		</prerequisites>
 	</ResearchProjectDef>
 
@@ -73,13 +74,12 @@
 		<label>Refined firearms</label>
 		<description>Craft more powerful Yaoma variants of the fachui, leiming, and yuanmao.</description>
 		<baseCost>1000</baseCost>
-		<techLevel>Industrial</techLevel>
+		<techLevel>Spacer</techLevel>
 		<researchViewX>1</researchViewX>
 		<researchViewY>1</researchViewY>
 
 		<prerequisites>
 			<li>YaomaXenotype_Research_Tier1_Ranged</li>
-			<li>PrecisionRifling</li>
 		</prerequisites>
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 	</ResearchProjectDef> 	

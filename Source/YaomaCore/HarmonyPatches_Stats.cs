@@ -24,7 +24,7 @@ namespace YaomaCore.HarmonyPatches
         public static void HealthScale_PostFix(ref float __result, Pawn __instance)
         {
             PawnCache cache = PawnCacheDict.RetrieveCache(__instance);
-            if(Prefs.DevMode && cache.Stale) Log.Message($"{__instance.ThingID} Health Scale Factor = {cache.healthScaleFactor}");
+            if(Prefs.DevMode && cache.Stale) Log.Message($"[YaomaCore] {__instance.ThingID} Health Scale Factor = {cache.healthScaleFactor}");
             __result *= cache.healthScaleFactor;
         }
     }
