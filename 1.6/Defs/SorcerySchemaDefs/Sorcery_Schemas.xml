@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ItsSorceryFramework.SorcerySchemaDef ParentName = "SorcerySchemaBase">
+		<defName>YaomaXenotype_Cultivation_Schema</defName>
+		<label>Yaoma cultivation</label>
+		<description>Cultivation is a psycho-transhumanist method for transcendence, created by Ku and subsequently refined by her many children. It was created in direct competition to psionics, for the Jade Progenitor believed true ascension should come from one’s own efforts- not from communing with archotechs.\n\nIn Yaoma thought, the mind can transform the body, which enables the body to better support its consciousness: refining this cycle is one of the core purposes of cultivation. At the final stage lies the immortal, the pinnacle of development, which comes with both power and prestige unto itself.</description>
+	
+		<energyTrackerDefs>
+			<li>YaomaXenotype_Qi_EnergyTracker</li>
+		</energyTrackerDefs>
+		<learningTrackerDefs>
+			<li>YaomaXenotype_LearningTracker_Progress</li>
+			<li>YaomaXenotype_LearningTracker_Tree_ArrayDao</li>
+			<li>YaomaXenotype_LearningTracker_Tree_EarthDao</li>
+			<li>YaomaXenotype_LearningTracker_Tree_FireDao</li>
+			<li>YaomaXenotype_LearningTracker_Tree_LifeDao</li>
+			<li>YaomaXenotype_LearningTracker_Tree_SoulDao</li>
+			<li>YaomaXenotype_LearningTracker_Tree_SpaceDao</li>
+			<li>YaomaXenotype_LearningTracker_Tree_StarDao</li>
+			<li>YaomaXenotype_LearningTracker_Tree_SwordDao</li>
+		</learningTrackerDefs>
+		<progressTrackerDef>YaomaXenotype_ProgressTracker_Cultivation</progressTrackerDef>
+	</ItsSorceryFramework.SorcerySchemaDef>
+	
+</Defs>

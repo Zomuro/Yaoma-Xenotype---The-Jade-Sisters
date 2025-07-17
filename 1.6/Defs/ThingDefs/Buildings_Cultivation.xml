@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<ThingDef ParentName="BuildingBase"> <!-- Tribulation Pillar -->
+		<defName>YaomaXenotype_TribulationPillar</defName>
+		<label>tribulation pillar</label>
+		<description>A pillar of Yaoma design that empowers its users to cultivate.\n\nMeant to be positioned within the main hall, the device is the centerpiece of a sect’s initiation ceremony for its coming-of-age and immigrants. It grants access to the Dao Canon along with the ability to sense qi. This same quantum-level technology also enables high-density energy storage, supporting the early stages of a Yaoma colony by serving as part of its electrical infrastructure.</description>
+		<tickerType>Normal</tickerType>
+		<drawerType>MapMeshAndRealTime</drawerType>
+    <thingClass>Building_Battery</thingClass>
+		<graphicData>
+			<drawSize>(1,2)</drawSize>
+			<texPath>Buildings/Tribulation_Pillar/TribulationPillar</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shadowData>
+				<volume>(0.5,0.35,0.4)</volume>
+			</shadowData>
+			<damageData>
+				<rect>(0.2, 0.2, 0.6, 0.6)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,2)</size>		
+		<rotatable>false</rotatable>
+		<castEdgeShadows>true</castEdgeShadows>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<category>Building</category>
+		<passability>PassThroughOnly</passability>
+    <fillPercent>0.6</fillPercent>
+    <pathCost>0</pathCost>
+		<blockWind>true</blockWind>
+		<holdsRoof>true</holdsRoof>
+		<canOverlapZones>false</canOverlapZones>
+
+		<useHitPoints>true</useHitPoints>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsMisc</li>
+		</thingCategories>		
+		<designationCategory>Misc</designationCategory>
+		<building>
+		  <isSittable>false</isSittable>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>	
+		<constructEffect>ConstructMetal</constructEffect>
+		
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToBuild>20000</WorkToBuild>
+			<Mass>40</Mass>
+			<Flammability>0</Flammability>
+			<Beauty>150</Beauty>
+		</statBases>
+		<researchPrerequisites>
+			<li>YaomaXenotype_Research_TribulationPillar</li>
+		</researchPrerequisites>	
+		
+		<costList>
+			<Plasteel>120</Plasteel>
+			<ComponentSpacer>10</ComponentSpacer>
+		</costList>
+
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+			<li Class="CompProperties_Art">
+				<nameMaker>YaomaXenotype_NamerArt</nameMaker>
+				<descriptionMaker>ArtDescription_Sculpture</descriptionMaker>
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_Battery">
+        <storedEnergyMax>9600</storedEnergyMax>
+        <efficiency>0.9</efficiency>
+				<idlePowerDraw>-20</idlePowerDraw>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <transmitsPower>true</transmitsPower>
+      </li>
+			<li Class="ItsSorceryFramework.CompProperties_SchemaItem">
+				<compClass>ItsSorceryFramework.CompSchemaItem</compClass>
+				<useJob>UseItem</useJob>
+				<useLabel>Become initiated in {0}</useLabel>
+				<schemaDef>YaomaXenotype_Cultivation_Schema</schemaDef>
+			</li>
+			<li Class="ItsSorceryFramework.CompProperties_UseEffectSchema">
+				<compClass>ItsSorceryFramework.CompUseEffect_Schema</compClass>
+				<schemaDef>YaomaXenotype_Cultivation_Schema</schemaDef>
+			</li>
+			<li Class="CompProperties_UseEffectArtifact">
+				<sound>PsychicAnimalPulserCast</sound>
+			</li>		
+		</comps>
+	</ThingDef>
+  
+</Defs>

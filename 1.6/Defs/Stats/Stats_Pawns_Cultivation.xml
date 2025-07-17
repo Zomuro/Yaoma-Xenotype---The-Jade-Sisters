@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StatDef Name="YaomaXenotype_CultivationStat" Abstract="True">
+		<category>BasicsPawn</category>
+		<showIfHediffsPresent><li>YaomaXenotype_ProgressTrackerRPG_Hediff_Cultivation</li></showIfHediffsPresent>
+	</StatDef>
+	
+	<StatDef ParentName = "YaomaXenotype_CultivationStat">
+		<defName>YaomaXenotype_QiAbsMin</defName>
+		<label>absolute minimum qi</label>
+		<description>The absolute minimum qi a cultivator can have.\n\nAs cultivators near this final threshold, they begin to experience symptoms of severe exhaustion. At full depletion, they will die.</description>
+		<defaultBaseValue>-50</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>8888881</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaXenotype_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef ParentName = "YaomaXenotype_CultivationStat">
+		<defName>YaomaXenotype_QiMin</defName>
+		<label>minimum qi</label>
+		<description>The minimum qi a cultivator normally has.\n\nIn life or death scenarios, cultivators can break through this boundary and fuel their techniques with their own life force.</description>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>8888882</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaXenotype_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+	
+	<StatDef ParentName = "YaomaXenotype_CultivationStat">
+		<defName>YaomaXenotype_QiMax</defName>
+		<label>maximum qi</label>
+		<description>The maximum qi a cultivator is able to normally to utilize before tapping into their own life force.</description>
+		<defaultBaseValue>100</defaultBaseValue>
+		<minValue>0</minValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>88888883</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaXenotype_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+
+	<StatDef ParentName = "YaomaXenotype_CultivationStat">
+		<defName>YaomaXenotype_QiCastFactor</defName>
+		<label>qi casting factor</label>
+		<description>A multiplier on qi used when casting techniques.</description>
+		<defaultBaseValue>1</defaultBaseValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<displayPriorityInCategory>88888884</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef ParentName = "YaomaXenotype_CultivationStat">
+		<defName>YaomaXenotype_QiRecoveryRate</defName>
+		<label>qi recovery rate</label>
+		<description>The rate per second at which a cultivator naturally recovers their qi.</description>
+		<hideAtValue>0</hideAtValue>
+		<defaultBaseValue>1</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<formatString>{0}/s</formatString>
+		<displayPriorityInCategory>88888885</displayPriorityInCategory>
+		<statFactors>
+			<li>YaomaXenotype_CultivationTalent</li>
+		</statFactors>
+	</StatDef>
+
+	<StatDef ParentName = "YaomaXenotype_CultivationStat">
+		<defName>YaomaXenotype_Qi</defName>
+		<label>qi</label>
+		<description>The energy unit of cultivation.</description>
+		<hideAtValue>0</hideAtValue> <!-- pawn shouldn't show this -->
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>FloatTwo</toStringStyle>
+		<displayPriorityInCategory>88888886</displayPriorityInCategory>
+	</StatDef>
+	
+</Defs>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Male - essentially copies of female -->
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>YaomaXenotype_Male_AverageNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Normal</graphicPath>
+    <gender>Male</gender>
+    <eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>YaomaXenotype_Male_AveragePointy</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Pointy</graphicPath>
+    <gender>Male</gender>
+    <eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="AverageBase">
+    <defName>YaomaXenotype_Male_AverageWide</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Average_Wide</graphicPath>
+    <gender>Male</gender>
+    <eyeOffsetEastWest>(0.13, 0, 0.17)</eyeOffsetEastWest>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>YaomaXenotype_Male_NarrowNormal</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Narrow_Normal</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>YaomaXenotype_Male_NarrowPointy</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Narrow_Pointy</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+
+  <HeadTypeDef ParentName="NarrowBase">
+    <defName>YaomaXenotype_Male_NarrowWide</defName>
+    <graphicPath>Things/Pawn/Humanlike/Heads/Female/Female_Narrow_Wide</graphicPath>
+    <gender>Male</gender>
+  </HeadTypeDef>
+
+</Defs>

@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Logos Experimentia -->
+	<ItsSorceryFramework.ProgressTrackerClassDef Abstract = "True" Name = "YaomaXenotype_Cultivation_ClassBase" ParentName = "ProgressTrackerClassBase">
+		<progressTrackerDef>YaomaXenotype_ProgressTracker_Cultivation</progressTrackerDef>
+	</ItsSorceryFramework.ProgressTrackerClassDef>	
+	
+	<ItsSorceryFramework.ProgressTrackerClassDef ParentName = "YaomaXenotype_Cultivation_ClassBase">
+		<defName>YaomaXenotype_Cultivation_Class</defName>
+		<label>Cultivator</label>
+		<description>In Yaoma thought, the mind can transform the body, which enables the body to better support its consciousness: refining this cycle is one of the core goals of a cultivator. At the final stage lies the immortal, the pinnacle of development, which comes with both power and prestige unto itself.</description>
+		
+		<levelRange>1~63</levelRange>
+		
+		<levelFactors> <!-- levelFactors point total = 84 -->
+			<li>
+				<level>1</level>
+				<statOffsets>
+					<YaomaXenotype_HealthScaleFactor>0.1</YaomaXenotype_HealthScaleFactor>
+					<InjuryHealingFactor>0.05</InjuryHealingFactor>
+				</statOffsets>
+				<statFactorOffsets>
+					<YaomaXenotype_QiRecoveryRate>0.18</YaomaXenotype_QiRecoveryRate>
+					<YaomaXenotype_QiMax>0.3</YaomaXenotype_QiMax> <!-- MoveSpeed Factor 1.1x -->
+					<YaomaXenotype_QiAbsMin>0.3</YaomaXenotype_QiAbsMin> <!-- MoveSpeed Factor 1.1x -->
+				</statFactorOffsets>
+				<capMods>
+					<li><capacity>Consciousness</capacity><offset>0.025</offset></li>
+				</capMods>
+				<pointGain>1</pointGain>
+			</li>
+			<li>
+				<level>3</level>
+				<statOffsets>
+					<YaomaXenotype_HealthScaleFactor>0.1</YaomaXenotype_HealthScaleFactor>
+					<InjuryHealingFactor>0.05</InjuryHealingFactor>
+				</statOffsets>
+				<statFactorOffsets>
+					<YaomaXenotype_QiRecoveryRate>0.48</YaomaXenotype_QiRecoveryRate>
+					<YaomaXenotype_QiMax>0.8</YaomaXenotype_QiMax> <!-- MoveSpeed Factor 1.1x -->
+					<YaomaXenotype_QiAbsMin>0.8</YaomaXenotype_QiAbsMin> <!-- MoveSpeed Factor 1.1x -->
+				</statFactorOffsets>
+				<capMods>
+					<li><capacity>Consciousness</capacity><offset>0.025</offset></li>
+				</capMods>
+				<pointGain>2</pointGain>
+			</li>
+		</levelFactors>
+		<levelSpecifics> <!-- levelFactors point total = 12 -->
+			<li>
+				<level>10</level>
+				<statFactorOffsets>
+					<InjuryHealingFactor>1.0</InjuryHealingFactor>
+				</statFactorOffsets>
+				<pointGain>2</pointGain>
+			</li>
+			<li>
+				<level>19</level>
+				<statOffsets>
+					<WorkSpeedGlobal>0.5</WorkSpeedGlobal>
+				</statOffsets>
+				<statFactorOffsets>
+					<InjuryHealingFactor>-1.0</InjuryHealingFactor>
+				</statFactorOffsets>
+				<pointGain>2</pointGain>
+			</li>
+			<li>
+				<level>28</level>
+				<statOffsets>
+					<GlobalLearningFactor>1.0</GlobalLearningFactor>
+					<WorkSpeedGlobal>-0.5</WorkSpeedGlobal>
+				</statOffsets>
+				<pointGain>2</pointGain>
+			</li>
+			<li>
+				<level>37</level>
+				<statOffsets>
+					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+					<GlobalLearningFactor>-1.0</GlobalLearningFactor>
+				</statOffsets>
+				<pointGain>2</pointGain>
+			</li>
+			<li>
+				<level>46</level>
+				<statOffsets>
+					<MentalBreakThreshold>0.1</MentalBreakThreshold>
+				</statOffsets>
+				<pointGain>2</pointGain>
+				<capMods>
+					<li><capacity>Consciousness</capacity><offset>0.15</offset></li>
+				</capMods>
+			</li>			
+			<li>
+				<level>55</level>
+				<capMods>
+					<li><capacity>Consciousness</capacity><offset>0.3</offset></li>
+				</capMods>
+				<pointGain>2</pointGain>
+			</li>
+		</levelSpecifics>
+		<levelLabels>
+			<li><level>1</level><label>Qi Gathering</label></li>
+			<li><level>10</level><label>Foundation Establishment</label></li>
+			<li><level>19</level><label>Golden Core</label></li>
+			<li><level>28</level><label>Nascent Soul</label></li>
+			<li><level>37</level><label>Spirit Severing</label></li>
+			<li><level>46</level><label>Immortal Ascension</label></li>
+			<li><level>55</level><label>Immortality</label></li>
+			<li><level>63</level><label>A Half Step Beyond</label></li>
+		</levelLabels>
+		<expTags>
+			<li>YaomaXenotype_Cultivation_EXPTag_CastEnergyCost</li>
+			<li>YaomaXenotype_Cultivation_EXPTag_DuringJob</li>
+			<li>YaomaXenotype_Cultivation_EXPTag_UseItem</li>
+		</expTags>
+	</ItsSorceryFramework.ProgressTrackerClassDef>
+	
+</Defs>

@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Abstract = "True" Name = "YaomaXenotype_InsightHediffBase">
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>6</maxSeverity>
+		<isBad>false</isBad>
+	  <tendable>false</tendable>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Soul Insight: increases conciousness -->
+		<defName>YaomaXenotype_SoulInsight</defName>
+		<label>Soul Dao insight</label>
+		<labelNoun>soul insight</labelNoun>
+		<description>Understanding of the Soul Dao - the insights on every living being's metaphysical anima.</description>
+		<defaultLabelColor>(0.573,0.918,1)</defaultLabelColor>
+
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+				<capMods>
+					<li><capacity>Consciousness</capacity><postFactor>1.04</postFactor></li>
+				</capMods>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+				<capMods>
+					<li><capacity>Consciousness</capacity><postFactor>1.08</postFactor></li>
+				</capMods>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+				<capMods>
+					<li><capacity>Consciousness</capacity><postFactor>1.12</postFactor></li>
+				</capMods>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+				<capMods>
+					<li><capacity>Consciousness</capacity><postFactor>1.16</postFactor></li>
+				</capMods>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+				<capMods>
+					<li><capacity>Consciousness</capacity><postFactor>1.2</postFactor></li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Life Insight: increases max health -->
+		<defName>YaomaXenotype_LifeInsight</defName>
+		<label>Life Dao insight</label>
+		<labelNoun>life insight</labelNoun>
+		<description>Understanding of the Life Dao- the insights on the motive force of all organic entities.</description>
+		<defaultLabelColor>(0.196,1.0,0.196)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+				<statFactors>
+					<YaomaXenotype_HealthScaleFactor>1.05</YaomaXenotype_HealthScaleFactor>
+				</statFactors>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+				<statFactors>
+					<YaomaXenotype_HealthScaleFactor>1.1</YaomaXenotype_HealthScaleFactor>
+				</statFactors>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+				<statFactors>
+					<YaomaXenotype_HealthScaleFactor>1.15</YaomaXenotype_HealthScaleFactor>
+				</statFactors>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+				<statFactors>
+					<YaomaXenotype_HealthScaleFactor>1.2</YaomaXenotype_HealthScaleFactor>
+				</statFactors>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+				<statFactors>
+					<YaomaXenotype_HealthScaleFactor>1.25</YaomaXenotype_HealthScaleFactor>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Fire Insight: increases max comfortable temperature -->
+		<defName>YaomaXenotype_FireInsight</defName>
+		<label>Fire Dao insight</label>
+		<labelNoun>fire insight</labelNoun>
+		<description>Understanding of the Fire Dao- the insights on combustion and superhot thermodynamics.</description>
+		<defaultLabelColor>(1,0.502,0)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>20</ComfyTemperatureMax> <!-- resistance to normal enviromental heatstroke -->
+				</statOffsets>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>40</ComfyTemperatureMax> <!-- greater resistance to normal enviromental heatstroke -->
+				</statOffsets>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>100</ComfyTemperatureMax> <!-- immune to normal enviromental heatstroke -->
+				</statOffsets>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>250</ComfyTemperatureMax> <!-- don't catch on fire randomly -->
+				</statOffsets>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+				<statOffsets>
+					<ComfyTemperatureMax>2000</ComfyTemperatureMax> <!-- immune to high temperatures (not burns, however) -->
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Space Insight: increases max qi -->
+		<defName>YaomaXenotype_SpaceInsight</defName>
+		<label>Space Dao insight</label>
+		<labelNoun>space insight</labelNoun>
+		<description>Understanding of the Space Dao- the insights on reality’s dimensions and its interactions with energy.</description>
+		<defaultLabelColor>(0.463,0.286,0.996)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+				<statFactors>
+					<YaomaXenotype_QiMax>1.04</YaomaXenotype_QiMax>
+				</statFactors>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+				<statFactors>
+					<YaomaXenotype_QiMax>1.08</YaomaXenotype_QiMax>
+				</statFactors>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+				<statFactors>
+					<YaomaXenotype_QiMax>1.12</YaomaXenotype_QiMax>
+				</statFactors>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+				<statFactors>
+					<YaomaXenotype_QiMax>1.16</YaomaXenotype_QiMax>
+				</statFactors>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+				<statFactors>
+					<YaomaXenotype_QiMax>1.2</YaomaXenotype_QiMax>
+				</statFactors>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Sword Insight: causes AOE melee damage in a range depending on severity of this hediff; damage gets divided among targets-->
+		<defName>YaomaXenotype_SwordInsight</defName>
+		<label>Sword Dao insight</label>
+		<labelNoun>sword insight</labelNoun>
+		<description>Understanding of the Sword Dao- the insights on warfare and melee combat.</description>
+		<defaultLabelColor>(0.725,0.725,0.725)</defaultLabelColor> <!-- radius ring around pawn is hard coded in C# in Comp_Cultivation -->
+		
+		<stages>
+			<li>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Star Insight: adds a percent chance to completely avoid all damage-->
+		<defName>YaomaXenotype_StarInsight</defName>
+		<label>Star Dao insight</label>
+		<labelNoun>star insight</labelNoun>
+		<description>Understanding of the Star Dao- the insights on predictive capabilities and celestial bodies.</description>
+		<defaultLabelColor>(1, 0.7882, 0.1333)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+				<statOffsets>
+					<YaomaXenotype_DamageNullChance>0.04</YaomaXenotype_DamageNullChance>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+				<statOffsets>
+					<YaomaXenotype_DamageNullChance>0.08</YaomaXenotype_DamageNullChance>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+				<statOffsets>
+					<YaomaXenotype_DamageNullChance>0.12</YaomaXenotype_DamageNullChance>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+				<statOffsets>
+					<YaomaXenotype_DamageNullChance>0.16</YaomaXenotype_DamageNullChance>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+				<statOffsets>
+					<YaomaXenotype_DamageNullChance>0.2</YaomaXenotype_DamageNullChance>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Earth Insight: decreases incoming damage -->
+		<defName>YaomaXenotype_EarthInsight</defName>
+		<label>Earth Dao insight</label>
+		<labelNoun>earth insight</labelNoun>
+		<description>Understanding of the Earth Dao- the insights on structural and foundational components.</description>
+		<defaultLabelColor>(0.749, 0.502, 0.251)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+				<statOffsets>
+					<IncomingDamageFactor>0.96</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+				<statOffsets>
+					<IncomingDamageFactor>0.92</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+				<statOffsets>
+					<IncomingDamageFactor>0.88</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+				<statOffsets>
+					<IncomingDamageFactor>0.84</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+				<statOffsets>
+					<IncomingDamageFactor>0.8</IncomingDamageFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName = "YaomaXenotype_InsightHediffBase"> <!-- Array Insight: increases work speed-->
+		<defName>YaomaXenotype_ArrayInsight</defName>
+		<label>Array Dao insight</label>
+		<labelNoun>array insight</labelNoun>
+		<description>Understanding of the Array Dao- the insights on overall tactics and strategies.</description>
+		<defaultLabelColor>(0.549, 0.5725, 0.6745)</defaultLabelColor>
+		
+		<stages>
+			<li>
+				<label>Qi Gathering</label>
+			</li>
+			<li>
+				<label>Foundation Establishment</label>
+				<minSeverity>2</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Golden Core</label>
+				<minSeverity>3</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Nascent Soul</label>
+				<minSeverity>4</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Spirit Severing</label>
+				<minSeverity>5</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+			<li>
+				<label>Immortal Ascension</label>
+				<minSeverity>6</minSeverity>
+				<statOffsets>
+					<WorkSpeedGlobal>0.25</WorkSpeedGlobal>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+
+</Defs>

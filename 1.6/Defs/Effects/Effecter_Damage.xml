@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FleckDef ParentName="FleckBase_Thrown">
+    <defName>YaomaXenotype_Leiming_FlashGlow</defName>
+    <graphicData>
+      <texPath>Things/Mote/LightningGlow</texPath>
+      <shaderType>MoteGlow</shaderType>
+    </graphicData>
+    <altitudeLayer>MoteOverhead</altitudeLayer>
+    <fadeInTime>0.08</fadeInTime>
+    <solidTime>0.15</solidTime>
+    <fadeOutTime>0.35</fadeOutTime>
+  </FleckDef>
+	
+	<EffecterDef>
+    <defName>YaomaXenotype_Effect_Leiming_Flash</defName>
+    <children>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.4</positionRadius>
+        <fleckDef>AirPuff</fleckDef>
+        <burstCount>2~3</burstCount>
+        <speed>0.4~0.8</speed>
+        <scale>0.8~1.1</scale>
+        <color>(0.7, 0.8, 1, 0.7)</color>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.05</positionRadius>
+        <fleckDef>YaomaXenotype_Leiming_FlashGlow</fleckDef>
+        <burstCount>3</burstCount>
+        <scale>5~9.25</scale>
+				<rotationRate>-3~3</rotationRate>
+        <spawnLocType>OnSource</spawnLocType>
+        <color>(1, 1, 1, 1)</color>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.02</positionRadius>
+        <fleckDef>MicroSparksFast</fleckDef>
+        <burstCount>1~1</burstCount>
+        <speed>0.3~0.4</speed>
+        <rotationRate>5~10</rotationRate>
+        <scale>0.7~1.0</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+      <li>
+        <subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+        <positionRadius>0.1</positionRadius>
+        <fleckDef>SparkFlash</fleckDef>
+        <burstCount>1~1</burstCount>
+        <scale>1.0~1.5</scale>
+        <spawnLocType>OnSource</spawnLocType>
+      </li>
+    </children>
+    <offsetTowardsTarget>0.25~0.25</offsetTowardsTarget>
+    <positionRadius>0.1</positionRadius>
+  </EffecterDef>
+
+</Defs>

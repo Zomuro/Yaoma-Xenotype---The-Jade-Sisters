@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Example EnergyTrackers - Logos Experimentia -->
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>ISFE_Sorcery_Logos_Experiment</defName>
+		<label>Experiment</label>
+		<description>The basics of experimentation is the willingness to test your hypothesis in the real world.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/ISFE_Logos_Experiment</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		
+		<statBases>
+			<ISFE_Brainpower>40</ISFE_Brainpower>
+			<ISFE_Theory>10</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFireSpew">
+				<range>7.9</range>
+				<lineWidthEnd>3</lineWidthEnd>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>ISFE_Sorcery_Logos_Reasoning</defName>
+		<label>Reasoning</label>
+		<description>Through deep thought, you can properly set things in order within your mind.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/ISFE_Logos_Reasoning</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		
+		<statBases>
+			<ISFE_Brainpower>-30</ISFE_Brainpower>
+			<ISFE_Theory>-25</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>0.1</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_LogosExperimentia</sorcerySchema>
+		<defName>ISFE_Sorcery_Logos_Testing</defName>
+		<label>Testing</label>
+		<description>test to add exp.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/ISFE_Logos_Reasoning</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		
+		<statBases>
+			<ISFE_Brainpower>-30</ISFE_Brainpower>
+			<ISFE_Theory>-25</ISFE_Theory>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>0.1</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>ItsSorceryFramework.CompAbilityEffect_AddEXP</compClass>
+				<severity>2000</severity>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+	
+	<!-- Example EnergyTrackers - Coomsumerism -->
+	<ItsSorceryFramework.SorceryDef ParentName="SorceryBase">
+		<sorcerySchema>ISFE_Coomsumerism</sorcerySchema>
+		<defName>ISFE_Sorcery_Coomsumerism_Pleasure</defName>
+		<label>Pleasure</label>
+		<description>The first technique of a coomsumer is the ability to pleasure others... but mostly oneself.</description>
+		<level>1</level>
+		<iconPath>UI/Sorceries/ISFE_Coomsumerism_Pleasure</iconPath>
+		<warmupSound>ISFE_TomeFlip</warmupSound>
+		<aiCanUse>true</aiCanUse>
+		<cooldownTicksRange>60</cooldownTicksRange>
+		
+		<statBases>
+			<ISFE_Stamina>15</ISFE_Stamina>
+			<ISFE_Ecstasy>25</ISFE_Ecstasy>
+			<Ability_Duration>120</Ability_Duration>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<range>24.9</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<targetParams>
+				<canTargetBuildings>False</canTargetBuildings>
+				<canTargetAnimals>False</canTargetAnimals>
+				<thingCategory>Item</thingCategory>
+				<mapObjectTargetsMustBeAutoAttackable>False</mapObjectTargetsMustBeAutoAttackable>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class = "CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>AmbrosiaHigh</hediffDef>
+				<durationMultiplier>ISFE_Coomsumerism_CoomVirility</durationMultiplier>
+				<psychic>false</psychic>
+				<applicableToMechs>False</applicableToMechs>
+			</li>
+			<li Class="CompProperties_AbilityFleckOnTarget">
+				<fleckDef>PsycastPsychicEffect</fleckDef>
+			</li>
+		</comps>
+	</ItsSorceryFramework.SorceryDef>
+  
+</Defs>

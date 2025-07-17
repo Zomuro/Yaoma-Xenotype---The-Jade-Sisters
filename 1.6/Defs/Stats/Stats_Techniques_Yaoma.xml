@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StatCategoryDef>
+		<defName>Technique</defName>
+		<label>Technique</label>
+		<displayOrder>60</displayOrder>
+	</StatCategoryDef>
+	
+	<!-- <StatDef> -->
+		<!-- <defName>Technique_QiCost</defName> -->
+		<!-- <label>qi cost</label> -->
+		<!-- <category>Technique</category> -->
+		<!-- <description>The amount of life force required to cast a Yaoma technique. -->
+		<!-- \n\nYaoma techniques are just like any other magic except for one factor: the usage of life force rather than a distinct energy source such as mana.</description> -->
+		<!-- <defaultBaseValue>10</defaultBaseValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>1</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+	
+	<!-- <StatDef> -->
+		<!-- <defName>Technique_Tier</defName> -->
+		<!-- <label>technique tier</label> -->
+		<!-- <category>Technique</category> -->
+		<!-- <description>The difficulty of a technique and the insight required. -->
+		<!-- \n\nUnlike other more formulaic magic systems, Yaoma techniques are focused primarily upon one's understanding of the laws that govern the universe. -->
+		<!-- \n\nWhile cultivation level is foundational, truly strong practioners must possess a mounumental level of insight to match.</description> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <minValue>1</minValue> -->
+		<!-- <maxValue>3</maxValue> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>2</displayPriorityInCategory> -->
+	<!-- </StatDef>	 -->
+
+	<!-- <StatDef> -->
+		<!-- <defName>Technique_Requirement</defName> -->
+		<!-- <label>cultivation requirement</label> -->
+		<!-- <category>Technique</category> -->
+		<!-- <description>The minimum cultivation required to use this technique. -->
+		<!-- \n\nAlthough any cultivator can cast heavenly techniques in theory, in practice the amount of qi required would make any attempt either impossible or fatal. -->
+		<!-- \n\nAdditionally, certain insights required for said techniques need the improved perceptive and cognitive abilities that immortal cultivation provides.</description> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <minValue>1</minValue> -->
+		<!-- <maxValue>6</maxValue> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>3</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+	
+	<!-- <StatDef> -->
+		<!-- <defName>Technique_Thing_Damage</defName> -->
+		<!-- <label>creation damage</label> -->
+		<!-- <category>Technique</category> -->
+		<!-- <description>The damage that an object created through techniques will do.</description> -->
+		<!-- <defaultBaseValue>0</defaultBaseValue> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>3</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+	
+	<!-- <StatDef> -->
+		<!-- <defName>Technique_Based_Damage_Mult</defName> -->
+		<!-- <label>technique-based damage multiplier</label> -->
+		<!-- <category>Technique</category> -->
+		<!-- <description>An additional multiplier on technique damage linked to the technique itself.</description> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <hideAtValue>1</hideAtValue> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <displayPriorityInCategory>3</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+  
+
+
+</Defs>

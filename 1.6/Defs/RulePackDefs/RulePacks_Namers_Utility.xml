@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>YaomaXenotype_WordUtility</defName>
+		<rulePack>
+			<rulesFiles>			
+				<!-- Names -->
+				<li>YaomaFamily->Names/Yaoma_Family_Name</li> 
+				<li>YaomaGiven->Names/Yaoma_Given_Name</li>
+				<li>YaomaMoniker->Names/Yaoma_Monikers</li>
+			
+				<!-- Adjectives -->			
+				<li>YaomaAdj->Words/Adjectives/Yaoma_Adj</li>		
+				
+				<!-- Verbs -->
+				<li>YaomaAction->Words/Verbs/Yaoma_Action</li>	
+				
+				<!-- Nouns -->
+				<li>YaomaMyth->Words/Nouns/Yaoma_Mythology</li>
+				<li>YaomaElements->Words/Nouns/Yaoma_Elements</li>
+				<li>YaomaItem->Words/Nouns/Yaoma_Items</li>
+				<li>YaomaPositive->Words/Nouns/Yaoma_Positive</li>
+				<li>YaomaTitle->Words/Nouns/Yaoma_Titles</li>
+				<li>YaomaGroup->Words/Nouns/Yaoma_Community</li>					
+		    </rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef Abstract = "True" Name = "YaomaXenotype_StarDao_NodeBase">
+		<learningTrackerDef>YaomaXenotype_LearningTracker_Tree_StarDao</learningTrackerDef>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+
+	<!-- Insight Nodes - used for granting passives -->
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_StarDao_NodeBase">
+		<defName>YaomaXenotype_Node_Star_1_Insight</defName>
+		<label>Star Insight (一)</label>
+		<description>Gain understanding of the Star Dao- the insights on predictive capabilities and celestial bodies.</description>
+		
+		<hediffAdd>
+			<li><hediffDef>YaomaXenotype_StarInsight</hediffDef><severity>1</severity></li>
+		</hediffAdd>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_StarDao_NodeBase">
+		<defName>YaomaXenotype_Node_Star_2_Insight</defName>
+		<label>Star Insight (二)</label>
+		<description>Gain understanding of the Star Dao- the insights on predictive capabilities and celestial bodies. Increases the chance to completely avoid damage.</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Star_1_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_StarInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+
+		<coordX>1</coordX>
+		<coordY>1</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_StarDao_NodeBase">
+		<defName>YaomaXenotype_Node_Star_3_Insight</defName>
+		<label>Star Insight (三)</label>
+		<description>Gain understanding of the Star Dao- the insights on predictive capabilities and celestial bodies. Increases the chance to completely avoid damage.</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Star_2_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_StarInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>2</coordX>
+		<coordY>2</coordY>
+		<pointReq>2</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_StarDao_NodeBase">
+		<defName>YaomaXenotype_Node_Star_4_Insight</defName>
+		<label>Star Insight (四)</label>
+		<description>Gain understanding of the Star Dao- the insights on predictive capabilities and celestial bodies. Increases the chance to completely avoid damage.</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Star_3_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_StarInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>3</coordX>
+		<coordY>3</coordY>
+		<pointReq>2</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_StarDao_NodeBase">
+		<defName>YaomaXenotype_Node_Star_5_Insight</defName>
+		<label>Star Insight (五)</label>
+		<description>Gain understanding of the Star Dao- the insights on predictive capabilities and celestial bodies. Increases the chance to completely avoid damage.</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Star_4_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_StarInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>4</coordX>
+		<coordY>4</coordY>
+		<pointReq>3</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_StarDao_NodeBase">
+		<defName>YaomaXenotype_Node_Star_6_Insight</defName>
+		<label>Star Insight (六)</label>
+		<description>Gain understanding of the Star Dao- the insights on predictive capabilities and celestial bodies. Increases the chance to completely avoid damage.</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Star_5_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_StarInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>5</coordX>
+		<coordY>5</coordY>
+		<pointReq>3</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+</Defs>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>YaomaXenotype_Hediff_OlfactoryOverload</defName>
+    <label>olfactory overload</label>
+    <description>Disorientation caused by an overwhelming stench. For organics, it makes it difficult to breathe and taste things, and can even induce vomiting.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+        <vomitMtbDays>0.0005</vomitMtbDays>
+				<capMods>
+					<li><capacity>Breathing</capacity><setMax>0.7</setMax></li>
+					<li><capacity>Eating</capacity><setMax>0.3</setMax></li>
+				</capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Disorientation">
+        <wanderMtbHours>0.05</wanderMtbHours>
+        <singleWanderDurationTicks>180</singleWanderDurationTicks>
+        <wanderRadius>3</wanderRadius>
+      </li>
+      <li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2000~2500</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+	
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>YaomaXenotype_Hediff_Flashbang_Sight</defName>
+    <label>vision flashbang</label>
+    <description>Visual disruption from sensory overload. Naturally disappears over time.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+				<capMods>
+					<li><capacity>Sight</capacity><setMax>0.1</setMax></li>
+				</capMods>
+      </li>
+    </stages>
+    <comps>
+			<li Class="YaomaCore.HediffCompProperties_ShouldRemoveGeneric">
+				<capacities>
+					<li>Sight</li>
+				</capacities>
+			</li>
+      <li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>720~960</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+	
+	<HediffDef>
+		<hediffClass>HediffWithComps</hediffClass>
+		<defName>YaomaXenotype_Hediff_Flashbang_Hearing</defName>
+    <label>auditory flashbang</label>
+    <description>Auditory disruption from sensory overload. Naturally disappears over time.</description>
+    <isBad>true</isBad>
+    <stages>
+      <li>
+				<capMods>
+					<li><capacity>Hearing</capacity><setMax>0.1</setMax></li>
+				</capMods>
+      </li>
+    </stages>
+    <comps>
+			<li Class="YaomaCore.HediffCompProperties_ShouldRemoveGeneric">
+				<capacities>
+					<li>Hearing</li>
+				</capacities>
+			</li>
+      <li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>720~960</disappearsAfterTicks>
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+    </comps>
+  </HediffDef>
+
+</Defs>

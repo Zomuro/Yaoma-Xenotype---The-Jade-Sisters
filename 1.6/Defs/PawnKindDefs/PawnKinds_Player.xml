@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	 <PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>YaomaXenotype_PawnKind_Player</defName>
+		<label>Yaoma colonist</label>
+		
+		<backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+		<backstoryFiltersOverride>
+			<li>
+				<categories> <!-- Yaoma backstories -->
+					<li>YaomaXenotype_YaomaBackstory</li>
+				</categories>
+				<commonality>3</commonality>
+		  </li>
+			<li>
+				<categories> <!-- Offworld backstories -->
+					<li>OffWorld</li>
+				</categories>
+				<commonality>1</commonality>
+		  </li>
+		</backstoryFiltersOverride>
+		
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>Neolithic</li>
+			<li>IndustrialBasic</li>
+			<li>YaomaCivilianApparel</li>
+		</apparelTags>
+		<apparelMoney>350~600</apparelMoney>
+    <techHediffsChance>0</techHediffsChance>
+		
+		<useFactionXenotypes>False</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<YaomaXenotype_YaomaXenotype>1</YaomaXenotype_YaomaXenotype>
+			</xenotypeChances>
+		</xenotypeSet>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+	
+</Defs>

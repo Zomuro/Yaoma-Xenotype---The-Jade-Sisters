@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Yaoma Cultivation ProgressEXPWorkers --> 
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_CastEnergyCost">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_CastEnergyCost</workerClass>
+		<defName>YaomaXenotype_Cultivation_EXPTag_CastEnergyCost</defName>
+		<scalingStatDef>YaomaXenotype_CultivationQiRefining</scalingStatDef>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_DuringJob">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_DuringJob</workerClass>
+		<defName>YaomaXenotype_Cultivation_EXPTag_DuringJob</defName>
+		<fixedEXP>1</fixedEXP>
+		<jobSets>
+			<li>
+				<label>meditating</label>
+				<jobDefs>
+					<li>Meditate</li>
+				</jobDefs>
+			</li>
+		</jobSets>
+		<scalingStatDef>YaomaXenotype_CultivationQiRefining</scalingStatDef>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+	<ItsSorceryFramework.ProgressEXPTagDef ParentName = "EXPTag_UseItem">
+		<workerClass>ItsSorceryFramework.ProgressEXPWorker_UseItem</workerClass>
+		<defName>YaomaXenotype_Cultivation_EXPTag_UseItem</defName>
+		<expItems>
+			<li>
+				<thingDef>YaomaXenotype_QiCoreGradeOne</thingDef>
+				<exp>50</exp>
+				<expFactorStat>YaomaXenotype_CultivationQiRefining</expFactorStat>
+			</li>
+			<li>
+				<thingDef>YaomaXenotype_QiCoreGradeTwo</thingDef>
+				<exp>100</exp>
+				<expFactorStat>YaomaXenotype_CultivationQiRefining</expFactorStat>
+			</li>
+			<li>
+				<thingDef>YaomaXenotype_QiCoreGradeThree</thingDef>
+				<exp>200</exp>
+				<expFactorStat>YaomaXenotype_CultivationQiRefining</expFactorStat>
+			</li>
+			<li>
+				<thingDef>YaomaXenotype_QiCoreGradeFour</thingDef>
+				<exp>400</exp>
+				<expFactorStat>YaomaXenotype_CultivationQiRefining</expFactorStat>
+			</li>
+			<li>
+				<thingDef>YaomaXenotype_QiCoreGradeFive</thingDef>
+				<exp>800</exp>
+				<expFactorStat>YaomaXenotype_CultivationQiRefining</expFactorStat>
+			</li>
+			<li>
+				<thingDef>YaomaXenotype_QiCoreGradeSix</thingDef>
+				<exp>1600</exp>
+				<expFactorStat>YaomaXenotype_CultivationQiRefining</expFactorStat>
+			</li>
+			<li>
+				<thingDef>YaomaXenotype_QiCoreGradeImmortal</thingDef>
+				<exp>3200</exp>
+				<expFactorStat>YaomaXenotype_CultivationQiRefining</expFactorStat>
+			</li>
+		</expItems>
+	</ItsSorceryFramework.ProgressEXPTagDef>
+	
+</Defs>

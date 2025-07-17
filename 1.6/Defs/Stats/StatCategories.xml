@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<StatCategoryDef>
+		<defName>YaomaXenotype_Cultivation</defName>
+		<label>Yaoma Cultivation</label>
+		<displayOrder>400</displayOrder>
+		<displayAllByDefault>false</displayAllByDefault>
+	</StatCategoryDef>
+
+</Defs>

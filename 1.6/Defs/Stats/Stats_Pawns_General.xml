@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StatDef>
+		<defName>YaomaXenotype_CultivationTalent</defName>
+		<label>cultivation talent</label>
+		<description>Cultivation talent determines a pawn's innate ability to manipulate qi, or life energy. More talented pawns tend to cultivate faster and are able to store more qi.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0.1</minValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<showOnAnimals>false</showOnAnimals>
+		<displayPriorityInCategory>88888888</displayPriorityInCategory>
+		<scenarioRandomizable>true</scenarioRandomizable>
+	</StatDef>
+	
+	<StatDef>
+		<defName>YaomaXenotype_CultivationQiRefining</defName>
+		<label>qi refining rate</label>
+		<description>By integrating more and more qi into their bodies, cultivators can gradually transcend themselves. A higher qi refining rate increases the efficacy of this process.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0.1</minValue>
+		<statFactors>
+      <li>YaomaXenotype_CultivationTalent</li>
+    </statFactors>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<showOnAnimals>false</showOnAnimals>
+		<displayPriorityInCategory>88888887</displayPriorityInCategory>
+		<scenarioRandomizable>false</scenarioRandomizable>
+	</StatDef>
+	
+	<StatDef>
+		<defName>YaomaXenotype_HealthScaleFactor</defName>
+		<label>health scale factor</label>
+		<description>A multiplier on the pawn's maximum hit points.</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>1</defaultBaseValue>
+		<minValue>0</minValue>
+		<roundValue>false</roundValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<showOnAnimals>false</showOnAnimals>
+		<scenarioRandomizable>false</scenarioRandomizable>
+		<displayPriorityInCategory>88888870</displayPriorityInCategory>
+	</StatDef>
+	
+	<StatDef>
+		<defName>YaomaXenotype_DamageNullChance</defName>
+		<label>damage nullification chance</label>
+		<description>The probability a pawn will not be damaged (whether by sheer luck, precognition, or reflexes).</description>
+		<category>BasicsPawn</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<minValue>0</minValue>
+		<maxValue>1</maxValue>
+		<roundValue>true</roundValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<showOnPawns>true</showOnPawns>
+		<showOnAnimals>false</showOnAnimals>
+		<scenarioRandomizable>false</scenarioRandomizable>
+		<displayPriorityInCategory>88888871</displayPriorityInCategory>
+	</StatDef>
+	
+	<!-- <StatDef> -->
+		<!-- <defName>DaoWisdom</defName> -->
+		<!-- <label>Dao wisdom</label> -->
+		<!-- <description>Dao wisdom refers to the ability of the pawn to comprehend the Dao. Greater Dao wisdom enables the pawn to develop Dao insights more quickly.</description> -->
+		<!-- <category>BasicsPawn</category> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <toStringStyle>PercentZero</toStringStyle> -->
+		<!-- <showOnAnimals>false</showOnAnimals> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <displayPriorityInCategory>3500</displayPriorityInCategory> -->
+		<!-- <scenarioRandomizable>true</scenarioRandomizable> -->
+	<!-- </StatDef> -->
+	
+	
+	
+	<!-- <StatDef> -->
+		<!-- <defName>MeleeStrengthFactor</defName> -->
+		<!-- <label>melee strength factor</label> -->
+		<!-- <description>Multiplier on the amount of melee damage a pawn can deal.</description> -->
+		<!-- <category>BasicsPawn</category> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <roundValue>true</roundValue> -->
+		<!-- <toStringStyle>Integer</toStringStyle> -->
+		<!-- <roundToFiveOver>200</roundToFiveOver> -->
+		<!-- <showNonAbstract>true</showNonAbstract> -->
+		<!-- <scenarioRandomizable>true</scenarioRandomizable> -->
+		<!-- <showOnPawns>false</showOnPawns> -->
+		<!-- <displayPriorityInCategory>99997</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+	
+	<!-- <StatDef> -->
+		<!-- <defName>ArmorRatingFactor</defName> -->
+		<!-- <label>armor rating factor</label> -->
+		<!-- <description>Multiplier on a pawn's armor's efficacy.</description> -->
+		<!-- <category>BasicsPawn</category> -->
+		<!-- <defaultBaseValue>1</defaultBaseValue> -->
+		<!-- <minValue>0</minValue> -->
+		<!-- <roundValue>true</roundValue> -->
+		<!-- <toStringStyle>Integer</toStringStyle> -->
+		<!-- <roundToFiveOver>200</roundToFiveOver> -->
+		<!-- <showNonAbstract>true</showNonAbstract> -->
+		<!-- <scenarioRandomizable>true</scenarioRandomizable> -->
+		<!-- <showOnPawns>false</showOnPawns> -->
+		<!-- <displayPriorityInCategory>99997</displayPriorityInCategory> -->
+	<!-- </StatDef> -->
+
+</Defs>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GeneDef>
+		<defName>YaomaXenotype_Neuroplasticity</defName>
+		<label>enhanced neuroplasticity</label>
+		<description>Carriers of this gene form neural connections more quickly. This alteration in neuron function allows them to learn more swiftly and work more efficiently, but makes it easier to recall bad memories.</description>
+		<iconPath>UI/Icons/Genes/Gene_EnhancedNeuroplasticity</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>30</displayOrderInCategory>
+		
+		<statOffsets>
+			<GlobalLearningFactor>0.25</GlobalLearningFactor>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+			<MentalBreakThreshold>.075</MentalBreakThreshold>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>corti</symbol></li>
+				<li><symbol>neuro</symbol></li>
+				<li><symbol>mnemo</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>plastic</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef ParentName="GeneToughnessBase">
+		<defName>YaomaXenotype_MyeloaffectiveOsteoporosis</defName>
+		<label>Myeloaffective osteoporosis</label>
+		<description>Carriers of this gene have altered osteogenesis cells that create weaker bone structures and reduced bone marrow. This has a variety of knock-on effects that effectively reduce their physical durability and weaken their immune response.</description>
+		<iconPath>UI/Icons/Genes/Gene_MyeloaffectiveOsteoporosis</iconPath>
+		<displayOrderInCategory>11</displayOrderInCategory>
+		
+		<statFactors>
+			<YaomaXenotype_HealthScaleFactor>0.75</YaomaXenotype_HealthScaleFactor>
+			<ImmunityGainSpeed>0.9</ImmunityGainSpeed>
+		</statFactors>
+		<biostatCpx>2</biostatCpx>
+		<biostatMet>5</biostatMet>
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>brittle</symbol></li>
+				<li><symbol>hollowed</symbol></li>
+				<li><symbol>osteo</symbol></li>
+				<li><symbol>myelo</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>porosis</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>YaomaXenotype_Hermaphroditism</defName>
+		<label>Intersex (F)</label>
+		<labelShortAdj>hermaphroditic</labelShortAdj>
+		<description>Carriers of this gene possess both female and male primary sex organs, and present with feminine secondary sex characteristics.</description>
+		<customEffectDescriptions>
+			<li>Causes a pawn to appear female, no matter the gender.</li>
+		</customEffectDescriptions>
+		<iconPath>UI/Icons/Genes/Gene_Intersex</iconPath>
+		<displayCategory>Reproduction</displayCategory>
+		<displayOrderInCategory>40</displayOrderInCategory>
+		
+		<biostatMet>-1</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		
+		<bodyType>Standard</bodyType>
+		<forcedHeadTypes>
+			<li>Female_AverageNormal</li>
+			<li>Female_AveragePointy</li>
+			<li>Female_AverageWide</li>
+			<li>Female_NarrowNormal</li>
+			<li>Female_NarrowPointy</li>
+			<li>Female_NarrowWide</li>
+			<li>YaomaXenotype_Male_AverageNormal</li>
+			<li>YaomaXenotype_Male_AveragePointy</li>
+			<li>YaomaXenotype_Male_AverageWide</li>
+			<li>YaomaXenotype_Male_NarrowNormal</li>
+			<li>YaomaXenotype_Male_NarrowPointy</li>
+			<li>YaomaXenotype_Male_NarrowWide</li>
+		</forcedHeadTypes>
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>co</symbol></li>
+				<li><symbol>inter</symbol></li>
+				<li><symbol>herm</symbol></li>
+				<li><symbol>gynandro</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>aphroditic</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>YaomaXenotype_DaoAttunement</defName>
+		<label>Dao attunement</label>
+		<description>Carriers of this gene are more amenable to the mental and physiological changes brought upon by Yaoma cultivation. Though the precise mechanism is still unknown, researchers have discovered a category of unique receptors only found in cultivators and carriers. </description>
+		<iconPath>UI/Icons/Genes/Gene_DaoAttunement</iconPath>
+		<displayCategory>YaomaXenotype_CategoryCultivation</displayCategory>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		
+		<statOffsets>
+			<YaomaXenotype_CultivationTalent>0.5</YaomaXenotype_CultivationTalent>
+		</statOffsets>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>Dao</symbol></li>
+				<li><symbol>taiji</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>harmonized</symbol></li>
+				<li><symbol>qigong</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+
+	<GeneDef ParentName="CellInstabilityBase">
+		<defName>YaomaXenotype_StabilizedSenescence</defName>
+		<label>stabilized senescence</label>
+		<description>Carriers of this gene are granted a longer average life expectancy. Their cells are less likely to die due to reduced DNA damage during the cell replication process. The lower rate of apoptosis, however, gives cells the time to become cancerous through environmental factors.</description>
+		<iconPath>UI/Icons/Genes/Gene_StabilisedSenescence</iconPath>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		
+		<statFactors>
+			<LifespanFactor>1.25</LifespanFactor>
+			<CancerRate>2</CancerRate>
+		</statFactors>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		
+		<symbolPack>
+			<prefixSymbols>
+				<li><symbol>dura</symbol></li>
+				<li><symbol>teneo</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+				<li><symbol>longevity</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>YaomaXenotype_GeneYutaozi</defName>
+		<label>yutaozi (jade peach)</label>
+		<description>Carriers of this gene gain the boons of yutaozi, with its full gamut of capacity and regenerative improvements, and can pass them down to their descendents. The immense breadth and complexity of its genetic alterations, however, makes it impossible to capture within a geneset.</description>
+		<customEffectDescriptions>
+			<li>Every (*DateTime)15-45 days(/DateTime), one old wound or chronic illness is healed.</li>
+		</customEffectDescriptions>
+		<iconPath>UI/Icons/Genes/Gene_Yutaozi</iconPath>
+		<displayCategory>Miscellaneous</displayCategory>
+		<displayOrderInCategory>35</displayOrderInCategory>
+		
+		<geneClass>YaomaCore.Gene_Healing_Yutaozi</geneClass>
+		<canGenerateInGeneSet>true</canGenerateInGeneSet>
+		<preventPermanentWounds>false</preventPermanentWounds>
+		<statOffsets>
+			<InjuryHealingFactor>0.40</InjuryHealingFactor>
+		</statOffsets>
+		<capMods>
+			<li><capacity>BloodFiltration</capacity><offset>0.6</offset></li>
+			<li><capacity>Metabolism</capacity><offset>0.25</offset></li>
+			<li><capacity>BloodPumping</capacity><offset>0.25</offset></li>
+			<li><capacity>Sight</capacity><offset>0.2</offset></li>
+			<li><capacity>Consciousness</capacity><offset>0.10</offset></li>
+			<li><capacity>Breathing</capacity><offset>0.2</offset></li>
+			<li><capacity>Moving</capacity><offset>0.08</offset></li>
+		</capMods>
+		<biostatCpx>20</biostatCpx>
+		<biostatMet>0</biostatMet>
+	</GeneDef>
+</Defs>

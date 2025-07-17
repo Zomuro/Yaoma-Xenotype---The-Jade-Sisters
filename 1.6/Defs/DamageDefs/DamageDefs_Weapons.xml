@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+		
+	<DamageDef>
+		<defName>YaomaXenotype_Damage_Stink</defName>
+		<label>stink</label>
+		<workerClass>YaomaCore.DamageWorker_AddGlobalFleshOnly</workerClass>
+		<canInterruptJobs>false</canInterruptJobs>
+		<makesBlood>false</makesBlood>
+		<defaultDamage>1</defaultDamage>
+		<hediff>YaomaXenotype_Hediff_OlfactoryOverload</hediff>
+		<explosionCellFleck>BlastExtinguisher</explosionCellFleck>
+		<explosionColorEdge>(0.537, 0.635, 0.012, 0.05)</explosionColorEdge>
+		<harmsHealth>false</harmsHealth>
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Smoke</combatLogRules>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+	
+	<DamageDef ParentName = "Bomb">
+		<defName>YaomaXenotype_Damage_FlashBomb</defName>
+		<label>flash bomb</label>
+		
+		<additionalHediffs>
+			<li><hediff>YaomaXenotype_Hediff_Flashbang_Sight</hediff><severityFixed>1</severityFixed></li>
+			<li><hediff>YaomaXenotype_Hediff_Flashbang_Hearing</hediff><severityFixed>1</severityFixed></li>
+		</additionalHediffs>
+		
+		<buildingDamageFactorImpassable>1</buildingDamageFactorImpassable>
+    <buildingDamageFactorPassable>1</buildingDamageFactorPassable>
+    <plantDamageFactor>1</plantDamageFactor>
+    <corpseDamageFactor>1</corpseDamageFactor>
+		
+		<soundExplosion>Explosion_Smoke</soundExplosion>
+		<combatLogRules>Damage_Smoke</combatLogRules>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
+
+</Defs>

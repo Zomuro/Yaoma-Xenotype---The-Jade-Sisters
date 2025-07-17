@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef Abstract = "True" Name = "YaomaXenotype_FireDao_NodeBase">
+		<learningTrackerDef>YaomaXenotype_LearningTracker_Tree_FireDao</learningTrackerDef>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+
+	<!-- Insight Nodes - used for granting passives -->
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_FireDao_NodeBase">
+		<defName>YaomaXenotype_Node_Fire_1_Insight</defName>
+		<label>Fire Insight (一)</label>
+		<description>Gain understanding of the Fire Dao- the insights on combustion and superhot thermodynamics.</description>
+		
+		<hediffAdd>
+			<li><hediffDef>YaomaXenotype_FireInsight</hediffDef><severity>1</severity></li>
+		</hediffAdd>
+		
+		<coordX>0</coordX>
+		<coordY>0</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_FireDao_NodeBase">
+		<defName>YaomaXenotype_Node_Fire_2_Insight</defName>
+		<label>Fire Insight (二)</label>
+		<description>Gain understanding of the Fire Dao- the insights on combustion and superhot thermodynamics. Increases maximum comfortable temperature (heat resistance).</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Fire_1_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_FireInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+
+		<coordX>1</coordX>
+		<coordY>1</coordY>
+		<pointReq>1</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_FireDao_NodeBase">
+		<defName>YaomaXenotype_Node_Fire_3_Insight</defName>
+		<label>Fire Insight (三)</label>
+		<description>Gain understanding of the Fire Dao- the insights on combustion and superhot thermodynamics. Increases maximum comfortable temperature (heat resistance).</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Fire_2_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_FireInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>2</coordX>
+		<coordY>2</coordY>
+		<pointReq>2</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_FireDao_NodeBase">
+		<defName>YaomaXenotype_Node_Fire_4_Insight</defName>
+		<label>Fire Insight (四)</label>
+		<description>Gain understanding of the Fire Dao- the insights on combustion and superhot thermodynamics. Increases maximum comfortable temperature (heat resistance).</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Fire_3_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_FireInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>3</coordX>
+		<coordY>3</coordY>
+		<pointReq>2</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_FireDao_NodeBase">
+		<defName>YaomaXenotype_Node_Fire_5_Insight</defName>
+		<label>Fire Insight (五)</label>
+		<description>Gain understanding of the Fire Dao- the insights on combustion and superhot thermodynamics. Increases maximum comfortable temperature (heat resistance).</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Fire_4_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_FireInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>4</coordX>
+		<coordY>4</coordY>
+		<pointReq>3</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+	<ItsSorceryFramework.LearningTreeNodeDef ParentName = "YaomaXenotype_FireDao_NodeBase">
+		<defName>YaomaXenotype_Node_Fire_6_Insight</defName>
+		<label>Fire Insight (六)</label>
+		<description>Gain understanding of the Fire Dao- the insights on combustion and superhot thermodynamics. Increases maximum comfortable temperature (heat resistance).</description>
+		
+		<prereqNodes>
+			<li>YaomaXenotype_Node_Fire_5_Insight</li>
+		</prereqNodes>
+		<hediffAdjust>
+			<li><hediffDef>YaomaXenotype_FireInsight</hediffDef><severity>1</severity></li>
+		</hediffAdjust>
+		
+		<coordX>5</coordX>
+		<coordY>5</coordY>
+		<pointReq>3</pointReq>
+	</ItsSorceryFramework.LearningTreeNodeDef>
+	
+</Defs>

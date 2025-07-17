@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>YaomaXenotype_NamerFaction</defName>
+    <include>
+      <li>YaomaXenotype_WordUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[YaomaGroup] of [YaomaElements]</li> <!-- i.e. Sect of Space -->
+		<li>r_name->[YaomaGroup] of the [YaomaMyth] </li> <!-- i.e. Sect of the Taotie -->		
+        <li>r_name->[YaomaGroup] of the [YaomaMyth]'s [Positive] </li> <!-- i.e. Sect of the Taotie's Blessing -->
+        
+		<li>r_name->[YaomaElements] - [YaomaElementsAction] [YaomaGroup]</li> <!-- i.e. Space Rending Sect -->
+		<li>r_name->[YaomaElements] [YaomaItem] [YaomaGroup]</li>	<!-- i.e. Space Blade Sect -->
+		<li>r_name->[YaomaElements] [YaomaMyth] [YaomaGroup]</li> <!-- i.e. Space Immortal Sect  -->
+
+		<li>r_name->[YaomaMyth] [YaomaItem] [YaomaGroup]</li> <!-- i.e. Tiger's Blade Sect -->
+		<li>r_name->[YaomaMyth] [YaomaElements] [YaomaGroup]</li> <!-- i.e. Tiger Space Sect -->		
+		
+		<li>r_name->[YaomaItem] [YaomaMyth] [YaomaGroup]</li> <!-- i.e. Blade Tiger Sect -->		
+ 
+		<li>r_name->[YaomaAdj] [YaomaItem] [YaomaGroup]</li>  <!-- i.e. Dominating Blade Sect -->	
+		<li>r_name->[YaomaAdj] [YaomaMyth] [YaomaGroup]</li> <!-- i.e. Dominating Immortal Sect -->	
+		<li>r_name->[YaomaAdj] [YaomaGroup] of the [YaomaMyth]</li> <!-- i.e. Dominating Sect of the Immortal -->	
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>
