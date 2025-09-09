@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 		
-	<DamageDef>
+	<!-- Armor Damage Types -->
+	<DamageDef> <!-- Stink -->
 		<defName>YaomaXenotype_Damage_Stink</defName>
 		<label>stink</label>
 		<workerClass>YaomaCore.DamageWorker_AddGlobalFleshOnly</workerClass>
@@ -17,7 +18,8 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
 	
-	<DamageDef ParentName = "Bomb">
+	<!-- Weapon Damage Types -->
+	<DamageDef ParentName = "Bomb"> <!-- Flashbomb -->
 		<defName>YaomaXenotype_Damage_FlashBomb</defName>
 		<label>flash bomb</label>
 		
@@ -36,4 +38,22 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 	</DamageDef>
 
+	<DamageDef ParentName="BluntBase"> <!-- Internal Trauma -->
+    <defName>YaomaXenotype_Damage_MeleeInternalTrauma</defName>
+		<label>internal trauma</label>
+    <workerClass>YaomaCore.DamageWorker_Blunt_ScalingBodySize</workerClass>
+		<defaultArmorPenetration>1</defaultArmorPenetration>
+    <bluntInnerHitChance>1</bluntInnerHitChance>
+		<bluntInnerHitDamageFractionToConvert>0.30~0.50</bluntInnerHitDamageFractionToConvert>
+    <bluntInnerHitDamageFractionToAdd>0.2~0.35</bluntInnerHitDamageFractionToAdd>
+  </DamageDef>
+	
+	<DamageDef ParentName="BluntBase"> <!-- Heavy Blunt -->
+    <defName>YaomaXenotype_Damage_Smash</defName>
+		<label>smash</label>
+		<defaultArmorPenetration>1</defaultArmorPenetration>
+    <buildingDamageFactor>10</buildingDamageFactor>
+    <buildingDamageFactorImpassable>0.75</buildingDamageFactorImpassable>
+  </DamageDef>
+	
 </Defs>

@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Civilians -->
+
+	<PawnKindDef Name = "YaomaXenotype_Palace_Civ_Base" ParentName="YaomaXenotype_PawnKind_Base"> <!-- Villager -->
+		<defName>YaomaXenotype_Palace_Villager</defName>
+		<label>villager</label>
+		<labelPlural>villagers</labelPlural>
+		<combatPower>45</combatPower>
+		
+		<minApparelQuality>Poor</minApparelQuality>
+		<maxApparelQuality>Good</maxApparelQuality>
+		<itemQuality>Poor</itemQuality>
+		<apparelMoney>
+			<min>400</min>
+			<max>600</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>200</min>
+			<max>350</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeBasic</li>
+			<li>SimpleGun</li>
+		</weaponTags>
+		
+		<inventoryOptions>
+		  <skipChance>0.75</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+				<choiceChance>90</choiceChance>
+				<thingDef>Silver</thingDef>
+				<countRange>
+					<min>25</min>
+					<max>50</max>
+				</countRange>
+			</li>
+			<li>
+				<choiceChance>10</choiceChance>
+				<thingDef>Silver</thingDef>
+				<countRange>
+					<min>50</min>
+					<max>100</max>
+				</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="YaomaXenotype_Palace_Civ_Base"> <!-- Guard -->
+		<defName>YaomaXenotype_Palace_Guard</defName>
+		<label>guard</label>
+		<labelPlural>guards</labelPlural>
+		<isFighter>true</isFighter>
+		<combatPower>25</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<combatPower>60</combatPower>
+		
+		<itemQuality>Normal</itemQuality>		
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>YaomaMediumMilitaryT1</li>
+		</apparelTags>
+		<apparelMoney>
+			<min>500</min>
+			<max>700</max>
+		</apparelMoney>
+		<weaponMoney>
+			<min>300</min>
+			<max>350</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>YaomaWeaponsMeleeT1</li>
+			<li>YaomaWeaponsRangedT1</li>
+		</weaponTags>
+		
+		<initialWillRange>1~2</initialWillRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="YaomaXenotype_Palace_Civ_Base"> <!-- Merchant -->
+		<defName>YaomaXenotype_Palace_Merchant</defName>
+		<label>merchant</label>
+		<trader>true</trader>
+		<combatPower>50</combatPower>
+		
+		<itemQuality>Normal</itemQuality>		
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>400</min>
+			<max>600</max>
+		</apparelMoney>
+		<apparelTags Inherit = "False">
+			<li>YaomaLightMilitaryT1</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>250</min>
+			<max>450</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>YaomaWeaponsRangedT1</li>
+		</weaponTags>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="YaomaXenotype_Palace_Civ_Base"> <!-- Sect Leader -->
+		<defName>YaomaXenotype_Palace_SectLeader</defName>
+		<label>sect leader</label>	
+		<combatPower>500</combatPower>
+		<minGenerationAge>50</minGenerationAge>
+		<factionLeader>true</factionLeader>
+		<factionHostileOnKill>true</factionHostileOnKill>
+		<isFighter>true</isFighter>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>9~10</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>9~10</range>
+			</li>			
+			<li>
+				<skill>Social</skill>
+				<range>10~20</range>
+			</li>
+		</skills>		
+		
+		<itemQuality>Excellent</itemQuality>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>
+			<min>9000</min>
+			<max>10000</max>
+		</apparelMoney>
+		<apparelTags Inherit = "False">
+			<li>YaomaLightMilitaryT3</li>
+		</apparelTags>
+		<weaponMoney>
+			<min>9000</min>
+			<max>10000</max>
+		</weaponMoney>
+		<weaponTags Inherit = "False">
+			<li>YaomaWeaponsMeleeT3</li>
+			<li>YaomaWeaponsRangedT3</li>
+		</weaponTags>
+		
+		<requiredWorkTags>
+			<li>Social</li>
+			<li>Violent</li>
+		</requiredWorkTags>	
+		
+		<initialWillRange>4~5</initialWillRange>
+		<initialResistanceRange>20~25</initialResistanceRange>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="YaomaXenotype_PawnKind_Military_Base"> <!-- Outer Disciple -->		
+		<defName>YaomaXenotype_Palace_DiscipleOuter</defName>
+		<label>outer disciple</label>
+		<minGenerationAge>18</minGenerationAge>
+		<combatPower>100</combatPower>
+		
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>3~6</range>
+			</li>
+			<li>
+				<skill>Melee</skill>
+				<range>3~6</range>
+			</li>			
+		</skills>	
+		
+		<itemQuality>Normal</itemQuality>
+		<apparelTags>
+			<li>YaomaMilitaryT1</li>
+		</apparelTags>
+		
+		<weaponMoney>
+			<min>350</min>
+			<max>400</max>
+		</weaponMoney>
+		<weaponTags>
+			<li>YaomaWeaponsRangedT1</li>
+			<li>YaomaWeaponsMeleeT1</li>
+		</weaponTags>
+	</PawnKindDef>
+
+</Defs>

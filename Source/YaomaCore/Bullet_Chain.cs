@@ -76,11 +76,7 @@ namespace YaomaCore
                         }
                     }
                 }
-                if (Rand.Chance(def.projectile.bulletChanceToStartFire) && (hitPawn == null || Rand.Chance(FireUtility.ChanceToAttachFireFromEvent(hitPawn))))
-                {
-                    hitThing.TryAttachFire(def.projectile.bulletFireSizeRange.RandomInRange, originalLauncher);
-                    //return;
-                }
+                if (Rand.Chance(base.DamageDef.igniteCellChance)) FireUtility.TryStartFireIn(base.Position, map, Rand.Range(0.55f, 0.85f), this.launcher, null);
             }
             else
             {
@@ -90,7 +86,7 @@ namespace YaomaCore
                     if (position.GetTerrain(map).takeSplashes) FleckMaker.WaterSplash(ExactPosition, map, Mathf.Sqrt((float)DamageAmount) * 1f, 4f);
                     else FleckMaker.Static(ExactPosition, map, FleckDefOf.ShotHit_Dirt, 1f);
                 }
-                if (Rand.Chance(def.projectile.bulletChanceToStartFire)) FireUtility.TryStartFireIn(position, map, def.projectile.bulletFireSizeRange.RandomInRange, originalLauncher, null);
+                if (Rand.Chance(base.DamageDef.igniteCellChance)) FireUtility.TryStartFireIn(base.Position, map, Rand.Range(0.55f, 0.85f), this.launcher, null);
             }
 
             ChainFromImpact(hitThing, map, projectileDeflected, blockedByShield);

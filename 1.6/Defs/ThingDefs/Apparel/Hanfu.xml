@@ -60,6 +60,7 @@
 			</layers>
 			<tags>
 				<li>YaomaLightMilitary</li>
+				<li>YaomaLightMilitaryT1</li>
 				<li>YaomaCivilianApparel</li>
 				<li>YaomaMilitaryT1</li>				
 			</tags>
@@ -124,7 +125,8 @@
 				<li>Overhead</li>
 			</layers>
 			<tags>
-				<li>YaomaLightMilitary</li>			
+				<li>YaomaLightMilitary</li>		
+				<li>YaomaLightMilitaryT1</li>
 				<li>YaomaCivilianApparel</li>
 				<li>YaomaMilitaryT1</li>				
 			</tags>

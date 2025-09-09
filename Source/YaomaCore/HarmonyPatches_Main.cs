@@ -25,7 +25,7 @@ namespace YaomaCore.HarmonyPatches
             // reporting tool for checking on Harmony Patches - modified from Humanoid Alien Races's HarmonyPatches
             stopwatch.Stop();
             Log.Message(
-                string.Format("YaomaCore.HarmonyPatches.HarmonyPatches_Main: successfully completed {0} patches in {1} secs.",
+                string.Format("[YaomaCore] Successfully completed {0} patches in {1} secs.",
                     harmony.GetPatchedMethods().Select(new Func<MethodBase, Patches>(Harmony.GetPatchInfo)).SelectMany(
                         (Patches p) => p.Prefixes.Concat(p.Postfixes).Concat(p.Transpilers)).Count((Patch p) => p.owner == harmony.Id),
                     stopwatch.Elapsed.TotalSeconds

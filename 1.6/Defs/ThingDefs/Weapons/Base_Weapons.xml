@@ -26,4 +26,40 @@
     </comps>
   </ThingDef>
 	
+	<ThingDef Name="YaomaXenotype_BaseMeleeWeapon_Sharp" ParentName="BaseMeleeWeapon_Sharp" Abstract="True">
+    <tradeTags>
+      <li>YaomaWeaponsMelee</li>
+    </tradeTags>
+  </ThingDef>
+	
+	<ThingDef Name="YaomaXenotype_BaseMeleeWeapon_Sharp_Quality" Abstract="True" ParentName="YaomaXenotype_BaseMeleeWeapon_Sharp">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+				<nameMaker>YaomaXenotype_NamerArtWeapon</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef Name="YaomaXenotype_BaseMeleeWeapon_Blunt_Quality" Abstract="True" ParentName="YaomaXenotype_BaseMeleeWeapon_Sharp">
+    <weaponClasses Inherit="False">
+      <li>MeleeBlunt</li>
+    </weaponClasses>
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+				<nameMaker>YaomaXenotype_NamerArtWeapon</nameMaker>
+				<descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+				<minQualityForArtistic>Excellent</minQualityForArtistic>
+			</li>
+    </comps>
+  </ThingDef>
+	
+	
 </Defs>

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name = "YaomaXenotype_JianMeleeBase" ParentName="YaomaXenotype_BaseMeleeWeapon_Sharp_Quality"> <!-- Tier 1 Jian -->
+		<defName>YaomaXenotype_Tier1_Jian</defName>
+		<label>jian</label>
+		<description>A well-balanced blade that can hold a keen edge.\n\nThis historical and functional design has been wielded for self-defense by Yaoma from all walks of life. Many chose to specialize in this weapon’s quick cuts and stabs as part of their mandatory martial education.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_SwordSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>14000</WorkToMake>
+			<Mass>1.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+
+		<!-- TAG -->
+		<weaponTags>
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT1</li>
+		</weaponTags>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+		
+		<!-- ATTACKS -->
+	  <tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+				<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>1.7</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="YaomaXenotype_JianMeleeBase"> <!-- Tier 2 Jian -->
+		<defName>YaomaXenotype_Tier2_Jian</defName>
+		<label>refined jian</label>
+		<description>An improved iteration of the jian smithed with spacer technology.\n\nTaking advantage of metallurgical and material advances, the lightened blade boasts increased durability, holding a finer edge for longer yet still maintaining its excellent balance. These adjustments allow it to maneuver more swiftly, improving attack speed and aiding evasion.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_SwordRefined</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>32000</WorkToMake>
+			<Mass>1.25</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>5</MeleeDodgeChance>
+		</equippedStatOffsets>
+
+		<!-- TAG -->
+		<weaponTags Inherit = "False">
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT2</li>
+		</weaponTags>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount>50</costStuffCount>
+		<costList>
+			<Plasteel>30</Plasteel>
+		</costList>	
+		
+		<!-- ATTACKS -->
+	  <tools Inherit = "False">
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>1.8</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+				<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>17</power>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="YaomaXenotype_JianMeleeBase"> <!-- Tier 3 Jian -->
+		<defName>YaomaXenotype_Tier3_Jian</defName>
+		<label>grand jian</label>
+		<description>The Yaoma’s archetypal blade, brought to life utilizing ultratech techniques.\n\nAfter reverse-engineering the Sophian monosword, union engineers further enhanced the durability of the jian, additionally granting it a dynamic weight distribution system via nanotech. These upgrades allow for seamless, rapid, and guided transitions from offense to defense, delivering greater precision and power.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_SwordGrand</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>52000</WorkToMake>
+			<Mass>1.25</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MeleeDodgeChance>10</MeleeDodgeChance>
+		</equippedStatOffsets>
+
+		<!-- TAG -->
+		<weaponTags Inherit = "False">
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT3</li>
+		</weaponTags>
+		<weaponClasses>
+      <li>Ultratech</li>
+    </weaponClasses>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount/>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>	
+		
+		<!-- ATTACKS -->
+	  <tools Inherit = "False">
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>1.6</cooldownTime>
+			</li>
+			<li>
+				<label>point</label>
+				<capacities>
+				<li>Stab</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>1.3</cooldownTime>
+			</li>
+			<li>
+				<label>edge</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>19</power>
+				<cooldownTime>1.3</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef Name = "YaomaXenotype_QiangMeleeBase" ParentName="YaomaXenotype_BaseMeleeWeapon_Sharp_Quality"> <!-- Tier 1 Qiang -->
+		<defName>YaomaXenotype_Tier1_Qiang</defName>
+		<label>qiang</label>
+		<description>A weapon designed for wide sweeps and decisive thrusts.\n\nGenerations of feedback from combat encounters have made the spear sturdy, such that it can perform fight after fight. With a simple leaf-shaped point, it pierces opponents quite well, and continues to be a reliable armament.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_SpearSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>3</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+		<equippedDistanceOffset/>
+
+		<!-- TAG -->
+		<weaponTags>
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT1</li>
+		</weaponTags>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>80</costStuffCount>
+		<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+		
+		<!-- ATTACKS -->
+		<tools>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>25</power>
+				<armorPenetration>0.50</armorPenetration>
+				<cooldownTime>3</cooldownTime>
+			</li>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>3</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName = "YaomaXenotype_QiangMeleeBase"> <!-- Tier 2 Qiang -->
+		<defName>YaomaXenotype_Tier2_Qiang</defName>
+		<label>refined qiang</label>
+		<description>An upgraded version of the Yaoma qiang, constructed with spacer methods.\n\nThe reinforced shaft accommodates more powerful thrusts, while the point’s adjusted metallurgy improves its penetrative ability. It also possesses a touch of tradition in the form of a tassel, its purpose twofold: to prevent blood from flowing onto the shaft, and to blur the tip when in combat.</description>
+		<techLevel>Spacer</techLevel>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_SpearSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>36000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+
+		<!-- TAG -->
+		<weaponTags Inherit = "False">
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT2</li>
+		</weaponTags>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Plasteel>30</Plasteel>
+		</costList>	
+		
+		<!-- ATTACKS -->
+		<tools Inherit="False">
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>29</power>
+				<armorPenetration>0.60</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName = "YaomaXenotype_QiangMeleeBase"> <!-- Tier 3 Qiang -->
+		<defName>YaomaXenotype_Tier3_Qiang</defName>
+		<label>grand qiang</label>
+		<description>The ultratech variant of the Yaoma qiang, born in and raised for combat.\n\nIt was designed to kill massive insectoids during the Tianting’s colonization, taking inspiration from fusion chamber shielding rods. Upon gouging into the opponent, the spear tip projects a shield that converts contact pressure into expansion force, repelling the wound open. This delivers devastating internal trauma that scales with body size, while further improving weapon longevity.</description>
+		<techLevel>Ultra</techLevel>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_SpearSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>65000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+
+		<!-- TAG -->
+		<weaponTags Inherit = "False">
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT3</li>
+		</weaponTags>
+		<weaponClasses>
+      <li>Ultratech</li>
+    </weaponClasses>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount/>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>	
+		
+		<!-- ATTACKS -->
+		<tools Inherit="False">
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>25</power>
+				<armorPenetration>0.60</armorPenetration>
+				<cooldownTime>2.6</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>YaomaXenotype_Damage_MeleeInternalTrauma</def>
+						<amount>10</amount>
+						<armorPenetration>1</armorPenetration>
+					</li>
+				</extraMeleeDamages>
+			</li>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef Name = "YaomaXenotype_GunMeleeBase" ParentName="YaomaXenotype_BaseMeleeWeapon_Blunt_Quality"> <!-- Tier 1 Gun -->
+		<defName>YaomaXenotype_Tier1_Gun</defName>
+		<label>gun</label>
+		<description>A staff constructed to deliver blunt swipes and pokes.\n\nIt is a common weapon for Yaoma civilians to train on during their common martial education. Due to its versatility, most households own one for both menial tasks and self defense.</description>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_StaffSimple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>11000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+
+		<!-- TAG -->
+		<weaponTags>
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT1</li>
+		</weaponTags>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier1_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costStuffCount>75</costStuffCount>
+		<stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+		
+		<!-- ATTACKS -->
+		<tools>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>15</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="YaomaXenotype_GunMeleeBase"> <!-- Tier 2 Gun -->
+		<defName>YaomaXenotype_Tier2_Gun</defName>
+		<label>refined gun</label>
+		<description>An enhanced Yaoma staff that benefits from industrial advancements.\n\nStrengthened by the implementation of banding and tipping on the ends, the staff boasts improved toughness. These alterations adjust the weapon’s weight distribution, making it easier to incorporate shaft bending techniques that enhance the power behind its swipes.</description>
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<texPath>Item/Weapon/Melee_StaffRefined</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>34000</WorkToMake>
+			<Mass>2</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+
+		<!-- TAG -->
+		<weaponTags Inherit = "False">
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT2</li>
+		</weaponTags>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier2_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount>60</costStuffCount>
+		<costList>
+			<Plasteel>30</Plasteel>
+		</costList>	
+		
+		<!-- ATTACKS -->
+		<tools>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>20</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>18</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+	
+	<ThingDef ParentName="YaomaXenotype_GunMeleeBase"> <!-- Tier 3 Gun -->
+		<defName>YaomaXenotype_Tier3_Gun</defName>
+		<label>grand gun</label>
+		<description>The ultratech Yaoma staff design, optimized for smashing.\n\nLeveraging lessons learned from high-pressure spaceship metallurgy, this heavy-duty weapon combines momentum-repulsion technology and low-latency sensors to manipulate impulse, simultaneously enhancing both its durability and power. These improvements make this weapon ideal for breaching and anti-armor roles.</description>
+		<techLevel>Ultra</techLevel>		
+		<graphicData>
+			<texPath>Item/Weapon/Melee_StaffGrand</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<WorkToMake>63000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+		<equippedAngleOffset>-45</equippedAngleOffset>
+
+		<!-- TAG -->
+		<weaponTags Inherit = "False">
+			<li>YaomaWeaponsMelee</li>
+			<li>YaomaWeaponsMeleeT3</li>
+		</weaponTags>
+		<weaponClasses>
+      <li>Ultratech</li>
+    </weaponClasses>
+
+		<!-- COST -->
+		<recipeMaker>
+			<researchPrerequisite>YaomaXenotype_Research_Tier3_Melee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costStuffCount/>
+		<costList>
+			<Plasteel>85</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+		
+		<!-- ATTACKS -->
+		<tools>
+			<li>
+				<label>tip</label>
+				<capacities>
+					<li>YaomaXenotype_ToolCapacity_Smash</li>
+				</capacities>
+				<power>39</power>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>15</amount>
+					</li>
+				</extraMeleeDamages>				
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>YaomaXenotype_ToolCapacity_Smash</li>
+				</capacities>
+				<power>33</power>
+				<cooldownTime>2.5</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Stun</def>
+						<amount>15</amount>
+						<chance>0.5</chance>
+					</li>
+				</extraMeleeDamages>	
+			</li>
+		</tools>
+	</ThingDef>
+	
+</Defs>

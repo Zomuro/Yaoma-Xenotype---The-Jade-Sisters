@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<FactionDef ParentName="FactionBase" Name="YaomaXenotype_NPCFactionBase">
+	<FactionDef ParentName="FactionBase" Name="YaomaXenotype_NPCFactionBase"> <!-- Palace -->
 		<defName>YaomaXenotype_Faction_Palace</defName>
 		<label>yaoma palace</label>
 		<description>A gathering of Yaoma in a stable community aimed at developing the area.\n\nThey regard themselves as envoys of an enigmatic being known as "Suffering", who gave them a mission to prepare humanity against the unknown.</description>
 		<pawnsPlural>yaoma</pawnsPlural>
 		<techLevel>Ultra</techLevel>
 		<listOrderPriority>9</listOrderPriority> <!-- List below pirates and above Yaoma Cult -->		
-
-		<factionIconPath>World/WorldObjects/Faction_Icon/YaomaPalace</factionIconPath>
+		
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<factionIconPath>World/WorldObjects/Expanding/YaomaPalace</factionIconPath>
 		<colorSpectrum Inherit = "False">
 			<li>(0, 0.659, 0.42)</li>
 		</colorSpectrum>
@@ -56,11 +57,6 @@
 				<commonality>3</commonality>
 			</li>
 		</backstoryFilters>
-		<xenotypeSet> <!-- set the default xenotype set -->
-			<xenotypeChances>
-				<YaomaXenotype_YaomaXenotype>1</YaomaXenotype_YaomaXenotype>
-			</xenotypeChances>
-		</xenotypeSet>
 		
 		<visitorTraderKinds>
 			<li>YaomaXenotype_Trader_Visitor_Standard</li>
@@ -85,7 +81,45 @@
 			</points>
 		</maxPawnCostPerTotalPointsCurve>
 		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+		
+		<pawnGroupMakers> <!-- Creates the groups of pawns you might see in the following situations: -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<options>
+					<YaomaXenotype_Palace_DiscipleOuter>5</YaomaXenotype_Palace_DiscipleOuter>
+					<YaomaXenotype_Palace_SectLeader>0.1</YaomaXenotype_Palace_SectLeader>		
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<YaomaXenotype_Palace_DiscipleOuter>5</YaomaXenotype_Palace_DiscipleOuter>
+					<YaomaXenotype_Palace_SectLeader>0.1</YaomaXenotype_Palace_SectLeader>	
+				</options>
+			</li>
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<YaomaXenotype_Palace_Merchant>1</YaomaXenotype_Palace_Merchant>
+				</traders>
+				<carriers>
+					<Muffalo>2</Muffalo>
+					<Dromedary>2</Dromedary>
+				</carriers>
+				<guards>
+					<YaomaXenotype_Palace_DiscipleOuter>5</YaomaXenotype_Palace_DiscipleOuter>				
+				</guards>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<YaomaXenotype_Palace_Villager>20</YaomaXenotype_Palace_Villager>
+					<YaomaXenotype_Palace_Guard>10</YaomaXenotype_Palace_Guard>
+					<YaomaXenotype_Palace_DiscipleOuter>5</YaomaXenotype_Palace_DiscipleOuter>
+					<YaomaXenotype_Palace_SectLeader>1</YaomaXenotype_Palace_SectLeader>						
+				</options>
+			</li>
+		</pawnGroupMakers>
 	</FactionDef>
-	
 
 </Defs>
